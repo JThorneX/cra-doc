@@ -1,0 +1,17 @@
+@import "../../styles/theme-variables.scss";
+
+.home {
+  width: 100%;
+  z-index: 99;
+  height: 100%;
+  display: flex;
+  @include themify($themes) {
+    background: themed("bodyBackgroundColor");
+    color: themed("textColor");
+  }
+  .home-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
