@@ -4,6 +4,7 @@ import { ThemeContext } from "../../contexts/theme-context";
 import logoDark from "../../assets/logo/fcsw dark logo.png";
 import logoLight from "../../assets/logo/fcsw light logo.png";
 import "./header.scss";
+import { FiMoon } from "react-icons/fi";
 
 const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -17,24 +18,41 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <a href="/" className="logo-section">
-          <img src={logoLight} alt="logo" />
-          <span>Family Care Southwest, P.C.</span>
+        <a href="/" className="logo-section m-3 ">
+          <img src={logoLight} alt="logo" className="logoIcon" />
         </a>
-        <div className="toggle-btn-section">
-          <div className={`toggle-checkbox m-vertical-auto`}>
-            <input
-              className="toggle-btn__input"
-              type="checkbox"
-              name="checkbox"
-              onChange={handleThemeChange}
-              checked={theme === "light"}
-            />
-            <button
-              type="button"
-              className={`toggle-btn__input-label`}
-              onClick={handleThemeChange}
-            ></button>
+        <div className="headerText w-75">
+          <span className="fs-1 headerTitle">Family Care Southwest, P.C.</span>
+          <section className="headerAddress fs-5">
+            6169 S. Balsam Way, Suite #250 <br /> Littleton Colorado, 80123
+          </section>
+        </div>
+        <div className="headerRight">
+          <div className="headerHours">
+            <section className="fs-3 hoursText">Office Hours</section>
+            <section className="fs-5 hoursText">
+              Monday-Friday: 8:00 am to 5:00 pm <br /> Saturday: 8:00am to 11:00
+              am <br /> <br /> Phone: 303-933-4555
+            </section>
+          </div>
+          <br />
+          <div className="toggle-btn-section">
+            <div className={`toggle-checkbox m-vertical-auto`}>
+              <div className="modeText">Dark Mode</div>
+              <input
+                className="toggle-btn__input"
+                type="checkbox"
+                name="checkbox"
+                onChange={handleThemeChange}
+                checked={theme === "light"}
+              />
+              <button
+                type="button"
+                className={`toggle-btn__input-label`}
+                onClick={handleThemeChange}
+              ></button>
+              <div className="modeText">Light Mode</div>
+            </div>
           </div>
         </div>
       </div>
