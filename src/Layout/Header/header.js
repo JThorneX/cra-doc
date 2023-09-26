@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/theme-context";
 
-import logoIcon from "../../assets/logo/soapy rainbow NEON cat head heart sub badge.png";
+import logoDark from "../../assets/logo/fcsw dark logo.png";
+import logoLight from "../../assets/logo/fcsw light logo.png";
 import "./header.scss";
 
 const Header = () => {
@@ -17,8 +18,8 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <a href="/" className="logo-section">
-          <img src={logoIcon} alt="logo" />
-          <span>Light/Dark mode app</span>
+          <img src={logoLight} alt="logo" />
+          <span>Family Care Southwest, P.C.</span>
         </a>
         <div className="toggle-btn-section">
           <div className={`toggle-checkbox m-vertical-auto`}>

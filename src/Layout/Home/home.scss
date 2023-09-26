@@ -1,5 +1,8 @@
 @import "../../styles/theme-variables.scss";
 
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
 .home {
   width: 100%;
   z-index: 99;
@@ -11,7 +14,14 @@
   }
   .home-content {
     text-align: center;
-    max-width: 1200px;
     margin: auto;
+  }
+
+  .doctor-patient {
+    max-width: 100%;
+  }
+
+  .medical-building {
+    max-width: 100%;
   }
 }
