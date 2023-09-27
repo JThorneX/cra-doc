@@ -2,20 +2,21 @@
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-
 .home {
+  position: relative;
   width: 100%;
-  z-index: 99;
   height: 100%;
   display: flex;
   @include themify($themes) {
     background: themed("bodyBackgroundColor");
     color: themed("textColor");
   }
+
   .home-content {
     text-align: center;
     margin: auto;
   }
+
 
   .doctor-patient {
     max-width: 100%;

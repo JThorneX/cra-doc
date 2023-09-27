@@ -1,6 +1,7 @@
 @import "../../styles/theme-variables.scss";
 
 /*Header styles*/
+
 .header {
   width: 100%;
   padding-top: 5rem;
@@ -25,6 +26,19 @@
       text-decoration: none;
       display: flex;
 
+      // .logo {
+      //   @include themify($themes) {
+      //     stroke: themed("logo");
+      //   }
+      // }
+      // @include themify($themes) {
+      //   .logo {
+      //     stroke: themed("logo");
+      //   }
+      // }
+
+      .DlogoIcon,
+      .LlogoIcon,
       .logoIcon {
         height: 10rem;
         width: 10rem;
@@ -135,4 +149,22 @@
       }
     }
   }
+}
+
+.subheader {
+  @include themify($themes) {
+    background: themed("subheader");
+    color: themed("textColor");
+  }
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}
+
+.btn {
+  background-color: #368F8B !important;
+  color: #fff !important;
+}
+
+.container {
 }
