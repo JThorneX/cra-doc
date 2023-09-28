@@ -1,15 +1,18 @@
 import Header from "./Header/header";
-import Home from "./Home/home"
+import Home from "./Home/home";
 import "./styles.scss";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const Layout = () => {
   return (
-    <div className="layout-wrapper">
-      <div className="main-wrapper">
-        <Header />
-        <Home />
+    <ParallaxProvider>
+      <div className="layout-wrapper">
+        <div className="main-wrapper">
+          <Header />
+          <Home />
+        </div>
       </div>
-    </div>
+    </ParallaxProvider>
   );
 };
 

@@ -17,12 +17,63 @@
     margin: auto;
   }
 
-
   .doctor-patient {
     max-width: 100%;
   }
 
-  .medical-building {
-    max-width: 100%;
+  .doctorImage {
+    display: block;
+    position: relative;
+    overflow: hidden;
   }
+
+  .missionText,
+  .transition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .missionText h1 {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .missionOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.41);
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+.medical-building {
+  max-width: 100%;
 }
