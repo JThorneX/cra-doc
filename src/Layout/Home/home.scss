@@ -64,15 +64,6 @@
       opacity: 1;
     }
   }
-
-  // @keyframes fadeOut {
-  //   0% {
-  //     opacity: 1;
-  //   }
-  //   100% {
-  //     opacity: 0;
-  //   }
-  // }
 }
 
 .medical-building {
@@ -128,7 +119,7 @@
   }
   height: 15rem;
   width: 15rem;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .leftSide,
@@ -155,8 +146,18 @@
   height: 100%;
   display: flex;
   padding-top: 1rem;
+  margin-top: 8rem;
   justify-content: center;
   align-items: center;
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem !important;
 }
 
 .buildingImage {

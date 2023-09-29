@@ -66,6 +66,7 @@ const Home = () => {
           </div>
         </header>
         <div className="fixed">
+          <h1 className="services">Our Services</h1>
           <div className="buildingImage">
             <img src={medicalBuilding} className="medical-building" />
           </div>
