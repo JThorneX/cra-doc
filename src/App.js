@@ -1,7 +1,10 @@
 import "./App.css";
 import { useState } from "react";
 import { ThemeContext } from "./contexts/theme-context";
-import Layout from "./Layout/layout";
+import Layout from "./Layout/Layouts/Home/homeLayout";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
   const isBrowserDefaultDark = () =>
@@ -16,11 +19,18 @@ function App() {
   const [theme, setTheme] = useState(getDefaultTheme());
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className={`theme-${theme}`}>
-        <Layout>// Your code here</Layout>
-      </div>
-    </ThemeContext.Provider>
+    <>
+      <Router>
+        <ScrollToTop />
+        <ThemeContext.Provider value={{ theme, setTheme }}>
+          <div className={`theme-${theme}`}>
+            <Routes>
+              <Route path="/" element={<Layout />} />
+            </Routes>
+          </div>
+        </ThemeContext.Provider>
+      </Router>
+    </>
   );
 }
 

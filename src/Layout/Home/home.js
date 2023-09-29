@@ -48,11 +48,17 @@ const Home = () => {
                   About Us
                 </a>
                 <br />
-                <a className="btn midBtn btn-sm border-0 w-lg-auto mb-4 mb-lg-0 p-3 fs-4 px-5">
+                <a
+                  className="btn midBtn btn-sm border-0 w-lg-auto mb-4 mb-lg-0 p-3 fs-4 px-5"
+                  href="http://www.connectforhealthco.com/"
+                >
                   Connect for Health Colorado
                 </a>{" "}
                 <br />
-                <a className="btn midBtn btn-sm border-0 w-lg-auto mb-4 mb-lg-0 p-3 fs-4 px-5">
+                <a
+                  className="btn midBtn btn-sm border-0 w-lg-auto mb-4 mb-lg-0 p-3 fs-4 px-5"
+                  href="https://www.medicare.gov/"
+                >
                   Medicare
                 </a>
               </div>
