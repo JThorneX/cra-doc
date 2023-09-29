@@ -9,7 +9,7 @@
   z-index: 99;
   box-shadow: 8px 0 25px rgba(0, 0, 0, 0.05);
   @include themify($themes) {
-    background: themed("headerFooterBackground");
+    background: themed("headerBackground");
   }
   .header-content {
     max-width: 100%;
@@ -154,17 +154,21 @@
 .subheader {
   @include themify($themes) {
     background: themed("subheader");
-    color: themed("textColor");
   }
   z-index: 2;
   position: absolute;
   width: 100%;
 }
 
-.btn {
-  background-color: #368F8B !important;
-  color: #fff !important;
+.subBtn {
+  @include themify($themes) {
+    background-color: themed("subheaderBtn");
+    color: themed("textColor");
+  }
 }
 
-.container {
+.subBtn:hover {
+  @include themify($themes) {
+    background-color: themed("btnHover");
+  }
 }
