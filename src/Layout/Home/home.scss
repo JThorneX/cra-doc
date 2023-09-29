@@ -1,12 +1,11 @@
 @import "../../styles/theme-variables.scss";
 
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-
 .home {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   @include themify($themes) {
     background: themed("bodyBackgroundColor");
     color: themed("textColor");
@@ -14,46 +13,6 @@
 
   .home-content {
     text-align: center;
-    margin: auto;
-  }
-
-  .doctor-patient {
-    max-width: 100%;
-  }
-
-  .doctorImage {
-    display: block;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .missionText,
-  .transition {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .missionText h1 {
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      color: white !important;
-    }
-  }
-
-  .missionOverlay {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.41);
   }
 
   @keyframes fadeIn {
@@ -66,8 +25,61 @@
   }
 }
 
-.medical-building {
+.doctorImage {
+  display: flex;
+  flex-direction: column;
   max-width: 100%;
+  width: 118.75rem;
+  height: 75rem;
+  background-image: url("../../assets/images/doctor-patient.avif");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.transition {
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 118.75rem;
+  height: 75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.animateOverlay {
+  height: 100%;
+  width: 100%;
+}
+
+.missionText {
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .missionText h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white !important;
+  }
+}
+
+.missionOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.41);
+  position: relative;
 }
 
 .midheader {
@@ -76,7 +88,6 @@
     color: themed("textColor");
   }
   z-index: 2;
-  position: relative;
   width: 100%;
 }
 
@@ -103,8 +114,8 @@
     }
   }
 
-  a:hover {
-  }
+  // a:hover {
+  // }
 }
 
 .gridIcon {
@@ -132,30 +143,35 @@
 .aniBox {
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
 }
 
-.relative {
-  position: relative;
+.fixed {
+  display: flex;
+  max-width: 100%;
+  width: 118.75rem;
+  height: 75rem;
+  //2073
+  //width: 100%;
+  //1378
+  //height: 100%;
+  background-image: url("../../assets/images/medical-building.avif");
+  background-repeat: no-repeat;
 }
 
 .homeMenu {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   padding-top: 1rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
   justify-content: center;
   align-items: center;
 }
 
 .services {
-  width: 100%;
+  width: 50%;
   display: flex;
-  position: absolute;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -167,15 +183,26 @@
   }
 }
 
-.buildingImage {
-  display: flex;
-  height: 100%;
+.subheader {
+  @include themify($themes) {
+    background: themed("subheader");
+  }
+  z-index: 2;
+  min-width: 100% !important;
+  height: 6rem !important;
 }
 
-.fixed {
-  display: block;
-  position: absolute;
-  height: 100%;
+.subBtn {
+  @include themify($themes) {
+    background-color: themed("subheaderBtn");
+    color: themed("textColor");
+  }
+}
+
+.subBtn:hover {
+  @include themify($themes) {
+    background-color: themed("btnHover");
+  }
 }
 
 @media screen and (max-width: 900px) {

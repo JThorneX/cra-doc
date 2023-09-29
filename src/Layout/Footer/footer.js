@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-content">
         &copy; {new Date().getFullYear()} <span>Light/Dark mode app</span>
-      </div>
+      </div> 
     </div>
   );
 };

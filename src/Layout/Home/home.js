@@ -17,16 +17,37 @@ const Home = () => {
     <div className="home">
       <div className="home-content">
         <div className="doctorImage">
-          <img
-            src={doctorPatient}
-            className="doctor-patient"
-            alt="doctor with patient"
-          />
+          <header className="subheader">
+            <div className="banner w-lg-75 mx-lg-auto position-relative px-lg-3 py-4 shadow-5 rounded-3 rounded-lg-pill">
+              <nav className="navbar navbar-expand-lg p-0">
+                <div className="container">
+                  <a
+                    className="btn subBtn d-inline-block w-lg-64 p-2 fs-4 px-4"
+                    href="/"
+                  >
+                    Home
+                  </a>
+                  <div className="collapse navbar-collapse justify-content-end ">
+                    <div className="navbar-nav align-items-lg-center gap-2 ms-lg-4 w-lg-6">
+                      <a className="btn subBtn bg-dark-hover border-0 w-100 w-lg-auto mb-4 mb-lg-0 p-2 fs-4 px-44">
+                        Login
+                      </a>{" "}
+                      <br />
+                      <a className="btn subBtn bg-dark-hover border-0 w-100 w-lg-auto mb-4 mb-lg-0 p-2 fs-4 px-4">
+                        Register
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
           <div className="transition">
             <AnimationOnScroll
               animateIn="animate__fadeIn"
               animatePreScroll={false}
               animateOnce={true}
+              className="animateOverlay"
             >
               <div className="missionText missionOverlay">
                 <h1>
@@ -67,9 +88,7 @@ const Home = () => {
         </header>
         <div className="fixed">
           <h1 className="services">Our Services</h1>
-          <div className="buildingImage">
-            <img src={medicalBuilding} className="medical-building" />
-          </div>
+
           <div className="homeMenu">
             {/* <div className="relative"> */}
             <div className="row leftSide gx-2 gy-5">
@@ -79,7 +98,7 @@ const Home = () => {
                 animatePreScroll={false}
                 animateOnce={true}
               >
-                <div className="col-lg-6 col-12 d-flex justify-content-center">
+                <div className="col-lg-6 col-12 d-flex justify-content-center cardDiv">
                   <div className="card m-6">
                     <div className="px-lg-8 px-4 menuItem">
                       <a className="w-100" href="/" target="_blank">
@@ -182,7 +201,6 @@ const Home = () => {
               </AnimationOnScroll>
             </div>
           </div>
-          {/* </div> */}
         </div>
       </div>
     </div>

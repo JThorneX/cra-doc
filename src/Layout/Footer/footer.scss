@@ -1,5 +1,12 @@
 @import "../../styles/theme-variables.scss";
 
 .footer {
-  padding: 10rem;
+  display: flex;
+  width: 100%;
+  left: 0;
+  // margin-top: 100vh;
+  bottom: 0;
+}
+
+.footer-content {
 }

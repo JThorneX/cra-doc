@@ -1,7 +1,9 @@
 import "./App.css";
 import { useState } from "react";
 import { ThemeContext } from "./contexts/theme-context";
-import Layout from "./Layout/Layouts/Home/homeLayout";
+import HomeLayout from "./Layout/Home/home";
+import Footer from "./Layout/Footer/footer";
+import Header from "./Layout/Header/header";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
@@ -19,18 +21,22 @@ function App() {
   const [theme, setTheme] = useState(getDefaultTheme());
 
   return (
-    <>
+    <div className="siteWrapper">
       <Router>
         <ScrollToTop />
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`theme-${theme}`}>
+            <Header />
             <Routes>
-              <Route path="/" element={<Layout />} />
+              <Route path="/" element={<HomeLayout />} />
             </Routes>
+            <div className="uniFooter">
+              <Footer />
+            </div>
           </div>
         </ThemeContext.Provider>
       </Router>
-    </>
+    </div>
   );
 }
 
