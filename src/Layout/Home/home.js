@@ -3,7 +3,14 @@ import doctorPatient from "../../assets/images/doctor-patient.avif";
 import medicalBuilding from "../../assets/images/medical-building.avif";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { BsCalendarDate } from "react-icons/bs";
+import {
+  BsCalendarDate,
+  BsEnvelope,
+  BsClipboardData,
+  BsClipboardPulse,
+  BsPrescription,
+} from "react-icons/bs";
+import { TbReportMoney } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -85,8 +92,12 @@ const Home = () => {
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
                   <div className="card m-6">
-                    <div className="px-lg-8 px-4">
-                      <a className="w-100" href="/" target="_blank"></a>
+                    <div className="px-lg-8 px-4 menuItem">
+                      <a className="w-100" href="/" target="_blank">
+                        <BsEnvelope className="gridIcon" />
+                        <br />
+                        Message your provider
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -99,8 +110,11 @@ const Home = () => {
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
                   <div className="card m-6">
-                    <div className="px-lg-8 px-4">
-                      <a className="w-100" href="/" target="_blank"></a>
+                    <div className="px-lg-8 px-4 menuItem">
+                      <a className="w-100" href="/" target="_blank">
+                        <BsPrescription className="gridIcon" /> <br />
+                        Request a prescription renewal
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -115,8 +129,11 @@ const Home = () => {
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
                   <div className="card m-6">
-                    <div className="px-lg-8 px-4">
-                      <a className="w-100" href="/" target="_blank"></a>
+                    <div className="px-lg-8 px-4 menuItem">
+                      <a className="w-100" href="/" target="_blank">
+                        <BsClipboardData className="gridIcon" /> <br />
+                        Review your chart
+                      </a>
                     </div>
                   </div>
                 </div>{" "}
@@ -130,8 +147,11 @@ const Home = () => {
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
                   <div className="card m-6">
-                    <div className="px-lg-8 px-4">
-                      <a className="w-100" href="/" target="_blank"></a>
+                    <div className="px-lg-8 px-4 menuItem">
+                      <a className="w-100" href="/" target="_blank">
+                        <BsClipboardPulse className="gridIcon" /> <br />
+                        Review your test results
+                      </a>
                     </div>
                   </div>
                 </div>{" "}
@@ -144,8 +164,11 @@ const Home = () => {
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
                   <div className="card m-6">
-                    <div className="px-lg-8 px-4">
-                      <a className="w-100" href="/" target="_blank"></a>
+                    <div className="px-lg-8 px-4 menuItem">
+                      <a className="w-100" href="/" target="_blank">
+                        <TbReportMoney className="gridIcon" /> <br />
+                        Pay your bill
+                      </a>
                     </div>
                   </div>
                 </div>

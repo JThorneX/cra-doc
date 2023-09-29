@@ -104,6 +104,16 @@
 
 .menuItem {
   z-index: 5;
+
+  a {
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("gridText");
+    }
+  }
+
+  a:hover {
+  }
 }
 
 .gridIcon {
