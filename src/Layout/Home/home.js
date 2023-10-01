@@ -50,10 +50,10 @@ const Home = () => {
               className="animateOverlay"
             >
               <div className="missionText missionOverlay">
-                <h1>
+                <section className="fs-1">
                   Our mission is to provide families meaningful <br /> care
                   leading to exceptional health.
-                </h1>
+                </section>
               </div>
             </AnimationOnScroll>
           </div>

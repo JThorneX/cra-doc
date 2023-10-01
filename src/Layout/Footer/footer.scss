@@ -8,6 +8,8 @@
   bottom: 0;
 }
 
+// pb-5 m-5
+
 .logoInfo {
   display: flex;
   text-align: center;
@@ -31,6 +33,20 @@
   text-align: start;
 }
 
+.badgeText {
+  height: 6.25rem;
+  width: 25rem;
+  margin-right: 0.5rem;
+}
+
+.badgeNCQA {
+  height: 9rem;
+  width: 9rem;
+  margin-right: 1rem;
+  background: url("../../assets/images/ncqa\ badge.svg");
+  background-repeat: no-repeat;
+}
+
 .copyrightBackground {
   width: 100%;
   align-items: center;
@@ -38,14 +54,19 @@
 }
 
 .copyrightWrapper {
-  @include themify($themes) {
-    background-color: themed("midHeader");
-    color: themed("textColor");
-  }
+  background-color: #289191;
+  color: black;
+  font-weight: 500;
 }
 
 .privacyDisclaimer {
   width: 50%;
+}
+
+.disclaimerLink {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
 }
 
 .copyrightInfo {

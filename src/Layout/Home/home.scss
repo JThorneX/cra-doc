@@ -46,6 +46,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  @include themify($themes) {
+    color: themed("missionText") !important;
+  }
 }
 
 .animateOverlay {
@@ -71,7 +74,6 @@
     display: flex;
     width: 100%;
     height: 100%;
-    color: white !important;
   }
 }
 
@@ -109,6 +111,7 @@
 
   a {
     text-decoration: none;
+    font-weight: 500;
     @include themify($themes) {
       color: themed("gridText");
     }
@@ -171,6 +174,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
   margin: 0rem !important;
   padding: 2rem !important;
   @include themify($themes) {
@@ -200,6 +204,12 @@
     background-color: themed("btnHover");
   }
 }
+
+//this
+//is
+//media
+//query
+//area
 
 @media screen and (max-width: 900px) {
   .card {
