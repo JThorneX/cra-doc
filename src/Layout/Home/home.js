@@ -29,11 +29,17 @@ const Home = () => {
                   </a>
                   <div className="collapse navbar-collapse justify-content-end ">
                     <div className="navbar-nav align-items-lg-center gap-2 ms-lg-4 w-lg-6">
-                      <a className="btn subBtn bg-dark-hover border-0 w-100 w-lg-auto mb-4 mb-lg-0 p-2 fs-4 px-44">
+                      <a
+                        className="btn subBtn bg-dark-hover border-0 w-100 w-lg-auto mb-4 mb-lg-0 p-2 fs-4 px-44"
+                        href="/Login"
+                      >
                         Login
                       </a>{" "}
                       <br />
-                      <a className="btn subBtn bg-dark-hover border-0 w-100 w-lg-auto mb-4 mb-lg-0 p-2 fs-4 px-4">
+                      <a
+                        className="btn subBtn bg-dark-hover border-0 w-100 w-lg-auto mb-4 mb-lg-0 p-2 fs-4 px-4"
+                        href="/Register"
+                      >
                         Register
                       </a>
                     </div>
@@ -48,6 +54,7 @@ const Home = () => {
               animatePreScroll={false}
               animateOnce={true}
               className="animateOverlay"
+              delay={500}
             >
               <div className="missionText missionOverlay">
                 <section className="fs-1">
@@ -64,7 +71,7 @@ const Home = () => {
               <div className="container justify-content-around">
                 <a
                   className="btn midBtn btn-sm d-inline-block w-lg-64 p-3 fs-4 px-5"
-                  href="/"
+                  href="/aboutUs"
                 >
                   About Us
                 </a>
@@ -99,14 +106,14 @@ const Home = () => {
                 animateOnce={true}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center cardDiv">
-                  <div className="card m-6">
-                    <div className="px-lg-8 px-4 menuItem">
-                      <a className="w-100" href="/" target="_blank">
+                  <a className="gridLink" href="/appointments">
+                    <div className="card m-6">
+                      <div className="px-lg-8 px-4 menuItem">
                         <BsCalendarDate className="gridIcon" /> <br />
                         Make an appointment
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </AnimationOnScroll>
               <AnimationOnScroll
@@ -117,15 +124,15 @@ const Home = () => {
                 delay={100}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <div className="card m-6">
-                    <div className="px-lg-8 px-4 menuItem">
-                      <a className="w-100" href="/" target="_blank">
+                  <a className="gridLink" href="/messages">
+                    <div className="card m-6">
+                      <div className="px-lg-8 px-4 menuItem">
                         <BsEnvelope className="gridIcon" />
                         <br />
                         Message your provider
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </AnimationOnScroll>
               <AnimationOnScroll
@@ -135,14 +142,14 @@ const Home = () => {
                 delay={200}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <div className="card m-6">
-                    <div className="px-lg-8 px-4 menuItem">
-                      <a className="w-100" href="/" target="_blank">
+                  <a className="gridLink" href="/prescriptions">
+                    <div className="card m-6">
+                      <div className="px-lg-8 px-4 menuItem">
                         <BsPrescription className="gridIcon" /> <br />
                         Request a prescription renewal
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </AnimationOnScroll>
             </div>
@@ -154,14 +161,14 @@ const Home = () => {
                 animateOnce={true}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <div className="card m-6">
-                    <div className="px-lg-8 px-4 menuItem">
-                      <a className="w-100" href="/" target="_blank">
+                  <a className="gridLink" href="/myChart">
+                    <div className="card m-6">
+                      <div className="px-lg-8 px-4 menuItem">
                         <BsClipboardData className="gridIcon" /> <br />
                         Review your chart
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>{" "}
               </AnimationOnScroll>
               <AnimationOnScroll
@@ -172,14 +179,14 @@ const Home = () => {
                 delay={100}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <div className="card m-6">
-                    <div className="px-lg-8 px-4 menuItem">
-                      <a className="w-100" href="/" target="_blank">
+                  <a className="gridLink" href="/testResults">
+                    <div className="card m-6">
+                      <div className="px-lg-8 px-4 menuItem">
                         <BsClipboardPulse className="gridIcon" /> <br />
                         Review your test results
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>{" "}
               </AnimationOnScroll>
               <AnimationOnScroll
@@ -189,14 +196,14 @@ const Home = () => {
                 delay={200}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <div className="card m-6">
-                    <div className="px-lg-8 px-4 menuItem">
-                      <a className="w-100" href="/" target="_blank">
+                  <a className="gridLink" href="/payBill">
+                    <div className="card m-6">
+                      <div className="px-lg-8 px-4 menuItem">
                         <TbReportMoney className="gridIcon" /> <br />
                         Pay your bill
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </AnimationOnScroll>
             </div>
