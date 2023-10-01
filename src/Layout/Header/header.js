@@ -3,7 +3,6 @@ import { ThemeContext } from "../../contexts/theme-context";
 
 import Logo from "../../assets/logo/fcsw dark logo.svg";
 import "./header.scss";
-import { FiMoon } from "react-icons/fi";
 
 const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext);

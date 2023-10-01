@@ -2,11 +2,51 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   width: 100%;
   left: 0;
-  // margin-top: 100vh;
   bottom: 0;
 }
 
-.footer-content {
+.logoInfo {
+  display: flex;
+  text-align: center;
+  @include themify($themes) {
+    background-color: themed("bodyBackgroundColor");
+  }
+}
+
+// .logo-section {
+// }
+
+.headerTitle {
+  text-decoration: none;
+  font-weight: bold;
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+}
+
+.locationInfo {
+  text-align: start;
+}
+
+.copyrightBackground {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyrightWrapper {
+  @include themify($themes) {
+    background-color: themed("midHeader");
+    color: themed("textColor");
+  }
+}
+
+.privacyDisclaimer {
+  width: 50%;
+}
+
+.copyrightInfo {
 }
