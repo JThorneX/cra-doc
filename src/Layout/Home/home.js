@@ -1,6 +1,4 @@
 import "./home.scss";
-import doctorPatient from "../../assets/images/doctor-patient.avif";
-import medicalBuilding from "../../assets/images/medical-building.avif";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import {
