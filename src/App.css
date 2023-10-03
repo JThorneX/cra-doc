@@ -6,13 +6,13 @@
 
 .theme-dark,
 .theme-light {
-  max-width: 100%;
+  width: 100%;
 }
 
 .siteWrapper {
   display: flex;
   flex-direction: column;
-  background-color: #282c34;
+  background-color: #282828;
   min-height: 100vh;
   width: 100%;
   position: relative;
