@@ -21,7 +21,7 @@ const Home = () => {
                 <div className="container">
                   <a
                     className="btn subBtn d-inline-block w-lg-64 p-2 fs-4 px-4"
-                    href="/"
+                    href="cra-doc/"
                   >
                     Home
                   </a>
