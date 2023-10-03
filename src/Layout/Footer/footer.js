@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="header-content">
         <div className="logoInfo">
           <div className="logoMargin m-5 d-flex">
-            <a href="/" className="logo-section me-3 ">
+            <a href="cra-doc/" className="logo-section me-3 ">
               <img src={Logo} alt="logo" className="LlogoIcon logo" />
             </a>
             <header className="fs-1 headerTitle mt-4">

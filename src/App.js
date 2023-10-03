@@ -38,17 +38,17 @@ function App() {
           <div className={`theme-${theme}`}>
             <Header />
             <Routes>
-              <Route path="/" element={<HomeLayout />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/myChart" element={<MyChart />} />
-              <Route path="/aboutUs" element={<AboutUs />} />
-              <Route path="/appointments" element={<Appointments />} />
-              <Route path="/prescriptions" element={<Prescriptions />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/payBill" element={<PayBill />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="/messages" element={<Messages />} />
-              <Route path="/testResults" element={<TestResults />} />
+              <Route path="cra-doc/" element={<HomeLayout />} />
+              <Route path="cra-doc/contact" element={<Contact />} />
+              <Route path="cra-doc/myChart" element={<MyChart />} />
+              <Route path="cra-doc/aboutUs" element={<AboutUs />} />
+              <Route path="cra-doc/appointments" element={<Appointments />} />
+              <Route path="cra-doc/prescriptions" element={<Prescriptions />} />
+              <Route path="cra-doc/login" element={<Login />} />
+              <Route path="cra-doc/payBill" element={<PayBill />} />
+              <Route path="cra-doc/register" element={<Register />} />
+              <Route path="cra-doc/messages" element={<Messages />} />
+              <Route path="cra-doc/testResults" element={<TestResults />} />
             </Routes>
             <div className="uniFooter">
               <Footer />
