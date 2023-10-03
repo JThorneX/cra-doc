@@ -14,6 +14,7 @@ The doctor's office I use has one of the worst website's I've ever seen. No resp
 
 - Basic pages for every route
 - Figure out why the arrow on 'aboutUs' doesn't transform
+- Stroke logo color change
 
 ### Usage
 
