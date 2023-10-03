@@ -14,7 +14,7 @@
   display: flex;
   text-align: center;
   @include themify($themes) {
-    background-color: themed("bodyBackgroundColor");
+    background-color: themed("footerBackgroundColor");
   }
 }
 
