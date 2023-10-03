@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cra-doc/static/css/main.6675549d.css",
+    "main.js": "/cra-doc/static/js/main.796ee1ae.js",
+    "static/media/medical-building.avif": "/cra-doc/static/media/medical-building.f6909f8b8729dcdb0bb8.avif",
+    "static/media/tim.jpg": "/cra-doc/static/media/tim.cde3c8afbaa271f94a48.jpg",
+    "static/media/doctor-patient.avif": "/cra-doc/static/media/doctor-patient.b00197bdb3b486379c9d.avif",
+    "static/media/keller.jpg": "/cra-doc/static/media/keller.3aa059450cfa9febb299.jpg",
+    "static/media/sims.jpg": "/cra-doc/static/media/sims.9f33416a7d752a91563f.jpg",
+    "static/media/morgan.jpg": "/cra-doc/static/media/morgan.4d446ad16f89a96be451.jpg",
+    "static/media/hildebrand.JPG": "/cra-doc/static/media/hildebrand.a4efb1bfaa72fc666b02.JPG",
+    "static/media/whitescarver.jpg": "/cra-doc/static/media/whitescarver.9c0e2a3ae5b5683579b5.jpg",
+    "static/media/ncqa badge.svg": "/cra-doc/static/media/ncqa badge.0145fa07bbd8a12f316c.svg",
+    "static/media/fcsw dark logo.svg": "/cra-doc/static/media/fcsw dark logo.213de07af2ced74a7dc31a6b5cb972ac.svg",
+    "index.html": "/cra-doc/index.html",
+    "static/media/icon-arrow-down.svg": "/cra-doc/static/media/icon-arrow-down.852fa301a0e795e07c59.svg",
+    "main.6675549d.css.map": "/cra-doc/static/css/main.6675549d.css.map",
+    "main.796ee1ae.js.map": "/cra-doc/static/js/main.796ee1ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6675549d.css",
+    "static/js/main.796ee1ae.js"
+  ]
+}
