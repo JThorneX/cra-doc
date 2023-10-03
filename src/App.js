@@ -10,10 +10,12 @@ import Contact from "./Layout/Layouts/Contact/contactLayout";
 import Login from "./Layout/Layouts/Login/loginLayout";
 import MyChart from "./Layout/Layouts/MyChart/myChart";
 import PayBill from "./Layout/Layouts/PayBill/payBill";
-import Prescriptions from "./Layout/Layouts/Prescription/prescriptionLayout";
+import Prescriptions from "./Layout/Layouts/Prescription/prescriptionsLayout";
 import Register from "./Layout/Layouts/Register/registerLayout";
 import TestResults from "./Layout/Layouts/TestResults/testResults";
 import Messages from "./Layout/Layouts/Messages/messages";
+import Privacy from "./Layout/Layouts/Privacy/privacy";
+import Disclaimer from "./Layout/Layouts/Disclaimer/disclaimer";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
@@ -49,6 +51,8 @@ function App() {
               <Route path="cra-doc/register" element={<Register />} />
               <Route path="cra-doc/messages" element={<Messages />} />
               <Route path="cra-doc/testResults" element={<TestResults />} />
+              <Route path="cra-doc/privacy" element={<Privacy />} />
+              <Route path="cra-doc/disclaimer" element={<Disclaimer />} />
             </Routes>
             <div className="uniFooter">
               <Footer />
