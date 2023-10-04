@@ -62,23 +62,23 @@ function App() {
                   )}
                   <Route path="cra-doc/aboutUs" element={<AboutUs />} />
                   {matches.large && (
-                    <Route path="cra-doc/appointments" element={<Appointments />} />
+                    <Route path="/appointments" element={<Appointments />} />
                   )}
                   {matches.large && (
                     <Route
-                      path="cra-doc/prescriptions"
+                      path="/prescriptions"
                       element={<Prescriptions />}
                     />
                   )}
                   <Route path="cra-doc/login" element={<Login />} />
-                  <Route path="cra-doc/payBill" element={<PayBill />} />
-                  <Route path="cra-doc/register" element={<Register />} />
+                  <Route path="/payBill" element={<PayBill />} />
+                  <Route path="/register" element={<Register />} />
                   {matches.large && (
-                    <Route path="cra-doc/messages" element={<Messages />} />
+                    <Route path="/messages" element={<Messages />} />
                   )}
-                  <Route path="cra-doc/testResults" element={<TestResults />} />
-                  <Route path="cra-doc/privacy" element={<Privacy />} />
-                  <Route path="cra-doc/disclaimer" element={<Disclaimer />} />
+                  <Route path="/testResults" element={<TestResults />} />
+                  <Route path="/privacy" element={<Privacy />} />
+                  <Route path="/disclaimer" element={<Disclaimer />} />
                 </Routes>
               )}
             </Media>
