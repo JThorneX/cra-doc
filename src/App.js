@@ -59,8 +59,14 @@ function App() {
                   <Route path="cra-doc/contact" element={<Contact />} />
                   <Route path="cra-doc/myChart" element={<MyChart />} />
                   <Route path="cra-doc/aboutUs" element={<AboutUs />} />
-                  <Route path="/appointments" element={<Appointments />}/>
-                  <Route path="cra-doc/prescriptions" element={<Prescriptions />}/>
+                  <Route
+                    path="cra-doc/appointments"
+                    element={<Appointments />}
+                  />
+                  <Route
+                    path="cra-doc/prescriptions"
+                    element={<Prescriptions />}
+                  />
                   <Route path="cra-doc/login" element={<Login />} />
                   <Route path="cra-doc/payBill" element={<PayBill />} />
                   <Route path="cra-doc/register" element={<Register />} />

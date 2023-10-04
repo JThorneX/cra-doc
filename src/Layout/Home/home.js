@@ -109,7 +109,7 @@ const Home = () => {
                 animateOnce={true}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center cardDiv">
-                  <a className="gridLink" href="/appointments">
+                  <a className="gridLink" href="cra-doc/appointments">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsCalendarDate className="gridIcon" /> <br />
