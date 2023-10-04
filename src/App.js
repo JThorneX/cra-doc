@@ -51,34 +51,47 @@ function App() {
               {(matches) => (
                 <Routes>
                   {matches.large && (
-                    <Route path="cra-doc/" element={<HomeLayout />} />
+                    <Route path="/cra-doc" element={<HomeLayout />} />
                   )}
                   {matches.small && (
                     <Route path="cra-doc/" element={<HomeMobile />} />
                   )}
-                  <Route path="/contact" element={<Contact />} />
                   {matches.large && (
-                    <Route path="/myChart" element={<MyChart />} />
+                    <Route path="/contact" element={<Contact />} />
                   )}
-                  <Route path="cra-doc/aboutUs" element={<AboutUs />} />
+                  {matches.large && (
+                    <Route path="cra-doc/myChart" element={<MyChart />} />
+                  )}
+                  {matches.large && (
+                    <Route path="cra-doc/aboutUs" element={<AboutUs />} />
+                  )}
                   {matches.large && (
                     <Route path="/appointments" element={<Appointments />} />
                   )}
                   {matches.large && (
-                    <Route
-                      path="/prescriptions"
-                      element={<Prescriptions />}
-                    />
+                    <Route path="/prescriptions" element={<Prescriptions />} />
                   )}
-                  <Route path="cra-doc/login" element={<Login />} />
-                  <Route path="/payBill" element={<PayBill />} />
-                  <Route path="/register" element={<Register />} />
                   {matches.large && (
-                    <Route path="/messages" element={<Messages />} />
+                    <Route path="cra-doc/login" element={<Login />} />
                   )}
-                  <Route path="/testResults" element={<TestResults />} />
-                  <Route path="/privacy" element={<Privacy />} />
-                  <Route path="/disclaimer" element={<Disclaimer />} />
+                  {matches.large && (
+                    <Route path="/payBill" element={<PayBill />} />
+                  )}
+                  {matches.large && (
+                    <Route path="/register" element={<Register />} />
+                  )}
+                  {matches.large && (
+                    <Route path="cra-doc/messages" element={<Messages />} />
+                  )}
+                  {matches.large && (
+                    <Route path="/testResults" element={<TestResults />} />
+                  )}
+                  {matches.large && (
+                    <Route path="/privacy" element={<Privacy />} />
+                  )}
+                  {matches.large && (
+                    <Route path="/disclaimer" element={<Disclaimer />} />
+                  )}
                 </Routes>
               )}
             </Media>

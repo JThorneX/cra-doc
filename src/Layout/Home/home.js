@@ -146,14 +146,18 @@ const Home = () => {
                 delay={200}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <a className="gridLink" href="cra-doc/prescriptions">
+                  <NavLink
+                    className="gridLink"
+                    exact
+                    to="cra-doc/prescriptions"
+                  >
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsPrescription className="gridIcon" /> <br />
                         Request a prescription renewal
                       </div>
                     </div>
-                  </a>
+                  </NavLink>
                 </div>
               </AnimationOnScroll>
             </div>
@@ -165,14 +169,14 @@ const Home = () => {
                 animateOnce={true}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <a className="gridLink" href="/myChart">
+                  <NavLink className="gridLink" exact to="/myChart">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsClipboardData className="gridIcon" /> <br />
                         Review your chart
                       </div>
                     </div>
-                  </a>
+                  </NavLink>
                 </div>{" "}
               </AnimationOnScroll>
               <AnimationOnScroll
@@ -183,14 +187,14 @@ const Home = () => {
                 delay={100}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <a className="gridLink" href="/testResults">
+                  <NavLink className="gridLink" exact to="/testResults">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsClipboardPulse className="gridIcon" /> <br />
                         Review your test results
                       </div>
                     </div>
-                  </a>
+                  </NavLink>
                 </div>{" "}
               </AnimationOnScroll>
               <AnimationOnScroll
@@ -200,14 +204,14 @@ const Home = () => {
                 delay={200}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <a className="gridLink" href="/payBill">
+                  <NavLink className="gridLink" exact to="/payBill">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <TbReportMoney className="gridIcon" /> <br />
                         Pay your bill
                       </div>
                     </div>
-                  </a>
+                  </NavLink>
                 </div>
               </AnimationOnScroll>
             </div>
