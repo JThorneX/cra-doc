@@ -59,10 +59,12 @@ function App() {
                   <Route path="cra-doc/contact" element={<Contact />} />
                   <Route path="cra-doc/myChart" element={<MyChart />} />
                   <Route path="cra-doc/aboutUs" element={<AboutUs />} />
-                  <Route
-                    path="cra-doc/appointments"
-                    element={<Appointments />}
-                  />
+                  {matches.large && (
+                    <Route
+                      path="cra-doc/appointments"
+                      element={<Appointments />}
+                    />
+                  )}
                   <Route
                     path="cra-doc/prescriptions"
                     element={<Prescriptions />}
