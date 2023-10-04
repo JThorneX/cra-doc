@@ -9,7 +9,7 @@ import {
   BsPrescription,
 } from "react-icons/bs";
 import { TbReportMoney } from "react-icons/tb";
-import PopUp from "../Alert/banner";
+import PopUp from "../Alert/banner"; 
 import Subheader from "../Subheader/subheader";
 
 const Home = () => {
