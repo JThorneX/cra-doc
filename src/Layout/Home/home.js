@@ -110,7 +110,7 @@ const Home = () => {
                 animateOnce={true}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center cardDiv">
-                  <NavLink className="gridLink" exact to="cra-doc/appointments">
+                  <NavLink className="gridLink" exact to="/appointments">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsCalendarDate className="gridIcon" /> <br />
@@ -128,7 +128,7 @@ const Home = () => {
                 delay={100}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <a className="gridLink" href="/messages">
+                  <NavLink className="gridLink" exact to="cra-doc/messages">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsEnvelope className="gridIcon" />
@@ -136,7 +136,7 @@ const Home = () => {
                         Message your provider
                       </div>
                     </div>
-                  </a>
+                  </NavLink>
                 </div>
               </AnimationOnScroll>
               <AnimationOnScroll
