@@ -1,0 +1,54 @@
+@import "../../styles/theme-variables.scss";
+
+.subheader {
+  @include themify($themes) {
+    background: themed("subheader");
+  }
+  z-index: 2;
+  width: 100% !important;
+  height: 6rem !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navBtns {
+  width: 90%;
+}
+
+.navBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subBtn {
+  @include themify($themes) {
+    background-color: themed("subheaderBtn");
+    color: themed("textColor");
+  }
+
+  width: 10rem;
+}
+
+.subBtn:hover {
+  @include themify($themes) {
+    background-color: themed("btnHover");
+  }
+}
+
+//this
+//is
+//media
+//query
+//area
+
+@media screen and (max-width: 993px) {
+}
+
+@media screen and (max-width: 450px) {
+  .subheader {
+    display: none;
+  }
+}

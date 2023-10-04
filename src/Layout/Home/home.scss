@@ -13,6 +13,8 @@
 
   .home-content {
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   // @keyframes fadeIn {
@@ -31,9 +33,14 @@
   max-width: 100%;
   width: 118.75rem;
   height: 75rem;
-  background-image: url("../../assets/images/doctor-patient.avif");
-  background-repeat: no-repeat;
-  object-fit: cover;
+  background: url("../../assets/images/doctor-patient.avif") no-repeat center
+    center;
+  // background-repeat: no-repeat;
+  // object-fit: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .transition {
@@ -89,7 +96,7 @@
     background: themed("midheader");
     color: themed("textColor");
   }
-  z-index: 2;
+  z-index: 1;
   width: 100%;
 }
 
@@ -107,7 +114,7 @@
 }
 
 .menuItem {
-  z-index: 5;
+  z-index: 1;
   // a:hover {
   // }
 }
@@ -185,27 +192,6 @@
   }
 }
 
-.subheader {
-  @include themify($themes) {
-    background: themed("subheader");
-  }
-  z-index: 2;
-  min-width: 100% !important;
-  height: 6rem !important;
-}
-
-.subBtn {
-  @include themify($themes) {
-    background-color: themed("subheaderBtn");
-    color: themed("textColor");
-  }
-}
-
-.subBtn:hover {
-  @include themify($themes) {
-    background-color: themed("btnHover");
-  }
-}
 
 //this
 //is
@@ -218,6 +204,15 @@
     font-size: 16px;
     width: 10rem;
     height: 10rem;
+  }
+
+  .doctorImage {
+    background: url("../../assets/images/doctor-patient-ipad.avif") no-repeat
+      center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
