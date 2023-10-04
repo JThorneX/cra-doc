@@ -40,3 +40,17 @@
     transform: rotate(360deg);
   }
 }
+
+.homeMobile {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .homeDesktop {
+    display: none;
+  }
+
+  .homeMobile {
+    display: flex;
+  }
+}
