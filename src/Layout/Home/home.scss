@@ -89,7 +89,7 @@
     background: themed("midheader");
     color: themed("textColor");
   }
-  z-index: 2;
+  z-index: 1;
   width: 100%;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .menuItem {
-  z-index: 5;
+  z-index: 1;
   // a:hover {
   // }
 }

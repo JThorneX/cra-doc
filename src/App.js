@@ -17,6 +17,7 @@ import Messages from "./Layout/Layouts/Messages/messages";
 import Privacy from "./Layout/Layouts/Privacy/privacy";
 import Disclaimer from "./Layout/Layouts/Disclaimer/disclaimer";
 
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
 
@@ -39,6 +40,7 @@ function App() {
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`theme-${theme}`}>
             <Header />
+            
             <Routes>
               <Route path="cra-doc/" element={<HomeLayout />} />
               <Route path="cra-doc/contact" element={<Contact />} />

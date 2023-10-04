@@ -9,6 +9,7 @@ import {
   BsPrescription,
 } from "react-icons/bs";
 import { TbReportMoney } from "react-icons/tb";
+import PopUp from "../Alert/banner";
 
 const Home = () => {
   return (
@@ -63,6 +64,7 @@ const Home = () => {
             </AnimationOnScroll>
           </div>
         </div>
+
         <header className="midheader">
           <div className="banner w-lg-75 mx-lg-auto position-relative px-lg-3 py-4 ">
             <nav className="navbar navbar-expand-lg p-0">
@@ -91,6 +93,7 @@ const Home = () => {
             </nav>
           </div>
         </header>
+
         <div className="fixed">
           <h1 className="services">Our Services</h1>
 
@@ -208,6 +211,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <PopUp />
     </div>
   );
 };
