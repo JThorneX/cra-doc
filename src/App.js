@@ -56,23 +56,26 @@ function App() {
                   {matches.small && (
                     <Route path="cra-doc/" element={<HomeMobile />} />
                   )}
-                  <Route path="cra-doc/contact" element={<Contact />} />
-                  <Route path="cra-doc/myChart" element={<MyChart />} />
+                  <Route path="/contact" element={<Contact />} />
+                  {matches.large && (
+                    <Route path="/myChart" element={<MyChart />} />
+                  )}
                   <Route path="cra-doc/aboutUs" element={<AboutUs />} />
                   {matches.large && (
+                    <Route path="/appointments" element={<Appointments />} />
+                  )}
+                  {matches.large && (
                     <Route
-                      path="cra-doc/appointments"
-                      element={<Appointments />}
+                      path="cra-doc/prescriptions"
+                      element={<Prescriptions />}
                     />
                   )}
-                  <Route
-                    path="cra-doc/prescriptions"
-                    element={<Prescriptions />}
-                  />
                   <Route path="cra-doc/login" element={<Login />} />
                   <Route path="cra-doc/payBill" element={<PayBill />} />
                   <Route path="cra-doc/register" element={<Register />} />
-                  <Route path="cra-doc/messages" element={<Messages />} />
+                  {matches.large && (
+                    <Route path="cra-doc/messages" element={<Messages />} />
+                  )}
                   <Route path="cra-doc/testResults" element={<TestResults />} />
                   <Route path="cra-doc/privacy" element={<Privacy />} />
                   <Route path="cra-doc/disclaimer" element={<Disclaimer />} />
