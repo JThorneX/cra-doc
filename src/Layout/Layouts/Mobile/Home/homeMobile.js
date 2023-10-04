@@ -1,3 +1,6 @@
+import "./homeMobile.scss"
+import { NavLink } from "react-router-dom";
+
 const HomeMobile = () => {
   return (
     <div className="homeMobile">

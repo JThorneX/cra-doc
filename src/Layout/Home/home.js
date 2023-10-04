@@ -128,7 +128,7 @@ const Home = () => {
                 delay={100}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <NavLink className="gridLink" exact to="cra-doc/messages">
+                  <NavLink className="gridLink" exact to="/messages">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsEnvelope className="gridIcon" />
@@ -146,11 +146,7 @@ const Home = () => {
                 delay={200}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <NavLink
-                    className="gridLink"
-                    exact
-                    to="cra-doc/prescriptions"
-                  >
+                  <NavLink className="gridLink" exact to="/prescriptions">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsPrescription className="gridIcon" /> <br />

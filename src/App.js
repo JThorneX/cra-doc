@@ -60,10 +60,10 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                   )}
                   {matches.large && (
-                    <Route path="cra-doc/myChart" element={<MyChart />} />
+                    <Route path="/myChart" element={<MyChart />} />
                   )}
                   {matches.large && (
-                    <Route path="cra-doc/aboutUs" element={<AboutUs />} />
+                    <Route path="/aboutUs" element={<AboutUs />} />
                   )}
                   {matches.large && (
                     <Route path="/appointments" element={<Appointments />} />
@@ -71,9 +71,7 @@ function App() {
                   {matches.large && (
                     <Route path="/prescriptions" element={<Prescriptions />} />
                   )}
-                  {matches.large && (
-                    <Route path="cra-doc/login" element={<Login />} />
-                  )}
+                  {matches.large && <Route path="/login" element={<Login />} />}
                   {matches.large && (
                     <Route path="/payBill" element={<PayBill />} />
                   )}
@@ -81,7 +79,7 @@ function App() {
                     <Route path="/register" element={<Register />} />
                   )}
                   {matches.large && (
-                    <Route path="cra-doc/messages" element={<Messages />} />
+                    <Route path="/messages" element={<Messages />} />
                   )}
                   {matches.large && (
                     <Route path="/testResults" element={<TestResults />} />
