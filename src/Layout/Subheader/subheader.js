@@ -1,4 +1,5 @@
 import "./subheader.scss";
+import { NavLink } from "react-router-dom";
 
 function Subheader() {
   return (
@@ -7,28 +8,31 @@ function Subheader() {
         <nav className="navbar navbar-expand-lg p-0">
           <div className="navBtns">
             <div className="navbar-left">
-              <a
+              <NavLink
                 className="btn subBtn d-inline-block p-2 fs-4 px-4"
-                href="cra-doc/"
+                exact
+                to="/"
               >
                 Home
-              </a>
+              </NavLink>
             </div>
             <div className="navbar-right justify-content-end">
               <div className="navBtns align-items-lg-center gap-2 ms-lg-4 w-lg-6">
-                <a
+                <NavLink
                   className="btn subBtn bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
-                  href="/login"
+                  exact
+                  to="/login"
                 >
                   Login
-                </a>{" "}
+                </NavLink>{" "}
                 <br />
-                <a
+                <NavLink
                   className="btn subBtn bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
-                  href="/register"
+                  exact
+                  to="/register"
                 >
                   Register
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
