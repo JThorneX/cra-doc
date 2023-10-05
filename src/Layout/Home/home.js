@@ -16,6 +16,7 @@ import Subheader from "../Subheader/subheader";
 const Home = () => {
   return (
     <div className="home">
+      <PopUp />
       <div className="home-content">
         <div className="doctorImage">
           {/* <header className="subheader">
@@ -215,7 +216,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <PopUp />
     </div>
   );
 };

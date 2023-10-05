@@ -11,7 +11,7 @@ function Subheader() {
               <NavLink
                 className="btn subBtn d-inline-block p-2 fs-4 px-4"
                 exact
-                to="/"
+                to="cra-doc/"
               >
                 Home
               </NavLink>

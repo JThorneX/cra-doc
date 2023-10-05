@@ -2,7 +2,9 @@ $themes: (
   light: (
     bodyBackgroundColor: #282828,
     footerBackgroundColor: #b4656f,
+    footerBG: #fbf2ee,
     midheader: #2baea7,
+    alertBanner: #b46973,
     headerBackground: #fbf2ee,
     midBtn: #b7727b,
     midText: #0e0e0e,
@@ -22,8 +24,10 @@ $themes: (
   dark: (
     bodyBackgroundColor: #282828,
     footerBackgroundColor: #b4656f,
+    footerBG: #282828,
     headerBackground: #282828,
-    midheader: #226b6b,
+    midheader: #289191,
+    alertBanner: #226b6b,
     midBtn: #925059,
     midText: #fbf2ee,
     missionText: #fff,

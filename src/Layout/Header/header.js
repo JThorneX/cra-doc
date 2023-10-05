@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/theme-context";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 import Logo from "../../assets/logo/fcsw dark logo.svg";
 import "./header.scss";
@@ -18,9 +18,9 @@ const Header = () => {
     <div className="headerAll">
       <header className="header">
         <div className="header-content">
-          <NavLink exact to="/cra-doc" className="logo-section m-3 ">
+          <a href="/cra-doc" className="logo-section m-3 ">
             <img src={Logo} alt="logo" className="LlogoIcon logo" />
-          </NavLink>
+          </a>
           <div className="headerText w-75">
             <span className="fs-1 headerTitle">
               Family Care Southwest, P.C.
@@ -62,9 +62,13 @@ const Header = () => {
       <header className="headerMobile">
         <div className="headerMobileWrapper">
           <div className="headerMobileContent">
-            <NavLink exact to="/cra-doc" className="headerLogoSection m-3 ">
-              <img src={Logo} alt="logo" className="headerLogoIconMobile logo" />
-            </NavLink>
+            <a href="cra-doc/" className="headerLogoSection m-3 ">
+              <img
+                src={Logo}
+                alt="logo"
+                className="headerLogoIconMobile logo"
+              />
+            </a>
             <section className="siteTitleMobile">
               <h1>FAMILY CARE Southwest, P.C.</h1>
             </section>

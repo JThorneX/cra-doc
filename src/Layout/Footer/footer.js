@@ -23,7 +23,7 @@ const Footer = () => {
         <br />
         <br />
         <div className="firstRow row d-flex justify-content-center pb-5">
-          <div className="locationInfo justify-content-start col-lg-6 col-12">
+          <div className="locationInfo justify-content-start col-lg-6 col-sm-6 col-12">
             <div className="footerSecond ms-5">
               <div className="headerHours">
                 <section className="fs-3 hoursText">Office Hours</section>
@@ -38,7 +38,7 @@ const Footer = () => {
               6169 S. Balsam Way, Suite #250 <br /> Littleton Colorado, 80123
             </section>
           </div>
-          <div className="badgeInfo col-lg-6 col-12 d-flex justify-content-end align-items-center">
+          <div className="badgeInfo col-lg-6 col-sm-6 col-12 d-flex justify-content-end align-items-center">
             <section className="text-align-center badgeText fs-5">
               NCQA Patient-Centered Medical Home (PCMH) Recognition is the most
               widely-used way to transform primary care practices into medical

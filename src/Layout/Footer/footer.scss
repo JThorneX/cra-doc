@@ -8,6 +8,13 @@
   bottom: 0;
 }
 
+.footerContent {
+  @include themify($themes) {
+    background-color: themed("footerBG");
+    color: themed("textColor");
+  }
+}
+
 // pb-5 m-5
 
 .logoInfo {
@@ -34,14 +41,14 @@
 }
 
 .badgeText {
-  height: 6.25rem;
+  min-height: 6.25rem;
   width: 25rem;
   margin-right: 0.5rem;
 }
 
 .badgeNCQA {
-  height: 9rem;
-  width: 9rem;
+  min-height: 9rem;
+  min-width: 9rem;
   margin-right: 1rem;
   background: url("../../assets/images/ncqa\ badge.svg");
   background-repeat: no-repeat;
@@ -72,6 +79,12 @@
 .footerContentMobile {
   display: none;
 }
+
+//this
+//is
+//media
+//query
+//area
 
 @media screen and (max-width: 600px) {
   .footerContent {
