@@ -1,0 +1,79 @@
+@import "../../../../styles/theme-variables.scss";
+
+.footer {
+  display: block !important;
+}
+
+.headerAll {
+  display: block !important;
+}
+
+.Login {
+  width: 100%;
+  height: 100vh;
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+}
+
+.loginHeader {
+  padding: 2rem;
+}
+
+.loginBtn {
+  border: 0;
+  @include themify($themes) {
+    background: themed("subheaderBtn");
+  }
+
+  .loginButton {
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("subText");
+    }
+  }
+}
+
+.backBtn {
+  position: relative;
+  top: 0;
+  display: flex;
+
+  .goBack {
+    padding: 0.5rem;
+    font-size: 12px;
+    @include themify($themes) {
+      background: themed("subheaderBtn");
+    }
+    .goBackText {
+      text-decoration: none;
+      @include themify($themes) {
+        color: themed("subText");
+      }
+    }
+  }
+}
+
+.loginBtn {
+  margin: 1.5rem;
+}
+
+.registerRedirect {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 4rem;
+}
+
+.loginFormLine {
+  padding: 0.8rem;
+}
+
+.forgetPass {
+  padding-top: 1rem;
+}
+
+.nonBtn {
+  text-decoration: none;
+  color: #2d8984;
+}

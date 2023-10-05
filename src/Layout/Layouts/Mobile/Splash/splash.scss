@@ -54,8 +54,10 @@
   align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-  .headerAll {
-    display: none;
-  }
+.footer {
+  display: none;
+}
+
+.headerAll {
+  display: none;
 }
