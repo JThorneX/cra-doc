@@ -72,12 +72,13 @@ const Home = () => {
           <div className="banner w-lg-75 mx-lg-auto position-relative px-lg-3 py-4 ">
             <nav className="navbar navbar-expand-lg p-0">
               <div className="container justify-content-around">
-                <a
+                <NavLink
                   className="btn midBtn btn-sm d-inline-block w-lg-64 p-3 fs-4 px-5"
-                  href="/aboutUs"
+                  exact
+                  to="/aboutUs"
                 >
                   About Us
-                </a>
+                </NavLink>
                 <br />
                 <a
                   className="btn midBtn btn-sm border-0 w-lg-auto mb-4 mb-lg-0 p-3 fs-4 px-5"

@@ -1,6 +1,11 @@
 @import "../../styles/theme-variables.scss";
 
 /*Header styles*/
+.headerAll {
+  position: relative;
+  top: 0;
+  max-width: 100%;
+}
 
 .header {
   width: 100%;
@@ -169,5 +174,58 @@
 .subBtn:hover {
   @include themify($themes) {
     background-color: themed("btnHover");
+  }
+}
+
+.headerMobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+
+  .headerMobile {
+    display: block;
+  }
+
+  .headerLogoSection {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .headerMobileWrapper {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    z-index: 99;
+
+    @include themify($themes) {
+      background: themed("headerBackground");
+    }
+    .headerMobileContent {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+
+  .siteTitleMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    
+    h1 {
+      @include themify($themes) {
+        color: themed("textColor");
+      }
+    }
+  }
+
+  .headerLogoIconMobile {
+    width: 6rem;
+    height: 6rem;
   }
 }
