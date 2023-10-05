@@ -19,6 +19,7 @@ import Privacy from "./Layout/Layouts/Privacy/privacy";
 import Disclaimer from "./Layout/Layouts/Disclaimer/disclaimer";
 
 import HomeMobile from "./Layout/Layouts/Mobile/Home/homeMobile";
+import Splash from "./Layout/Layouts/Mobile/Splash/splash";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
@@ -44,17 +45,20 @@ function App() {
             <Header />
             <Media
               queries={{
-                small: "(max-width: 500px)",
+                small: "(max-width: 600px)",
                 large: "(min-width: 600px)",
               }}
             >
               {(matches) => (
                 <Routes>
+                  {matches.small && (
+                    <Route path="/cra-doc" element={<Splash />} />
+                  )}
                   {matches.large && (
                     <Route path="/cra-doc" element={<HomeLayout />} />
                   )}
                   {matches.small && (
-                    <Route path="cra-doc/" element={<HomeMobile />} />
+                    <Route path="/home" element={<HomeMobile />} />
                   )}
                   {matches.large && (
                     <Route path="/contact" element={<Contact />} />

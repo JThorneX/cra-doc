@@ -8,6 +8,13 @@
   bottom: 0;
 }
 
+.footerContent {
+  @include themify($themes) {
+    background-color: themed("footerBG");
+    color: themed("textColor");
+  }
+}
+
 // pb-5 m-5
 
 .logoInfo {
@@ -34,14 +41,14 @@
 }
 
 .badgeText {
-  height: 6.25rem;
+  min-height: 6.25rem;
   width: 25rem;
   margin-right: 0.5rem;
 }
 
 .badgeNCQA {
-  height: 9rem;
-  width: 9rem;
+  min-height: 9rem;
+  min-width: 9rem;
   margin-right: 1rem;
   background: url("../../assets/images/ncqa\ badge.svg");
   background-repeat: no-repeat;
@@ -69,5 +76,49 @@
   color: black;
 }
 
-.copyrightInfo {
+.footerContentMobile {
+  display: none;
+}
+
+//this
+//is
+//media
+//query
+//area
+
+@media screen and (max-width: 600px) {
+  .footerContent {
+    display: none;
+  }
+
+  .footerContentMobile {
+    display: block;
+    position: fixed;
+    min-width: 100%;
+    background-color: #176f6b;
+    padding: 0.5rem;
+  }
+
+  .footerIconLinks {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footerMobileIconBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h5 {
+      text-align: center;
+      text-decoration: none;
+      color: rgb(211, 211, 211);
+    }
+  }
+
+  .footerMobileIcon {
+    height: 3.5rem;
+    width: 3.5rem;
+    color: rgb(211, 211, 211);
+  }
 }

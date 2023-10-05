@@ -10,18 +10,28 @@
   height: 5rem;
   width: 14rem;
   position: fixed;
-  bottom: 0;
+  bottom: 5rem;
   right: 0;
   font-size: 18px;
 }
 
 .popUpInfo {
   @include themify($themes) {
-    background-color: themed("midheader");
+    background-color: themed("alertBanner");
     color: themed("midText");
   }
 }
 
 .popUpText {
   margin: auto;
+}
+
+//this
+//is
+//media
+//query
+//area
+
+@media screen and (max-width: 600px) {
+  
 }

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/theme-context";
+// import { NavLink } from "react-router-dom";
 
 import Logo from "../../assets/logo/fcsw dark logo.svg";
 import "./header.scss";
@@ -55,6 +56,22 @@ const Header = () => {
                 <div className="modeText">Light Mode</div>
               </div>
             </div>
+          </div>
+        </div>
+      </header>
+      <header className="headerMobile">
+        <div className="headerMobileWrapper">
+          <div className="headerMobileContent">
+            <a href="cra-doc/" className="headerLogoSection m-3 ">
+              <img
+                src={Logo}
+                alt="logo"
+                className="headerLogoIconMobile logo"
+              />
+            </a>
+            <section className="siteTitleMobile">
+              <h1>FAMILY CARE Southwest, P.C.</h1>
+            </section>
           </div>
         </div>
       </header>

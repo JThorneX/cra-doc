@@ -1,10 +1,15 @@
 import "./footer.scss";
 import Logo from "../../assets/logo/fcsw dark logo.svg";
+import { NavLink } from "react-router-dom";
+
+import { IoSettingsOutline, IoLogOutOutline } from "react-icons/io5";
+import { BsClipboardData } from "react-icons/bs";
+import { AiOutlineHome } from "react-icons/ai";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="header-content">
+      <div className="footerContent">
         <div className="logoInfo">
           <div className="logoMargin m-5 d-flex">
             <a href="cra-doc/" className="logo-section me-3 ">
@@ -18,7 +23,7 @@ const Footer = () => {
         <br />
         <br />
         <div className="firstRow row d-flex justify-content-center pb-5">
-          <div className="locationInfo justify-content-start col-lg-6 col-12">
+          <div className="locationInfo justify-content-start col-lg-6 col-sm-6 col-12">
             <div className="footerSecond ms-5">
               <div className="headerHours">
                 <section className="fs-3 hoursText">Office Hours</section>
@@ -33,7 +38,7 @@ const Footer = () => {
               6169 S. Balsam Way, Suite #250 <br /> Littleton Colorado, 80123
             </section>
           </div>
-          <div className="badgeInfo col-lg-6 col-12 d-flex justify-content-end align-items-center">
+          <div className="badgeInfo col-lg-6 col-sm-6 col-12 d-flex justify-content-end align-items-center">
             <section className="text-align-center badgeText fs-5">
               NCQA Patient-Centered Medical Home (PCMH) Recognition is the most
               widely-used way to transform primary care practices into medical
@@ -59,6 +64,40 @@ const Footer = () => {
               {". "} All rights reserved
             </div>
           </div>
+        </div>
+      </div>
+      <div className="footerContentMobile">
+        <div className="footerContentMobileWrapper">
+          <section className="footerIconLinks">
+            <NavLink exact to="" className="footerHomeIcon footerMobileIconBox">
+              <AiOutlineHome className="footerMobileIcon" />
+              <h6>Home</h6>
+            </NavLink>
+            <NavLink
+              exact
+              to=""
+              className="footerMyChartIcon footerMobileIconBox"
+            >
+              <BsClipboardData className="footerMobileIcon" />
+              <h6>My Chart</h6>
+            </NavLink>
+            <NavLink
+              exact
+              to=""
+              className="footerSettingsIcon footerMobileIconBox"
+            >
+              <IoSettingsOutline className="footerMobileIcon" />
+              <h6>My Settings</h6>
+            </NavLink>
+            <NavLink
+              exact
+              to=""
+              className="footerLogoutIcon footerMobileIconBox"
+            >
+              <IoLogOutOutline className="footerMobileIcon" />
+              <h6>Logout</h6>
+            </NavLink>
+          </section>
         </div>
       </div>
     </div>
