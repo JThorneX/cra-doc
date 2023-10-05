@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cra-doc/static/css/main.9b4eaa37.css",
-    "main.js": "/cra-doc/static/js/main.a51c44e5.js",
+    "main.css": "/cra-doc/static/css/main.b2c246c0.css",
+    "main.js": "/cra-doc/static/js/main.87471cbe.js",
     "static/media/doctor-patient-ipad.avif": "/cra-doc/static/media/doctor-patient-ipad.4367305204995b7175e2.avif",
     "static/media/medical-building.avif": "/cra-doc/static/media/medical-building.f6909f8b8729dcdb0bb8.avif",
     "static/media/tim.jpg": "/cra-doc/static/media/tim.cde3c8afbaa271f94a48.jpg",
@@ -15,11 +15,11 @@
     "static/media/fcsw dark logo.svg": "/cra-doc/static/media/fcsw dark logo.213de07af2ced74a7dc31a6b5cb972ac.svg",
     "index.html": "/cra-doc/index.html",
     "static/media/icon-arrow-down.svg": "/cra-doc/static/media/icon-arrow-down.852fa301a0e795e07c59.svg",
-    "main.9b4eaa37.css.map": "/cra-doc/static/css/main.9b4eaa37.css.map",
-    "main.a51c44e5.js.map": "/cra-doc/static/js/main.a51c44e5.js.map"
+    "main.b2c246c0.css.map": "/cra-doc/static/css/main.b2c246c0.css.map",
+    "main.87471cbe.js.map": "/cra-doc/static/js/main.87471cbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b4eaa37.css",
-    "static/js/main.a51c44e5.js"
+    "static/css/main.b2c246c0.css",
+    "static/js/main.87471cbe.js"
   ]
 }
