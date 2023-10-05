@@ -30,7 +30,7 @@ const LoginMobile = () => {
       </div>
       <div className="loginForm">
         <Form onSubmit={handleSubmit}>
-          <Form.Group size="lg" controlId="name">
+          <Form.Group size="lg" controlId="name" className="loginFormLine">
             <Form.Label>Full Name</Form.Label>
             <Form.Control
               autoFocus
@@ -39,7 +39,7 @@ const LoginMobile = () => {
               onChange={(e) => setName(e.target.value)}
             />
           </Form.Group>
-          <Form.Group size="lg" controlId="email">
+          <Form.Group size="lg" controlId="email" className="loginFormLine">
             <Form.Label>Email</Form.Label>
             <Form.Control
               type="email"
@@ -47,7 +47,7 @@ const LoginMobile = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Group>
-          <Form.Group size="lg" controlId="password">
+          <Form.Group size="lg" controlId="password" className="loginFormLine">
             <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
@@ -63,7 +63,7 @@ const LoginMobile = () => {
             type="submit"
             disabled={!validateForm()}
           >
-            <NavLink exact to="/home">
+            <NavLink exact to="/home" className="loginButton">
               Login
             </NavLink>
           </Button>
@@ -73,7 +73,7 @@ const LoginMobile = () => {
         <p>
           Forget your password or username?
           <br />{" "}
-          <NavLink exact to="/unfortunate">
+          <NavLink exact to="/unfortunate" className="nonBtn">
             Reset here.
           </NavLink>
         </p>
@@ -82,7 +82,7 @@ const LoginMobile = () => {
         <p>
           Don't have an account?
           <br />
-          <NavLink exact to="/unfortunate">
+          <NavLink exact to="/unfortunate" className="nonBtn">
             Register here.
           </NavLink>
         </p>
