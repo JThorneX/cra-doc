@@ -12,6 +12,7 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   z-index: 99;
+  display: block;
   @include themify($themes) {
     background: themed("headerBackground");
   }
@@ -164,18 +165,18 @@
   width: 100%;
 }
 
-.subBtn {
-  @include themify($themes) {
-    background-color: themed("subheaderBtn");
-    color: themed("textColor");
-  }
-}
+// .subBtn {
+//   @include themify($themes) {
+//     background-color: themed("subheaderBtn");
+//     color: themed("textColor");
+//   }
+// }
 
-.subBtn:hover {
-  @include themify($themes) {
-    background-color: themed("btnHover");
-  }
-}
+// .subBtn:hover {
+//   @include themify($themes) {
+//     background-color: themed("btnHover");
+//   }
+// }
 
 .headerMobile {
   display: none;
@@ -216,7 +217,7 @@
     justify-content: center;
     align-items: center;
     max-width: 70%;
-    
+
     h1 {
       @include themify($themes) {
         color: themed("textColor");
