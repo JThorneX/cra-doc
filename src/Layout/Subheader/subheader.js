@@ -8,13 +8,12 @@ function Subheader() {
         <nav className="navbar navbar-expand-lg p-0">
           <div className="navBtns">
             <div className="navbar-left">
-              <NavLink
+              <a
+                href="/cra-doc"
                 className="btn subBtn d-inline-block p-2 fs-4 px-4"
-                exact
-                to="cra-doc/"
               >
                 Home
-              </NavLink>
+              </a>
             </div>
             <div className="navbar-right justify-content-end">
               <div className="navBtns align-items-lg-center gap-2 ms-lg-4 w-lg-6">

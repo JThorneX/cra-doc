@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Media from "react-media";
 import { ThemeContext } from "./contexts/theme-context";
-import HomeLayout from "./Layout/Home/home";
+import HomeLayout from "./Layout/Layouts/Home/home";
 import Footer from "./Layout/Footer/footer";
 import Header from "./Layout/Header/header";
 import AboutUs from "./Layout/Layouts/AboutUs/aboutUsLayout";
@@ -19,6 +19,7 @@ import Privacy from "./Layout/Layouts/Privacy/privacy";
 import Disclaimer from "./Layout/Layouts/Disclaimer/disclaimer";
 
 import HomeMobile from "./Layout/Layouts/Mobile/Home/homeMobile";
+import LoginMobile from "./Layout/Layouts/Mobile/Login/loginMobile";
 import Splash from "./Layout/Layouts/Mobile/Splash/splash";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -74,6 +75,9 @@ function App() {
                   )}
                   {matches.large && (
                     <Route path="/prescriptions" element={<Prescriptions />} />
+                  )}
+                  {matches.small && (
+                    <Route path="/loginmobile" element={<LoginMobile />} />
                   )}
                   {matches.large && <Route path="/login" element={<Login />} />}
                   {matches.large && (
