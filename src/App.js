@@ -77,7 +77,7 @@ function App() {
                     <Route path="/prescriptions" element={<Prescriptions />} />
                   )}
                   {matches.small && (
-                    <Route path="/loginmobile" element={<LoginMobile />} />
+                    <Route path="/login-mobile" element={<LoginMobile />} />
                   )}
                   {matches.large && <Route path="/login" element={<Login />} />}
                   {matches.large && (
