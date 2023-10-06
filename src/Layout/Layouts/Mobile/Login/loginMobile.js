@@ -26,7 +26,7 @@ const LoginMobile = () => {
         </button>
       </div>
       <div className="loginHeader">
-        <h2>Login</h2>
+        <h2>Welcome back!</h2>
       </div>
       <div className="loginForm">
         <Form onSubmit={handleSubmit}>
