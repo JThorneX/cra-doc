@@ -22,7 +22,12 @@ import HomeMobile from "./Layout/Layouts/Mobile/Home/homeMobile";
 import LoginMobile from "./Layout/Layouts/Mobile/Login/loginMobile";
 import Splash from "./Layout/Layouts/Mobile/Splash/splash";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  withRouter,
+} from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
 
 function App() {
@@ -43,7 +48,9 @@ function App() {
         <ScrollToTop />
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`theme-${theme}`}>
-            <Header />
+            <div className="headerSite">
+              <Header />
+            </div>
             <Media
               queries={{
                 small: "(max-width: 600px)",
@@ -55,6 +62,7 @@ function App() {
                   {matches.small && (
                     <Route path="/cra-doc" element={<Splash />} />
                   )}
+
                   {matches.large && (
                     <Route path="/cra-doc" element={<HomeLayout />} />
                   )}
