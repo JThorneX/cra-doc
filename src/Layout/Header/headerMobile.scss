@@ -1,0 +1,20 @@
+@import "../../styles/theme-variables.scss";
+
+.headerMobileWrapper {
+  padding-bottom: 2rem;
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+}
+
+.headerLogoSection {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.splashLogoIconMobile {
+  height: 10rem;
+  width: 10rem;
+}

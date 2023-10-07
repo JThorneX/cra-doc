@@ -17,7 +17,7 @@ const Splash = () => {
             <NavLink
               className="btn splashBtn bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
               exact
-              to="/login-mobile"
+              to="/login"
             >
               Login
             </NavLink>{" "}
@@ -25,7 +25,7 @@ const Splash = () => {
             <NavLink
               className="btn splashBtn bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
               exact
-              to="/registermobile"
+              to="/register"
             >
               Register
             </NavLink>
