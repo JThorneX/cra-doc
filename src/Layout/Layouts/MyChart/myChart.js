@@ -1,4 +1,4 @@
-import "./myChartStyles.scss";
+import "./myChart.scss";
 
 const MyChart = () => {
   return <></>;

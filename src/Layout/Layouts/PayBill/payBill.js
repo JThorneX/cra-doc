@@ -1,4 +1,4 @@
-import "./payBillStyles.scss";
+import "./payBill.scss";
 
 const PayBill = () => {
   return <></>;

@@ -3,20 +3,22 @@ import { useState } from "react";
 import Media from "react-media";
 import { ThemeContext } from "./contexts/theme-context";
 import HomeLayout from "./Layout/Layouts/Home/home";
-import Footer from "./Layout/Footer/footer";
-import Header from "./Layout/Header/header";
-import AboutUs from "./Layout/Layouts/AboutUs/aboutUsLayout";
-import Appointments from "./Layout/Layouts/Appointments/appointmentsLayout";
-import Contact from "./Layout/Layouts/Contact/contactLayout";
-import Login from "./Layout/Layouts/Login/loginLayout";
+// import Footer from "./Layout/Footer/footer";
+// import Header from "./Layout/Header/header";
+import AboutUs from "./Layout/Layouts/AboutUs/aboutUs";
+import Appointments from "./Layout/Layouts/Appointments/appointments";
+import Contact from "./Layout/Layouts/Contact/contact";
+import Login from "./Layout/Layouts/Login/login";
 import MyChart from "./Layout/Layouts/MyChart/myChart";
 import PayBill from "./Layout/Layouts/PayBill/payBill";
-import Prescriptions from "./Layout/Layouts/Prescription/prescriptionsLayout";
-import Register from "./Layout/Layouts/Register/registerLayout";
+import Prescriptions from "./Layout/Layouts/Prescription/prescriptions";
+import Register from "./Layout/Layouts/Register/register";
 import TestResults from "./Layout/Layouts/TestResults/testResults";
 import Messages from "./Layout/Layouts/Messages/messages";
 import Privacy from "./Layout/Layouts/Privacy/privacy";
 import Disclaimer from "./Layout/Layouts/Disclaimer/disclaimer";
+
+import HomeTablet from "./Layout/Layouts/Tablet/Home/homeTablet";
 
 import HomeMobile from "./Layout/Layouts/Mobile/Home/homeMobile";
 import LoginMobile from "./Layout/Layouts/Mobile/Login/loginMobile";
@@ -48,26 +50,28 @@ function App() {
         <ScrollToTop />
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`theme-${theme}`}>
-            <div className="headerSite">
-              <Header />
-            </div>
+            <div className="headerSite">{/* <Header /> */}</div>
             <Media
               queries={{
                 small: "(max-width: 600px)",
-                large: "(min-width: 600px)",
+                medium: "(min-width:600px) and (max-width:1080px)",
+                large: "(min-width: 1080px)",
               }}
             >
               {(matches) => (
                 <Routes>
+                  {/* home routes */}
                   {matches.small && (
                     <Route path="/cra-doc" element={<Splash />} />
                   )}
-
+                  {matches.small && (
+                    <Route path="/cra-doc-home" element={<HomeMobile />} />
+                  )}
+                  {matches.medium && (
+                    <Route path="/cra-doc" element={<HomeTablet />} />
+                  )}
                   {matches.large && (
                     <Route path="/cra-doc" element={<HomeLayout />} />
-                  )}
-                  {matches.small && (
-                    <Route path="/home" element={<HomeMobile />} />
                   )}
                   {matches.large && (
                     <Route path="/contact" element={<Contact />} />
@@ -109,9 +113,9 @@ function App() {
                 </Routes>
               )}
             </Media>
-            <div className="uniFooter">
+            {/* <div className="uniFooter">
               <Footer />
-            </div>
+            </div> */}
           </div>
         </ThemeContext.Provider>
       </Router>

@@ -1,4 +1,4 @@
-import "./appointmentsStyles.scss";
+import "./appointments.scss";
 
 const Appointments = () => {
   return <></>;

@@ -1,4 +1,4 @@
-import "./disclaimerStyles.scss";
+import "./disclaimer.scss";
 
 const Disclaimer = () => {
   return <></>;

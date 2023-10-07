@@ -1,4 +1,4 @@
-import "./registerStyles.scss";
+import "./register.scss";
 
 const Register = () => {
   return <></>;

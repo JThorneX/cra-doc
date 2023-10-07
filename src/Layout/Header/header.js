@@ -62,7 +62,7 @@ const Header = () => {
       <header className="headerMobile">
         <div className="headerMobileWrapper">
           <div className="headerMobileContent">
-            <a href="cra-doc/" className="headerLogoSection m-3 ">
+            <a href="/cra-doc" className="headerLogoSection m-3 ">
               <img
                 src={Logo}
                 alt="logo"
