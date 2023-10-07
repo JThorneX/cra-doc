@@ -1,33 +1,64 @@
+//THE USUAL
 import "./App.css";
 import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Media from "react-media";
-import { ThemeContext } from "./contexts/theme-context";
+
+//DESKTOP
 import HomeLayout from "./Layout/Layouts/Home/home";
-// import Footer from "./Layout/Footer/footer";
-// import Header from "./Layout/Header/header";
 import AboutUs from "./Layout/Layouts/AboutUs/aboutUs";
 import Appointments from "./Layout/Layouts/Appointments/appointments";
 import Contact from "./Layout/Layouts/Contact/contact";
 import Login from "./Layout/Layouts/Login/login";
+import Register from "./Layout/Layouts/Register/register";
 import MyChart from "./Layout/Layouts/MyChart/myChart";
 import PayBill from "./Layout/Layouts/PayBill/payBill";
 import Prescriptions from "./Layout/Layouts/Prescription/prescriptions";
-import Register from "./Layout/Layouts/Register/register";
 import TestResults from "./Layout/Layouts/TestResults/testResults";
 import Messages from "./Layout/Layouts/Messages/messages";
 import Privacy from "./Layout/Layouts/Privacy/privacy";
 import Disclaimer from "./Layout/Layouts/Disclaimer/disclaimer";
+import Settings from "./Layout/Layouts/UserSettings/userSettings";
+import FourOhFour from "./Layout/Layouts/404/404";
 
-import HomeTablet from "./Layout/Layouts/Tablet/Home/homeTablet";
-import LoginTablet from "./Layout/Layouts/Tablet/Login/login";
+//TABLET
 import SplashTablet from "./Layout/Layouts/Tablet/Splash/splash";
+import HomeTablet from "./Layout/Layouts/Tablet/Home/homeTablet";
+import AboutUsTablet from "./Layout/Layouts/Tablet/AboutUs/aboutUs";
+import AppointmentsTablet from "./Layout/Layouts/Tablet/Appointments/appointments";
+import ContactTablet from "./Layout/Layouts/Tablet/Contact/contact";
+import LoginTablet from "./Layout/Layouts/Tablet/Login/login";
+import RegisterTablet from "./Layout/Layouts/Tablet/Register/register";
+import PayBillTablet from "./Layout/Layouts/Tablet/PayBill/payBill";
+import PrescriptionTablet from "./Layout/Layouts/Tablet/Prescription/prescription";
+import TestResultsTablet from "./Layout/Layouts/Tablet/TestResults/testResults";
+import MessagesTablet from "./Layout/Layouts/Tablet/Messages/messages";
+import PrivacyTablet from "./Layout/Layouts/Tablet/Privacy/privacy";
+import DisclaimerTablet from "./Layout/Layouts/Tablet/Disclaimer/disclaimer";
+import SettingsTablet from "./Layout/Layouts/Tablet/UserSettings/userSettings";
+import FourOhFourTablet from "./Layout/Layouts/Tablet/404/404";
 
-import HomeMobile from "./Layout/Layouts/Mobile/Home/homeMobile";
-import LoginMobile from "./Layout/Layouts/Mobile/Login/loginMobile";
+//MOBILE
 import SplashMobile from "./Layout/Layouts/Mobile/Splash/splash";
+import HomeMobile from "./Layout/Layouts/Mobile/Home/homeMobile";
+import AboutUsMobile from "./Layout/Layouts/Mobile/AboutUs/aboutUs";
+import AppointmentsMobile from "./Layout/Layouts/Mobile/Appointments/appointments";
+import ContactMobile from "./Layout/Layouts/Mobile/Contact/contact";
+import LoginMobile from "./Layout/Layouts/Mobile/Login/login";
+import RegistertMobile from "./Layout/Layouts/Mobile/Register/register";
+import PayBillMobile from "./Layout/Layouts/Mobile/PayBill/payBill";
+import PrescriptionMobile from "./Layout/Layouts/Mobile/Prescription/prescription";
+import TestResultsMobile from "./Layout/Layouts/Mobile/TestResults/testResults";
+import MessagesMobile from "./Layout/Layouts/Mobile/Messages/messages";
+import PrivacyMobile from "./Layout/Layouts/Mobile/Privacy/privacy";
+import DisclaimerMobile from "./Layout/Layouts/Mobile/Disclaimer/disclaimer";
+import SettingsMobile from "./Layout/Layouts/Mobile/UserSettings/userSettings";
+import FourOhFourMobile from "./Layout/Layouts/Mobile/404/404";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+//3RD PARTY
+
 import ScrollToTop from "./components/scrollToTop";
+import { ThemeContext } from "./contexts/theme-context";
 
 function App() {
   const isBrowserDefaultDark = () =>
