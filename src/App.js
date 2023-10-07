@@ -13,7 +13,7 @@ import Login from "./Layout/Layouts/Login/login";
 import Register from "./Layout/Layouts/Register/register";
 import MyChart from "./Layout/Layouts/MyChart/myChart";
 import PayBill from "./Layout/Layouts/PayBill/payBill";
-import Prescriptions from "./Layout/Layouts/Prescription/prescriptions";
+import Prescription from "./Layout/Layouts/Prescription/prescriptions";
 import TestResults from "./Layout/Layouts/TestResults/testResults";
 import Messages from "./Layout/Layouts/Messages/messages";
 import Privacy from "./Layout/Layouts/Privacy/privacy";
@@ -29,6 +29,7 @@ import AppointmentsTablet from "./Layout/Layouts/Tablet/Appointments/appointment
 import ContactTablet from "./Layout/Layouts/Tablet/Contact/contact";
 import LoginTablet from "./Layout/Layouts/Tablet/Login/login";
 import RegisterTablet from "./Layout/Layouts/Tablet/Register/register";
+import MyChartTablet from "./Layout/Layouts/Tablet/MyChart/myChart";
 import PayBillTablet from "./Layout/Layouts/Tablet/PayBill/payBill";
 import PrescriptionTablet from "./Layout/Layouts/Tablet/Prescription/prescription";
 import TestResultsTablet from "./Layout/Layouts/Tablet/TestResults/testResults";
@@ -46,6 +47,7 @@ import AppointmentsMobile from "./Layout/Layouts/Mobile/Appointments/appointment
 import ContactMobile from "./Layout/Layouts/Mobile/Contact/contact";
 import LoginMobile from "./Layout/Layouts/Mobile/Login/login";
 import RegistertMobile from "./Layout/Layouts/Mobile/Register/register";
+import MyChartMobile from "./Layout/Layouts/Mobile/MyChart/myChart";
 import PayBillMobile from "./Layout/Layouts/Mobile/PayBill/payBill";
 import PrescriptionMobile from "./Layout/Layouts/Mobile/Prescription/prescription";
 import TestResultsMobile from "./Layout/Layouts/Mobile/TestResults/testResults";
@@ -87,7 +89,9 @@ function App() {
             >
               {(matches) => (
                 <Routes>
-                  {/* home routes */}
+                  {/* Home Routes 
+                  
+                  */}
                   {matches.small && (
                     <Route path="/cra-doc" element={<SplashMobile />} />
                   )}
@@ -103,42 +107,242 @@ function App() {
                   {matches.large && (
                     <Route path="/cra-doc" element={<HomeLayout />} />
                   )}
-                  {matches.large && (
-                    <Route path="/contact" element={<Contact />} />
+
+                  {/* About Us Routes 
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route path="/about-us" element={<AboutUsMobile />} />
                   )}
-                  {matches.large && (
-                    <Route path="/myChart" element={<MyChart />} />
+
+                  {matches.medium && (
+                    <Route path="/about-us" element={<AboutUsTablet />} />
                   )}
+
                   {matches.large && (
-                    <Route path="/aboutUs" element={<AboutUs />} />
+                    <Route path="/about-us" element={<AboutUs />} />
                   )}
+
+                  {/* Appointments Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route
+                      path="/appointments"
+                      element={<AppointmentsMobile />}
+                    />
+                  )}
+
+                  {matches.medium && (
+                    <Route
+                      path="/appointments"
+                      element={<AppointmentsTablet />}
+                    />
+                  )}
+
                   {matches.large && (
                     <Route path="/appointments" element={<Appointments />} />
                   )}
-                  {matches.large && (
-                    <Route path="/prescriptions" element={<Prescriptions />} />
-                  )}
+
+                  {/* Contact Routes  
+                  
+                  */}
+
                   {matches.small && (
-                    <Route path="/login-mobile" element={<LoginMobile />} />
+                    <Route path="/contact" element={<ContactMobile />} />
                   )}
-                  {matches.large && <Route path="/login" element={<Login />} />}
+
+                  {matches.medium && (
+                    <Route path="/contact" element={<ContactTablet />} />
+                  )}
+
                   {matches.large && (
-                    <Route path="/payBill" element={<PayBill />} />
+                    <Route path="/contact" element={<Contact />} />
                   )}
+
+                  {/* Login Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route path="/login" element={<LoginMobile />} />
+                  )}
+
+                  {matches.medium && (
+                    <Route path="/login" element={<LoginTablet />} />
+                  )}
+
+                  {matches.large && <Route path="/login" element={<Login />} />}
+
+                  {/* Register Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route path="/register" element={<RegistertMobile />} />
+                  )}
+
+                  {matches.medium && (
+                    <Route path="/register" element={<RegisterTablet />} />
+                  )}
+
                   {matches.large && (
                     <Route path="/register" element={<Register />} />
                   )}
-                  {matches.large && (
-                    <Route path="/messages" element={<Messages />} />
+
+                  {/* My Chart Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route path="/myChart" element={<MyChartMobile />} />
                   )}
+
+                  {matches.medium && (
+                    <Route path="/myChart" element={<MyChartTablet />} />
+                  )}
+
+                  {matches.large && (
+                    <Route path="/myChart" element={<MyChart />} />
+                  )}
+
+                  {/* Pay Bill Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route path="/payBill" element={<PayBillMobile />} />
+                  )}
+
+                  {matches.medium && (
+                    <Route path="/payBill" element={<PayBillTablet />} />
+                  )}
+
+                  {matches.large && (
+                    <Route path="/payBill" element={<PayBill />} />
+                  )}
+
+                  {/* Prescription Routes 
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route
+                      path="/prescriptions"
+                      element={<PrescriptionMobile />}
+                    />
+                  )}
+
+                  {matches.medium && (
+                    <Route
+                      path="/prescriptions"
+                      element={<PrescriptionTablet />}
+                    />
+                  )}
+
+                  {matches.large && (
+                    <Route path="/prescriptions" element={<Prescription />} />
+                  )}
+
+                  {/* Test Results Routes  
+                  
+                  */}
+                  {matches.small && (
+                    <Route
+                      path="/testResults"
+                      element={<TestResultsMobile />}
+                    />
+                  )}
+
+                  {matches.medium && (
+                    <Route
+                      path="/testResults"
+                      element={<TestResultsTablet />}
+                    />
+                  )}
+
                   {matches.large && (
                     <Route path="/testResults" element={<TestResults />} />
                   )}
+
+                  {/* Messages Routes
+                   
+                   */}
+                  {matches.small && (
+                    <Route path="/messages" element={<MessagesMobile />} />
+                  )}
+
+                  {matches.medium && (
+                    <Route path="/messages" element={<MessagesTablet />} />
+                  )}
+
+                  {matches.large && (
+                    <Route path="/messages" element={<Messages />} />
+                  )}
+
+                  {/* Privacy Routes  
+                  
+                  */}
+                  {matches.small && (
+                    <Route path="/privacy" element={<PrivacyMobile />} />
+                  )}
+
+                  {matches.medium && (
+                    <Route path="/privacy" element={<PrivacyTablet />} />
+                  )}
+
                   {matches.large && (
                     <Route path="/privacy" element={<Privacy />} />
                   )}
+
+                  {/* Disclaimer Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route path="/disclaimer" element={<DisclaimerMobile />} />
+                  )}
+
+                  {matches.medium && (
+                    <Route path="/disclaimer" element={<DisclaimerTablet />} />
+                  )}
+
                   {matches.large && (
                     <Route path="/disclaimer" element={<Disclaimer />} />
+                  )}
+
+                  {/* Settings Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route path="/user-settings" element={<SettingsMobile />} />
+                  )}
+
+                  {matches.medium && (
+                    <Route path="/user-settings" element={<SettingsTablet />} />
+                  )}
+
+                  {matches.large && (
+                    <Route path="/user-settings" element={<Settings />} />
+                  )}
+
+                  {/* 404 Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route path="/404" element={<FourOhFourMobile />} />
+                  )}
+
+                  {matches.medium && (
+                    <Route path="/404" element={<FourOhFourTablet />} />
+                  )}
+
+                  {matches.large && (
+                    <Route path="/404" element={<FourOhFour />} />
                   )}
                 </Routes>
               )}
