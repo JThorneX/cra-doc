@@ -14,6 +14,7 @@ import Header from "../../Header/header";
 import Footer from "../../Footer/footer";
 import PopUp from "../../Alert/banner";
 import Subheader from "../../Subheader/subheader";
+import Midheader from "../../Midheader/midheader";
 
 const Home = () => {
   return (
@@ -41,7 +42,8 @@ const Home = () => {
           </div>
         </div>
 
-        <header className="midheader">
+        <Midheader />
+        {/* <header className="midheader">
           <div className="banner w-lg-75 mx-lg-auto position-relative px-lg-3 py-4 ">
             <nav className="navbar navbar-expand-lg p-0">
               <div className="container justify-content-around">
@@ -69,7 +71,7 @@ const Home = () => {
               </div>
             </nav>
           </div>
-        </header>
+        </header> */}
 
         <div className="fixed">
           <h1 className="services">Our Services</h1>

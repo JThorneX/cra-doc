@@ -1,0 +1,23 @@
+@import "../../styles/theme-variables.scss";
+
+.midheader {
+  @include themify($themes) {
+    background: themed("midheader");
+    color: themed("textColor");
+  }
+  z-index: 1;
+  width: 100%;
+}
+
+.midBtn:hover {
+  @include themify($themes) {
+    background-color: themed("midHover");
+  }
+}
+
+.midBtn {
+  @include themify($themes) {
+    color: themed("midText");
+    background-color: themed("midBtn");
+  }
+}

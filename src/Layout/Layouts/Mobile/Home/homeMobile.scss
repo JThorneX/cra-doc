@@ -1,2 +1,62 @@
 @import "../../../../styles/theme-variables.scss";
 
+.homeMobile {
+  // position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @include themify($themes) {
+    background: themed("bodyBackgroundColor");
+    color: themed("textColor");
+  }
+
+  .homeContentMobile {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.missionTextMobile {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileMissionImage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: url("../../../../assets/images/colorado\ rockies.avif") no-repeat
+    top 15% left 50%;
+  background-size: 600px;
+}
+
+.missionOverlayMobile {
+  background-color: rgba(0, 0, 0, 0.41);
+  position: relative;
+}
+
+.midheader {
+    @include themify($themes) {
+      background: themed("midheader");
+      color: themed("textColor");
+    }
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .midBtn:hover {
+    @include themify($themes) {
+      background-color: themed("midHover");
+    }
+  }
+  
+  .midBtn {
+    @include themify($themes) {
+      color: themed("midText");
+      background-color: themed("midBtn");
+    }
+  }

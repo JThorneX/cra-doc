@@ -83,8 +83,8 @@ function App() {
             <Media
               queries={{
                 small: "(max-width: 600px)",
-                medium: "(min-width:600px) and (max-width:1080px)",
-                large: "(min-width: 1080px)",
+                medium: "(min-width:600px) and (max-width:1200px)",
+                large: "(min-width: 1200px)",
               }}
             >
               {(matches) => (

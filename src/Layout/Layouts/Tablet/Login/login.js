@@ -70,7 +70,7 @@ const LoginTablet = () => {
               type="submit"
               disabled={!validateForm()}
             >
-              <NavLink exact to="/home" className="loginButton">
+              <NavLink exact to="/cra-doc-home" className="loginButton">
                 Login
               </NavLink>
             </Button>
