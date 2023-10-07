@@ -1,0 +1,32 @@
+@import "../../styles/theme-variables.scss";
+
+.footerContentTablet {
+  display: block;
+  position: fixed;
+  width: 100%;
+  background-color: #176f6b;
+  padding: 0.5rem;
+}
+
+.footerIconLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerTabletIconBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+  }
+}
+
+.footerTabletIcon {
+  height: 3.5rem;
+  width: 3.5rem;
+  color: rgb(211, 211, 211);
+}

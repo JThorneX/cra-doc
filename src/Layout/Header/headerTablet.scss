@@ -1,0 +1,44 @@
+@import "../../styles/theme-variables.scss";
+
+.headerTablet {
+  display: block;
+}
+
+.headerLogoSection {
+  width: 5rem;
+  height: 5rem;
+}
+
+.headerTabletWrapper {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  z-index: 99;
+
+  @include themify($themes) {
+    background: themed("headerBackground");
+  }
+  .headerTabletContent {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.siteTitleTablet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+
+  h1 {
+    @include themify($themes) {
+      color: themed("textColor");
+    }
+  }
+}
+
+.headerLogoIconTablet {
+  width: 6rem;
+  height: 6rem;
+}

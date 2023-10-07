@@ -19,17 +19,14 @@ import Privacy from "./Layout/Layouts/Privacy/privacy";
 import Disclaimer from "./Layout/Layouts/Disclaimer/disclaimer";
 
 import HomeTablet from "./Layout/Layouts/Tablet/Home/homeTablet";
+import LoginTablet from "./Layout/Layouts/Tablet/Login/login";
+import SplashTablet from "./Layout/Layouts/Tablet/Splash/splash";
 
 import HomeMobile from "./Layout/Layouts/Mobile/Home/homeMobile";
 import LoginMobile from "./Layout/Layouts/Mobile/Login/loginMobile";
-import Splash from "./Layout/Layouts/Mobile/Splash/splash";
+import SplashMobile from "./Layout/Layouts/Mobile/Splash/splash";
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  withRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
 
 function App() {
@@ -50,7 +47,6 @@ function App() {
         <ScrollToTop />
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`theme-${theme}`}>
-            <div className="headerSite">{/* <Header /> */}</div>
             <Media
               queries={{
                 small: "(max-width: 600px)",
@@ -62,13 +58,16 @@ function App() {
                 <Routes>
                   {/* home routes */}
                   {matches.small && (
-                    <Route path="/cra-doc" element={<Splash />} />
+                    <Route path="/cra-doc" element={<SplashMobile />} />
                   )}
                   {matches.small && (
                     <Route path="/cra-doc-home" element={<HomeMobile />} />
                   )}
                   {matches.medium && (
-                    <Route path="/cra-doc" element={<HomeTablet />} />
+                    <Route path="/cra-doc" element={<SplashTablet />} />
+                  )}
+                  {matches.medium && (
+                    <Route path="/cra-doc-home" element={<HomeTablet />} />
                   )}
                   {matches.large && (
                     <Route path="/cra-doc" element={<HomeLayout />} />
@@ -113,9 +112,6 @@ function App() {
                 </Routes>
               )}
             </Media>
-            {/* <div className="uniFooter">
-              <Footer />
-            </div> */}
           </div>
         </ThemeContext.Provider>
       </Router>
