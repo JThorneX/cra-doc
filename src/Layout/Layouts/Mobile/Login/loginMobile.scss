@@ -1,15 +1,17 @@
 @import "../../../../styles/theme-variables.scss";
 
 .uniFooter {
-  display: block !important;
+  position: fixed;
 }
-.headerSite {
-  display: block !important;
-}
+// .headerSite {
+//   display: block !important;
+// }
 
 .Login {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   @include themify($themes) {
     color: themed("textColor");
   }
@@ -60,7 +62,6 @@
 .registerRedirect {
   display: flex;
   justify-content: center;
-  position: relative;
   padding-top: 4rem;
 }
 

@@ -1,4 +1,4 @@
-import "./privacyStyles.scss";
+import "./privacy.scss";
 
 const Privacy = () => {
   return <></>;

@@ -1,4 +1,4 @@
-import "./loginStyles.scss";
+import "./login.scss";
 
 const Login = () => {
   return <></>;

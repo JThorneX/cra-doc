@@ -1,4 +1,4 @@
-import "./prescriptionsStyles.scss";
+import "./prescriptions.scss";
 
 const Prescriptions = () => {
   return <></>;

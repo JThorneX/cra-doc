@@ -10,6 +10,8 @@ import {
   BsPrescription,
 } from "react-icons/bs";
 import { TbReportMoney } from "react-icons/tb";
+import Header from "../../Header/header";
+import Footer from "../../Footer/footer";
 import PopUp from "../../Alert/banner";
 import Subheader from "../../Subheader/subheader";
 
@@ -17,6 +19,7 @@ const Home = () => {
   return (
     <div className="home">
       <PopUp />
+      <Header />
       <div className="home-content">
         <div className="doctorImage">
           <Subheader />
@@ -185,6 +188,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

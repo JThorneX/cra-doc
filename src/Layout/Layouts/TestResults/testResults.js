@@ -1,4 +1,4 @@
-import "./testResultsStyles.scss";
+import "./testResults.scss";
 
 const TestResults = () => {
   return <></>;

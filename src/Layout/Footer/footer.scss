@@ -76,15 +76,13 @@
   color: black;
 }
 
-.footerContentMobile {
-  display: none;
-}
 
 //this
 //is
 //media
 //query
 //area
+
 
 @media screen and (max-width: 600px) {
   .footerContent {
@@ -93,8 +91,8 @@
 
   .footerContentMobile {
     display: block;
-    position: fixed;
-    min-width: 100%;
+    // position: fixed;
+    width: 100%;
     background-color: #176f6b;
     padding: 0.5rem;
   }

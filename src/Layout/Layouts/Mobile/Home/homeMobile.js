@@ -1,13 +1,15 @@
 import "./homeMobile.scss";
 import { NavLink } from "react-router-dom";
-import Header from "../../../Header/header";
+import HeaderMobile from "../../../Header/headerMobile";
+import FooterMobile from "../../../Footer/footerMobile";
+
 
 const HomeMobile = () => {
   return (
     <div className="homeMobile">
-      
-      <section>hi this is a test</section>
-      
+      <HeaderMobile />
+      <section>hi this is a mobile test</section>
+      <FooterMobile />
     </div>
   );
 };
