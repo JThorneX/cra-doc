@@ -22,7 +22,7 @@ const FooterTablet = () => {
             </NavLink>
             <NavLink
               exact
-              to="/mychart"
+              to="/my-chart"
               className="footerMyChartIcon footerTabletIconBox"
             >
               <BsClipboardData className="footerTabletIcon" />

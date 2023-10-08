@@ -22,7 +22,7 @@ const FooterMobile = () => {
             </NavLink>
             <NavLink
               exact
-              to="/mychart"
+              to="/my-chart"
               className="footerMyChartIcon footerMobileIconBox"
             >
               <BsClipboardData className="footerMobileIcon" />

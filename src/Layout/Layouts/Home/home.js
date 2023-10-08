@@ -43,7 +43,7 @@ const Home = () => {
         </div>
 
         <Midheader />
-        
+
         <div className="fixed">
           <h1 className="services">Our Services</h1>
 
@@ -112,7 +112,7 @@ const Home = () => {
                 animateOnce={true}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <NavLink className="gridLink" exact to="/myChart">
+                  <NavLink className="gridLink" exact to="/my-chart">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsClipboardData className="gridIcon" /> <br />
@@ -130,7 +130,7 @@ const Home = () => {
                 delay={100}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <NavLink className="gridLink" exact to="/testResults">
+                  <NavLink className="gridLink" exact to="/test-results">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <BsClipboardPulse className="gridIcon" /> <br />
@@ -147,7 +147,7 @@ const Home = () => {
                 delay={200}
               >
                 <div className="col-lg-6 col-12 d-flex justify-content-center">
-                  <NavLink className="gridLink" exact to="/payBill">
+                  <NavLink className="gridLink" exact to="/pay-bill">
                     <div className="card m-6">
                       <div className="px-lg-8 px-4 menuItem">
                         <TbReportMoney className="gridIcon" /> <br />

@@ -6,7 +6,7 @@ function MidheaderMobile() {
     <header className="midheaderMobile">
       <nav className="navbarMidMobile">
         <div className="midheaderBtnsMobile">
-          <NavLink className="btn midBtnMobile" exact to="/aboutUs">
+          <NavLink className="btn midBtnMobile" exact to="/about-us">
             About Us
           </NavLink>
           <br />

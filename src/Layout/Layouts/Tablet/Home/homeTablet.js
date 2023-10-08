@@ -70,7 +70,7 @@ const HomeTablet = () => {
             </div>
             <div className="rowTablet rightSideTablet gx-2 gy-5">
               <div className="col-lg-6 col-12 d-flex justify-content-center cardDivTablet">
-                <NavLink className="gridLinkTablet" exact to="/myChart">
+                <NavLink className="gridLinkTablet" exact to="/my-chart">
                   <div className="cardTablet m-6">
                     <div className="px-lg-8 px-4 menuItemTablet">
                       <BsClipboardData className="gridIconTablet" /> <br />
@@ -80,7 +80,7 @@ const HomeTablet = () => {
                 </NavLink>
               </div>{" "}
               <div className="col-lg-6 col-12 d-flex justify-content-center cardDivTablet">
-                <NavLink className="gridLinkTablet" exact to="/testResults">
+                <NavLink className="gridLinkTablet" exact to="/test-results">
                   <div className="cardTablet m-6">
                     <div className="px-lg-8 px-4 menuItemTablet">
                       <BsClipboardPulse className="gridIconTablet" /> <br />
@@ -90,7 +90,7 @@ const HomeTablet = () => {
                 </NavLink>
               </div>{" "}
               <div className="col-lg-6 col-12 d-flex justify-content-center cardDivTablet">
-                <NavLink className="gridLinkTablet" exact to="/payBill">
+                <NavLink className="gridLinkTablet" exact to="/pay-bill">
                   <div className="cardTablet m-6">
                     <div className="px-lg-8 px-4 menuItemTablet">
                       <BsCreditCard2Back className="gridIconTablet" /> <br />

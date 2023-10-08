@@ -75,7 +75,7 @@ const HomeMobile = () => {
               </div>
               <div className="rowMobile rightSideMobile gx-2 gy-5">
                 <div className="col-lg-6 col-12 d-flex justify-content-center cardDivMobile">
-                  <NavLink className="gridLinkMobile" exact to="/myChart">
+                  <NavLink className="gridLinkMobile" exact to="/my-chart">
                     <div className="cardMobile m-6">
                       <div className="px-lg-8 px-4 menuItemMobile">
                         <BsClipboardData className="gridIconMobile" /> <br />
@@ -85,7 +85,7 @@ const HomeMobile = () => {
                   </NavLink>
                 </div>{" "}
                 <div className="col-lg-6 col-12 d-flex justify-content-center cardDivMobile">
-                  <NavLink className="gridLinkMobile" exact to="/testResults">
+                  <NavLink className="gridLinkMobile" exact to="/test-results">
                     <div className="cardMobile m-6">
                       <div className="px-lg-8 px-4 menuItemMobile">
                         <BsClipboardPulse className="gridIconMobile" /> <br />
@@ -97,7 +97,7 @@ const HomeMobile = () => {
                   </NavLink>
                 </div>{" "}
                 <div className="col-lg-6 col-12 d-flex justify-content-center cardDivMobile">
-                  <NavLink className="gridLinkMobile" exact to="/payBill">
+                  <NavLink className="gridLinkMobile" exact to="/pay-bill">
                     <div className="cardMobile m-6">
                       <div className="px-lg-8 px-4 menuItemMobile">
                         <BsCreditCard2Back className="gridIconMobile" /> <br />
