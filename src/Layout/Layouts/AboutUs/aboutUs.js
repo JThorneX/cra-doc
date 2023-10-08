@@ -19,6 +19,7 @@ const AboutUs = () => {
         <div className="providersWrapper">
           <h2>Meet our providers</h2>
           <div className="accordion" id="accordionProviders">
+            {/* data-bs-parent ^^  */}
             {/* SIMS ACCORDION START  */}
             <div className="accordion-item">
               <h2 className="accordion-header">
@@ -27,7 +28,7 @@ const AboutUs = () => {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#Sims"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="Sims"
                 >
                   Robert M. Sims II M.D.
@@ -35,7 +36,7 @@ const AboutUs = () => {
               </h2>
               <div
                 id="Sims"
-                className="accordion-collapse collapse show"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionProviders"
               >
                 <div className="accordion-body">
@@ -69,14 +70,14 @@ const AboutUs = () => {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#Keller"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="Keller"
                 >
                   Lisa G. Keller PA-C
                 </button>
               </h2>
               <div
-                id="Sims"
+                id="Keller"
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordionProviders"
               >
@@ -102,7 +103,7 @@ const AboutUs = () => {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#Hildebrand"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="Hildebrand"
                 >
                   Cindy A. Hildebrand PA-C
@@ -110,7 +111,7 @@ const AboutUs = () => {
               </h2>
               <div
                 id="Hildebrand"
-                className="accordion-collapse collapse show"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionProviders"
               >
                 <div className="accordion-body">
@@ -136,7 +137,7 @@ const AboutUs = () => {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#Morgan"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="Morgan"
                 >
                   Lara E. Morgan PA-C
@@ -144,7 +145,7 @@ const AboutUs = () => {
               </h2>
               <div
                 id="Morgan"
-                className="accordion-collapse collapse show"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionProviders"
               >
                 <div className="accordion-body">
@@ -176,7 +177,7 @@ const AboutUs = () => {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#Tim"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="Tim"
                 >
                   Lena Tim PA-C
@@ -184,7 +185,7 @@ const AboutUs = () => {
               </h2>
               <div
                 id="Tim"
-                className="accordion-collapse collapse show"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionProviders"
               >
                 <div className="accordion-body">
@@ -210,7 +211,7 @@ const AboutUs = () => {
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#Whitescarver"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="Whitescarver"
                 >
                   Annette L. Whitescarver PA-C
@@ -218,7 +219,7 @@ const AboutUs = () => {
               </h2>
               <div
                 id="Whitescarver"
-                className="accordion-collapse collapse show"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionProviders"
               >
                 <div className="accordion-body">
