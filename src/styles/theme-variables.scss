@@ -20,13 +20,8 @@ $themes: (
     midHover: #e78996,
     gridBoxes: #c8c7c7c1,
     gridText: #1e6966,
-    gradient:
-      radial-gradient(
-        
-        #2baea7 0%,
-        #419d97 37%,
-        #eaeaea 100%
-      ),
+    // gradient: linear-gradient(#fbf2ee 0%, #2baea7 50%, #b4656f 100%),
+    gradient: radial-gradient(#2baea7 0%, #296662 37%, #fbf2ee 100%),
   ),
   dark: (
     bodyBackgroundColor: #282828,
@@ -49,13 +44,8 @@ $themes: (
     midHover: #b46973,
     gridBoxes: #373737bb,
     gridText: #e3909b,
-    gradient:
-      radial-gradient(
-        
-        #2baea7 0%,
-        #296662 37%,
-        #282828 100%
-      ),
+    gradient: radial-gradient(#2baea7 0%, #296662 37%, #282828 100%),
+    // gradient: linear-gradient(#282828 0%, #2baea7 50%, #b4656f 100%),
   ),
 );
 
