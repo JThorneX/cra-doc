@@ -1,8 +1,16 @@
 @import "../../styles/theme-variables.scss";
 
+.footerTablet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
 .footerContentTablet {
   display: block;
-  position: fixed;
   width: 100%;
   background-color: #176f6b;
   padding: 0.5rem;

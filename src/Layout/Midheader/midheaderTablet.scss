@@ -1,0 +1,68 @@
+@import "../../styles/theme-variables.scss";
+
+.midheaderTablet {
+  @include themify($themes) {
+    background: themed("midheader");
+    color: themed("textColor");
+  }
+  z-index: 1;
+  width: 100%;
+  max-height: 8rem;
+}
+
+.navbarTablet {
+  max-height: 100%;
+  margin: 1rem;
+}
+
+.midheaderBtnsTablet {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.midBtnTablet {
+  display: flex;
+  line-height: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 10rem;
+  max-height: 3rem;
+  align-items: center;
+  @include themify($themes) {
+    color: themed("midText");
+    background-color: themed("midBtn");
+  }
+}
+
+.midBtnTablet:hover {
+  @include themify($themes) {
+    background-color: themed("midHover");
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .midheaderTablet {
+    max-height: 15rem;
+  }
+
+  .navbarTablet {
+    margin: 0;
+  }
+  .midheaderBtnsTablet {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .midBtnTablet {
+    display: flex;
+    padding: 1rem;
+    width: 10rem;
+    max-height: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

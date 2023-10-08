@@ -1,7 +1,10 @@
 @import "../../styles/theme-variables.scss";
 
 .headerTablet {
-  display: block;
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .headerLogoSection {
@@ -10,26 +13,53 @@
 }
 
 .headerTabletWrapper {
-  width: 100%;
+  width: 90%;
   padding-top: 1rem;
   padding-bottom: 5rem;
   z-index: 99;
+  display: flex;
 
   @include themify($themes) {
     background: themed("headerBackground");
+    color: themed("textColor");
   }
+
   .headerTabletContent {
-    width: 100%;
-    margin: 0 auto;
+    width: 65%;
+    margin: 0;
     display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+    .headerTabletTitle {
+      width: 90%;
+      display: flex;
+    }
+    .headerAddress {
+      width: 70%;
+      text-align: center;
+      font-size: 1.25rem;
+    }
   }
+}
+
+.headerTabletRight {
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+.addressText,
+.headerTabletRight {
+  font-size: 18px;
 }
 
 .siteTitleTablet {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 70%;
+  max-width: 90%;
 
   h1 {
     @include themify($themes) {
@@ -41,4 +71,26 @@
 .headerLogoIconTablet {
   width: 6rem;
   height: 6rem;
+}
+
+@media screen and (max-width: 750px) {
+  .addressText,
+  .headerTabletRight {
+    font-size: 16px;
+  }
+
+  .titleTitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .addressText,
+  .headerTabletRight {
+    font-size: 14px;
+  }
+
+  .titleTitle {
+    font-size: 24px;
+  }
 }
