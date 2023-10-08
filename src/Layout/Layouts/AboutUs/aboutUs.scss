@@ -14,16 +14,29 @@
   }
 }
 
-.dropdownBtn {
-  width: 70%;
-  background-color: blue;
+.providersWrapper {
+  background: rgb(43, 174, 167);
+  @include themify($themes) {
+    background: themed("gradient");
+  }
+  padding-top: 2rem;
+
+  h2 {
+    @include themify($themes) {
+      color: themed("textColor");
+    }
+  }
 }
 
-.providersWrapper {
-  background-color: green;
+#accordionProviders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
 }
 
 .providerItem {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,10 +48,53 @@
   align-items: center;
 }
 
+.accordionBody {
+  text-align: left;
+  @include themify($themes) {
+    background-color: themed("headerBackground");
+    color: themed("textColor");
+  }
+}
+
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.accordionBtn {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include themify($themes) {
+    background-color: themed("footerBackgroundColor");
+    color: themed("textColor");
+  }
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.accordion-button::after {
+  color: green;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #36cac3;
+}
+.accordionText {
+  font-size: 1.3rem;
+}
+
 .headshotImg {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   margin-right: 3rem;
-  border-radius: 20rem 20rem 20rem 20rem;
+  border-radius: 0 50% 50% 50% !important;
+}
+
+.imgWrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 50% 50% 50% !important;
 }
