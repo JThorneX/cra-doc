@@ -3,18 +3,21 @@ import { NavLink } from "react-router-dom";
 
 function MidheaderMobile() {
   return (
-    <header className="midheader">
-      <nav className="navbar">
-        <div className="midheaderBtns">
-          <NavLink className="btn midBtn" exact to="/aboutUs">
+    <header className="midheaderMobile">
+      <nav className="navbarMidMobile">
+        <div className="midheaderBtnsMobile">
+          <NavLink className="btn midBtnMobile" exact to="/aboutUs">
             About Us
           </NavLink>
           <br />
-          <a className="btn midBtn" href="http://www.connectforhealthco.com/">
+          <a
+            className="btn midBtnMobile"
+            href="http://www.connectforhealthco.com/"
+          >
             Connect for Health Colorado
           </a>{" "}
           <br />
-          <a className="btn midBtn" href="https://www.medicare.gov/">
+          <a className="btn midBtnMobile" href="https://www.medicare.gov/">
             Medicare
           </a>
         </div>

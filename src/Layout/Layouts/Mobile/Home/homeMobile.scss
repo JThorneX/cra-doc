@@ -31,7 +31,10 @@
   width: 100%;
   background: url("../../../../assets/images/colorado\ rockies.avif") no-repeat
     top 15% left 50%;
-  background-size: 600px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .missionOverlayMobile {
@@ -39,24 +42,86 @@
   position: relative;
 }
 
-.midheader {
-    @include themify($themes) {
-      background: themed("midheader");
-      color: themed("textColor");
-    }
-    z-index: 1;
-    width: 100%;
+.fixedMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding-bottom: 8rem;
+}
+
+.servicesMobile {
+  max-height: 10rem;
+  width: 100%;
+  font-weight: 500;
+  margin: 0rem !important;
+  padding: 2rem !important;
+  @include themify($themes) {
+    background: themed("subHead");
+    color: themed("subText");
   }
-  
-  .midBtn:hover {
+}
+
+.homeMenuMobile {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardDivMobile {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.cardMobile {
+  display: flex;
+  align-items: center;
+  @include themify($themes) {
+    background-color: themed("gridBoxes");
+  }
+  height: 6rem;
+  width: 100%;
+  font-size: 28px;
+  border: 1px solid rgb(90, 90, 90);
+}
+
+.leftSideMobile,
+.rightSideMobile {
+  width: 100%;
+  height: 100%;
+}
+
+.menuItemMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .gridIconMobile {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 0.5rem;
+  }
+
+  .gridTextMobile {
+    width: 80%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.gridLinkMobile {
+  text-decoration: none;
+  font-weight: 500;
+  width: 100%;
+
+  .cardMobile {
     @include themify($themes) {
-      background-color: themed("midHover");
+      color: themed("gridText");
     }
   }
-  
-  .midBtn {
-    @include themify($themes) {
-      color: themed("midText");
-      background-color: themed("midBtn");
-    }
-  }
+}

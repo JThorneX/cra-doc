@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 function Subheader() {
   return (
     <header className="subheader">
-      <div className="banner w-lg-75 mx-lg-auto position-relative px-lg-3 py-4 shadow-5">
-        <nav className="navbar navbar-expand-lg p-0">
+      <div className="bannerSub w-lg-75 mx-lg-auto position-relative px-lg-3 py-4 shadow-5">
+        <nav className="navbarSub navbar-expand-lg p-0">
           <div className="navBtns">
             <div className="navbar-left">
               <a

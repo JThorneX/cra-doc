@@ -1,6 +1,6 @@
 @import "../../styles/theme-variables.scss";
 
-.midheader {
+.midheaderMobile {
   @include themify($themes) {
     background: themed("midheader");
     color: themed("textColor");
@@ -10,12 +10,12 @@
   max-height: 8rem;
 }
 
-.navbar {
+.navbarMidMobile {
   max-height: 100%;
   margin: 1rem;
 }
 
-.midheaderBtns {
+.midheaderBtnsMobile {
   width: 100%;
 
   display: flex;
@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.midBtn {
+.midBtnMobile {
   display: flex;
   line-height: 1rem;
   padding-top: 1rem;
@@ -37,27 +37,27 @@
   }
 }
 
-.midBtn:hover {
+.midBtnMobile:hover {
   @include themify($themes) {
     background-color: themed("midHover");
   }
 }
 
 @media screen and (max-width: 400px) {
-  .midheader {
+  .midheaderMobile {
     max-height: 15rem;
   }
 
-  .navbar {
+  .navbarMidMobile {
     margin: 0;
   }
-  .midheaderBtns {
+  .midheaderBtnsMobile {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  .midBtn {
+  .midBtnMobile {
     display: flex;
     padding: 1rem;
     width: 10rem;

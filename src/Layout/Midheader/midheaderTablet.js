@@ -3,18 +3,21 @@ import { NavLink } from "react-router-dom";
 
 function MidheaderTablet() {
   return (
-    <header className="midheader">
-      <nav className="navbar">
-        <div className="midheaderBtns">
-          <NavLink className="btn midBtn" exact to="/aboutUs">
+    <header className="midheaderTablet">
+      <nav className="navbarTablet">
+        <div className="midheaderBtnsTablet">
+          <NavLink className="btn midBtnTablet" exact to="/aboutUs">
             About Us
           </NavLink>
           <br />
-          <a className="btn midBtn" href="http://www.connectforhealthco.com/">
+          <a
+            className="btn midBtnTablet"
+            href="http://www.connectforhealthco.com/"
+          >
             Connect for Health Colorado
           </a>{" "}
           <br />
-          <a className="btn midBtn" href="https://www.medicare.gov/">
+          <a className="btn midBtnTablet" href="https://www.medicare.gov/">
             Medicare
           </a>
         </div>

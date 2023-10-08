@@ -8,7 +8,7 @@ import { AiOutlineHome } from "react-icons/ai";
 
 const FooterTablet = () => {
   return (
-    <div className="footer">
+    <div className="footerTablet">
       <div className="footerContentTablet">
         <div className="footerContentTabletWrapper">
           <section className="footerIconLinks">

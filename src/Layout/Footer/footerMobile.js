@@ -8,7 +8,7 @@ import { AiOutlineHome } from "react-icons/ai";
 
 const FooterMobile = () => {
   return (
-    <div className="footer">
+    <div className="footerMobile">
       <div className="footerContentMobile">
         <div className="footerContentMobileWrapper">
           <section className="footerIconLinks">
