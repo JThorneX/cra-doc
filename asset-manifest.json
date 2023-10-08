@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/cra-doc/static/css/main.fcc1f5fd.css",
-    "main.js": "/cra-doc/static/js/main.1ca4ded4.js",
+    "main.css": "/cra-doc/static/css/main.255a884b.css",
+    "main.js": "/cra-doc/static/js/main.1351ffcd.js",
+    "static/media/colorado rockies.avif": "/cra-doc/static/media/colorado rockies.414738c58c804d8afc16.avif",
     "static/media/doctor-patient-ipad.avif": "/cra-doc/static/media/doctor-patient-ipad.4367305204995b7175e2.avif",
     "static/media/medical-building.avif": "/cra-doc/static/media/medical-building.f6909f8b8729dcdb0bb8.avif",
     "static/media/tim.jpg": "/cra-doc/static/media/tim.cde3c8afbaa271f94a48.jpg",
@@ -15,11 +16,11 @@
     "static/media/fcsw dark logo.svg": "/cra-doc/static/media/fcsw dark logo.213de07af2ced74a7dc31a6b5cb972ac.svg",
     "index.html": "/cra-doc/index.html",
     "static/media/icon-arrow-down.svg": "/cra-doc/static/media/icon-arrow-down.852fa301a0e795e07c59.svg",
-    "main.fcc1f5fd.css.map": "/cra-doc/static/css/main.fcc1f5fd.css.map",
-    "main.1ca4ded4.js.map": "/cra-doc/static/js/main.1ca4ded4.js.map"
+    "main.255a884b.css.map": "/cra-doc/static/css/main.255a884b.css.map",
+    "main.1351ffcd.js.map": "/cra-doc/static/js/main.1351ffcd.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcc1f5fd.css",
-    "static/js/main.1ca4ded4.js"
+    "static/css/main.255a884b.css",
+    "static/js/main.1351ffcd.js"
   ]
 }
