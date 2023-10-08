@@ -17,7 +17,6 @@ const HomeTablet = () => {
   return (
     <div className="homeTablet">
       <HeaderTablet />
-      <MidheaderTablet />
       <div className="homeContentTablet">
         <div className="tabletMissionImage">
           <div className="missionTextMobile missionOverlayTablet">

@@ -12,13 +12,17 @@ const FooterMobile = () => {
       <div className="footerContentMobile">
         <div className="footerContentMobileWrapper">
           <section className="footerIconLinks">
-            <NavLink exact to="" className="footerHomeIcon footerMobileIconBox">
+            <NavLink
+              exact
+              to="/cra-doc-home"
+              className="footerHomeIcon footerMobileIconBox"
+            >
               <AiOutlineHome className="footerMobileIcon" />
               <h6>Home</h6>
             </NavLink>
             <NavLink
               exact
-              to=""
+              to="/mychart"
               className="footerMyChartIcon footerMobileIconBox"
             >
               <BsClipboardData className="footerMobileIcon" />
@@ -26,7 +30,7 @@ const FooterMobile = () => {
             </NavLink>
             <NavLink
               exact
-              to=""
+              to="/user-settings"
               className="footerSettingsIcon footerMobileIconBox"
             >
               <IoSettingsOutline className="footerMobileIcon" />
@@ -34,7 +38,7 @@ const FooterMobile = () => {
             </NavLink>
             <NavLink
               exact
-              to=""
+              to="/logout"
               className="footerLogoutIcon footerMobileIconBox"
             >
               <IoLogOutOutline className="footerMobileIcon" />
