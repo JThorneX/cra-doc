@@ -21,10 +21,6 @@ The doctor's office I use has one of the worst website's I've seen in the last d
 
 [See the website.](https://jthornex.github.io/cra-doc/)
 
-### Credit
-
-Various libraries and references that I will list out once most of the site is finished.
-
 ### License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
