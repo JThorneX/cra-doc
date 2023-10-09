@@ -7,13 +7,14 @@
   left: 0;
   bottom: 0;
   position: fixed;
+  z-index: 5;
 }
 
 .footerContentMobile {
   display: block;
   width: 100%;
   background-color: #176f6b;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .footerIconLinks {
@@ -26,15 +27,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  h5 {
+  text-decoration: none;
+  h6 {
     text-align: center;
-    text-decoration: none;
     color: rgb(211, 211, 211);
   }
 }
 
 .footerMobileIcon {
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   color: rgb(211, 211, 211);
 }

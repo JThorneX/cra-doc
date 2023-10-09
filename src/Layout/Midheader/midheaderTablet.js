@@ -6,7 +6,7 @@ function MidheaderTablet() {
     <header className="midheaderTablet">
       <nav className="navbarTablet">
         <div className="midheaderBtnsTablet">
-          <NavLink className="btn midBtnTablet" exact to="/aboutUs">
+          <NavLink className="btn midBtnTablet" exact to="/about-us">
             About Us
           </NavLink>
           <br />

@@ -12,13 +12,17 @@ const FooterTablet = () => {
       <div className="footerContentTablet">
         <div className="footerContentTabletWrapper">
           <section className="footerIconLinks">
-            <NavLink exact to="" className="footerHomeIcon footerTabletIconBox">
+            <NavLink
+              exact
+              to="/cra-doc-home"
+              className="footerHomeIcon footerTabletIconBox"
+            >
               <AiOutlineHome className="footerTabletIcon" />
               <h6>Home</h6>
             </NavLink>
             <NavLink
               exact
-              to=""
+              to="/my-chart"
               className="footerMyChartIcon footerTabletIconBox"
             >
               <BsClipboardData className="footerTabletIcon" />
@@ -26,7 +30,7 @@ const FooterTablet = () => {
             </NavLink>
             <NavLink
               exact
-              to=""
+              to="/user-settings"
               className="footerSettingsIcon footerTabletIconBox"
             >
               <IoSettingsOutline className="footerTabletIcon" />
@@ -34,7 +38,7 @@ const FooterTablet = () => {
             </NavLink>
             <NavLink
               exact
-              to=""
+              to="/logout"
               className="footerLogoutIcon footerTabletIconBox"
             >
               <IoLogOutOutline className="footerTabletIcon" />

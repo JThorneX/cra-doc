@@ -52,12 +52,12 @@ const Footer = () => {
         <div className="copyrightWrapper d-flex">
           <div className="copyrightBackground d-flex pb-4 pt-4">
             <div className="privacyDisclaimer d-flex justify-content-evenly col-md-6 fs-5">
-              <a href="https://www.google.com" className="disclaimerLink">
+              <NavLink exact to="/privacy" className="disclaimerLink">
                 Privacy Policy
-              </a>
-              <a href="https://www.google.com" className="disclaimerLink">
+              </NavLink>
+              <NavLink exact to="/disclaimer" className="disclaimerLink">
                 Disclaimer
-              </a>
+              </NavLink>
             </div>
             <div className="copyrightInfo d-flex col-md-6 justify-content-center fs-5">
               &copy; Family Care Southwest {new Date().getFullYear()}
@@ -66,40 +66,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footerContentMobile">
-        <div className="footerContentMobileWrapper">
-          <section className="footerIconLinks">
-            <NavLink exact to="" className="footerHomeIcon footerMobileIconBox">
-              <AiOutlineHome className="footerMobileIcon" />
-              <h6>Home</h6>
-            </NavLink>
-            <NavLink
-              exact
-              to=""
-              className="footerMyChartIcon footerMobileIconBox"
-            >
-              <BsClipboardData className="footerMobileIcon" />
-              <h6>My Chart</h6>
-            </NavLink>
-            <NavLink
-              exact
-              to=""
-              className="footerSettingsIcon footerMobileIconBox"
-            >
-              <IoSettingsOutline className="footerMobileIcon" />
-              <h6>My Settings</h6>
-            </NavLink>
-            <NavLink
-              exact
-              to=""
-              className="footerLogoutIcon footerMobileIconBox"
-            >
-              <IoLogOutOutline className="footerMobileIcon" />
-              <h6>Logout</h6>
-            </NavLink>
-          </section>
-        </div>
-      </div>
+      
     </div>
   );
 };

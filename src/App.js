@@ -83,8 +83,8 @@ function App() {
             <Media
               queries={{
                 small: "(max-width: 600px)",
-                medium: "(min-width:600px) and (max-width:1200px)",
-                large: "(min-width: 1200px)",
+                medium: "(min-width:600px) and (max-width:1080px)",
+                large: "(min-width: 1080px)",
               }}
             >
               {(matches) => (
@@ -197,15 +197,15 @@ function App() {
                   */}
 
                   {matches.small && (
-                    <Route path="/myChart" element={<MyChartMobile />} />
+                    <Route path="/my-chart" element={<MyChartMobile />} />
                   )}
 
                   {matches.medium && (
-                    <Route path="/myChart" element={<MyChartTablet />} />
+                    <Route path="/my-chart" element={<MyChartTablet />} />
                   )}
 
                   {matches.large && (
-                    <Route path="/myChart" element={<MyChart />} />
+                    <Route path="/my-chart" element={<MyChart />} />
                   )}
 
                   {/* Pay Bill Routes  
@@ -213,15 +213,15 @@ function App() {
                   */}
 
                   {matches.small && (
-                    <Route path="/payBill" element={<PayBillMobile />} />
+                    <Route path="/pay-bill" element={<PayBillMobile />} />
                   )}
 
                   {matches.medium && (
-                    <Route path="/payBill" element={<PayBillTablet />} />
+                    <Route path="/pay-bill" element={<PayBillTablet />} />
                   )}
 
                   {matches.large && (
-                    <Route path="/payBill" element={<PayBill />} />
+                    <Route path="/pay-bill" element={<PayBill />} />
                   )}
 
                   {/* Prescription Routes 
@@ -251,20 +251,20 @@ function App() {
                   */}
                   {matches.small && (
                     <Route
-                      path="/testResults"
+                      path="/test-results"
                       element={<TestResultsMobile />}
                     />
                   )}
 
                   {matches.medium && (
                     <Route
-                      path="/testResults"
+                      path="/test-results"
                       element={<TestResultsTablet />}
                     />
                   )}
 
                   {matches.large && (
-                    <Route path="/testResults" element={<TestResults />} />
+                    <Route path="/test-results" element={<TestResults />} />
                   )}
 
                   {/* Messages Routes

@@ -1,0 +1,103 @@
+@import "../../../../styles/theme-variables.scss";
+
+.aboutUsMobile {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @include themify($themes) {
+    background-color: themed("bodyBackgroundColor");
+  }
+
+  .aboutUsWrapperMobile {
+    height: 100%;
+  }
+}
+
+.providersWrapperMobile {
+  background: rgb(43, 174, 167);
+  @include themify($themes) {
+    background: themed("headerBackground");
+  }
+  padding-top: 2rem;
+
+  h2 {
+    @include themify($themes) {
+      color: themed("textColor");
+    }
+  }
+}
+
+#accordionProvidersMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+
+.providerItemMobile {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.providerGroupMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordionBodyMobile {
+  text-align: left;
+  @include themify($themes) {
+    background-color: themed("headerBackground");
+    color: themed("textColor");
+  }
+}
+
+.cardWrapperMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.accordionBtnMobile {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include themify($themes) {
+    background-color: themed("footerBackgroundColor");
+    color: themed("textColor");
+  }
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+// .accordion-button::after {
+//   color: green;
+// }
+
+.accordion-button:not(.collapsed) {
+  color: #36cac3;
+}
+
+.accordionTextMobile {
+  font-size: 1.3rem;
+}
+
+.headshotImgMobile {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 3rem;
+  border-radius: 0 50% 50% 50% !important;
+}
+
+.imgWrapperMobile {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 50% 50% 50% !important;
+}

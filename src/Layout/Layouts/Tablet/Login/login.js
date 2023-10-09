@@ -20,20 +20,24 @@ const LoginTablet = () => {
   return (
     <>
       <HeaderTablet />
-      <div className="Login px-3">
-        <div className="backBtn">
-          <button className="goBack">
-            <NavLink exact to="/cra-doc/" className="goBackText">
+      <div className="LoginTablet px-3">
+        <div className="backBtnTablet">
+          <button className="goBackTablet">
+            <NavLink exact to="/cra-doc/" className="goBackTextTablet">
               Go back
             </NavLink>
           </button>
         </div>
-        <div className="loginHeader">
+        <div className="loginHeaderTablet">
           <h2>Welcome back!</h2>
         </div>
-        <div className="loginForm">
+        <div className="loginFormTablet">
           <Form onSubmit={handleSubmit}>
-            <Form.Group size="lg" controlId="name" className="loginFormLine">
+            <Form.Group
+              size="lg"
+              controlId="name"
+              className="loginFormLineTablet"
+            >
               <Form.Label>Full Name</Form.Label>
               <Form.Control
                 autoFocus
@@ -42,7 +46,11 @@ const LoginTablet = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
-            <Form.Group size="lg" controlId="email" className="loginFormLine">
+            <Form.Group
+              size="lg"
+              controlId="email"
+              className="loginFormLineTablet"
+            >
               <Form.Label>Email</Form.Label>
               <Form.Control
                 type="email"
@@ -53,7 +61,7 @@ const LoginTablet = () => {
             <Form.Group
               size="lg"
               controlId="password"
-              className="loginFormLine"
+              className="loginFormLineTablet"
             >
               <Form.Label>Password</Form.Label>
               <Form.Control
@@ -66,30 +74,30 @@ const LoginTablet = () => {
             <Button
               block
               size="lg"
-              className="loginBtn"
+              className="loginBtnTablet"
               type="submit"
               disabled={!validateForm()}
             >
-              <NavLink exact to="/cra-doc-home" className="loginButton">
+              <NavLink exact to="/cra-doc-home" className="loginButtonTablet">
                 Login
               </NavLink>
             </Button>
           </Form>
         </div>
-        <div className="forgetPass">
+        <div className="forgetPassTablet">
           <p>
             Forget your password or username?
             <br />{" "}
-            <NavLink exact to="/unfortunate" className="nonBtn">
+            <NavLink exact to="/unfortunateTablet" className="nonBtnTablet">
               Reset here.
             </NavLink>
           </p>
         </div>
-        <div className="registerRedirect">
+        <div className="registerRedirectTablet">
           <p>
             Don't have an account?
             <br />
-            <NavLink exact to="/unfortunate" className="nonBtn">
+            <NavLink exact to="/unfortunateTablet" className="nonBtnTablet">
               Register here.
             </NavLink>
           </p>
