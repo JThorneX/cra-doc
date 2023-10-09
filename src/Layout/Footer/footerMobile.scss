@@ -1,6 +1,6 @@
 @import "../../styles/theme-variables.scss";
 
-.footer {
+.footerMobile {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,7 +8,7 @@
   bottom: 0;
 }
 
-.footerContent {
+.footerContentMobile {
   @include themify($themes) {
     background-color: themed("footerBG");
     color: themed("textColor");
@@ -17,36 +17,60 @@
 
 // pb-5 m-5
 
-.logoInfo {
+.logoInfoMobile {
   display: flex;
   text-align: center;
+  margin-bottom: 1rem;
+
   @include themify($themes) {
     background-color: themed("footerBackgroundColor");
   }
 }
 
-// .logo-section {
-// }
+.logoIconMobile {
+  height: 5rem;
+  width: 5rem;
+}
 
-.headerTitle {
+.logoMarginMobile {
+  margin: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.headerTitleMobile {
   text-decoration: none;
+
   font-weight: bold;
   @include themify($themes) {
     color: themed("textColor");
   }
 }
 
-.locationInfo {
+.firstRowMobile {
+  padding-bottom: 2rem;
+}
+
+.locationInfoMobile {
+  text-align: start;
+  margin-left: 0.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 16px;
+}
+
+.headerAddressMobile {
   text-align: start;
 }
 
-.badgeText {
+.badgeTextMobile {
   min-height: 6.25rem;
   width: 25rem;
-  margin-right: 0.5rem;
+  font-size: 16px;
+  margin-left: 0.5rem;
+  text-align: start;
 }
 
-.badgeNCQA {
+.badgeNCQAMobile {
   min-height: 9rem;
   min-width: 9rem;
   margin-right: 1rem;
@@ -54,26 +78,33 @@
   background-repeat: no-repeat;
 }
 
-.copyrightBackground {
+.copyrightWrapperMobile {
+  background-color: #289191;
+  color: black;
+  font-weight: 400;
+  padding-bottom: 5rem;
+}
+
+.copyrightBackgroundMobile {
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.copyrightWrapper {
-  background-color: #289191;
-  color: black;
-  font-weight: 500;
-}
-
-.privacyDisclaimer {
+.privacyDisclaimerMobile {
   width: 50%;
 }
 
-.disclaimerLink {
+.disclaimerLinkMobile {
   text-decoration: none;
   cursor: pointer;
   color: black;
+  font-size: 12px;
+}
+
+.copyrightInfoMobile {
+  font-size: 12px;
+  max-width: 10rem;
 }
 
 //this
