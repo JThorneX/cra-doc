@@ -1,6 +1,15 @@
 @import "../../../../styles/theme-variables.scss";
 
+.splashTablet {
+  @include themify($themes) {
+    color: themed("textColor");
+    background-color: themed("footerBG");
+  }
+  height: 100vh;
+}
+
 .splashTabletWrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

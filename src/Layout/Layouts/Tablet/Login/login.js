@@ -100,7 +100,7 @@ const LoginTablet = () => {
           <p>
             Don't have an account?
             <br />
-            <NavLink exact to="/unfortunateTablet" className="nonBtnTablet">
+            <NavLink exact to="/register" className="nonBtnTablet">
               Register here.
             </NavLink>
           </p>

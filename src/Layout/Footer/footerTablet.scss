@@ -1,41 +1,83 @@
 @import "../../styles/theme-variables.scss";
 
-.footerTablet {
+.footer {
   display: flex;
   flex-direction: column;
   width: 100%;
   left: 0;
   bottom: 0;
-  position: fixed;
-  z-index: 7;
 }
 
-.footerContentTablet {
-  display: block;
-  width: 100%;
-  background-color: #176f6b;
-  padding-top: 0.5rem;
-}
-
-.footerIconLinks {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footerTabletIconBox {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  h6 {
-    text-align: center;
-    color: rgb(211, 211, 211);
+.footerContent {
+  @include themify($themes) {
+    background-color: themed("footerBG");
+    color: themed("textColor");
   }
 }
 
-.footerTabletIcon {
-  height: 2.5rem;
-  width: 2.5rem;
-  color: rgb(211, 211, 211);
+// pb-5 m-5
+
+.logoInfo {
+  display: flex;
+  text-align: center;
+  @include themify($themes) {
+    background-color: themed("footerBackgroundColor");
+  }
 }
+
+// .logo-section {
+// }
+
+.headerTitle {
+  text-decoration: none;
+  font-weight: bold;
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+}
+
+.locationInfo {
+  text-align: start;
+}
+
+.badgeText {
+  min-height: 6.25rem;
+  width: 25rem;
+  margin-right: 0.5rem;
+}
+
+.badgeNCQA {
+  min-height: 9rem;
+  min-width: 9rem;
+  margin-right: 1rem;
+  background: url("../../assets/images/ncqa\ badge.svg");
+  background-repeat: no-repeat;
+}
+
+.copyrightBackground {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyrightWrapper {
+  background-color: #289191;
+  color: black;
+  font-weight: 500;
+}
+
+.privacyDisclaimer {
+  width: 50%;
+}
+
+.disclaimerLink {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+//this
+//is
+//media
+//query
+//area

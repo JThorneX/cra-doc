@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import HeaderTablet from "../../../Header/headerTablet";
-import FooterTablet from "../../../Footer/footerTablet";
-
 
 const RegisterTablet = () => {
   const [pin, setPin] = useState("");
@@ -28,7 +26,7 @@ const RegisterTablet = () => {
   return (
     <>
       <HeaderTablet />
-   
+
       <div className="RegisterTablet px-3">
         <div className="backBtnTablet">
           <button className="goBackTablet">
@@ -172,7 +170,6 @@ const RegisterTablet = () => {
           </p>
         </div>
       </div>
-      <FooterTablet />
     </>
   );
 };
