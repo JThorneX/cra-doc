@@ -44,6 +44,7 @@ const LoginTablet = () => {
                 type="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                className="loginLineTablet"
               />
             </Form.Group>
             <Form.Group
@@ -56,6 +57,7 @@ const LoginTablet = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className="loginLineTablet"
               />
             </Form.Group>
             <Form.Group
@@ -68,6 +70,7 @@ const LoginTablet = () => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                className="loginLineTablet"
               />
             </Form.Group>
 

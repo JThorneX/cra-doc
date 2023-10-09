@@ -1,0 +1,118 @@
+@import "../../../../styles/theme-variables.scss";
+
+.uniFooter {
+  position: fixed;
+}
+// .headerSite {
+//   display: block !important;
+// }
+
+.RegisterTablet {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6rem;
+  @include themify($themes) {
+    color: themed("textColor");
+    background-color: themed("footerBG");
+  }
+}
+
+.registerHeaderTablet {
+  padding: 2rem;
+}
+
+.registerBtnTablet {
+  border: 0;
+  margin: 1.5rem;
+  @include themify($themes) {
+    background: themed("subheaderBtn");
+  }
+
+  .registerButtonTablet {
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("textColor");
+    }
+  }
+}
+
+.backBtnTablet {
+  position: relative;
+  padding-top: 3rem;
+  top: 0;
+  width: 80%;
+  display: flex;
+
+  .goBackTablet {
+    padding: 0.5rem;
+    font-size: 18px;
+    border: none;
+    @include themify($themes) {
+      background: themed("subheaderBtn");
+    }
+    .goBackTextTablet {
+      text-decoration: none;
+      @include themify($themes) {
+        color: themed("textColor");
+      }
+    }
+  }
+}
+
+.registerAlertTablet {
+  width: 60%;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 15px !important;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+    box-shadow: themed("floatingBgShadow");
+  }
+}
+
+.registerRedirectTablet {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.registerFormTablet {
+  width: 60%;
+  border-radius: 15px !important;
+  padding: 2rem;
+  margin: 1rem;
+  margin-bottom: 4rem;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+    box-shadow: themed("floatingBgShadow");
+  }
+}
+
+.registerFormLineTablet {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+  }
+}
+
+.registerLineTablet {
+  @include themify($themes) {
+    background-color: themed("formLine");
+    border: themed("formLineBorder");
+  }
+}
+
+.forgetPassTablet {
+  padding-top: 1rem;
+}
+
+.nonBtnTablet {
+  text-decoration: none;
+  color: #2d8984;
+}

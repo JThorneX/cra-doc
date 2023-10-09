@@ -8,13 +8,14 @@
 // }
 
 .LoginTablet {
-  width: 100%;
+  max-width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   @include themify($themes) {
     color: themed("textColor");
+    background-color: themed("footerBG");
   }
 }
 
@@ -31,7 +32,7 @@
   .loginButtonTablet {
     text-decoration: none;
     @include themify($themes) {
-      color: themed("subText");
+      color: themed("textColor");
     }
   }
 }
@@ -39,6 +40,7 @@
 .backBtnTablet {
   position: relative;
   top: 0;
+  width: 80%;
   display: flex;
 
   .goBackTablet {
@@ -50,7 +52,7 @@
     .goBackTextTablet {
       text-decoration: none;
       @include themify($themes) {
-        color: themed("subText");
+        color: themed("textColor");
       }
     }
   }
@@ -66,15 +68,33 @@
   padding-top: 4rem;
 }
 
+.loginFormTablet {
+  width: 80%;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+    box-shadow: themed("floatingBgShadow");
+  }
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 2.5rem;
+}
+
 .loginFormLineTablet {
   padding: 0.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+  }
 }
 
-.form-control {
+.loginLineTablet {
   width: 70%;
+  @include themify($themes) {
+    background-color: themed("formLine");
+    border: themed("formLineBorder");
+  }
 }
 
 .forgetPassTablet {

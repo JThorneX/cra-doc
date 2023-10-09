@@ -1,0 +1,109 @@
+@import "../../../styles/theme-variables.scss";
+
+.uniFooter {
+  position: fixed;
+}
+// .headerSite {
+//   display: block !important;
+// }
+
+.Login {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include themify($themes) {
+    color: themed("textColor");
+    background-color: themed("footerBG");
+  }
+}
+
+.loginHeader {
+  padding: 2rem;
+}
+
+.loginBtn {
+  border: 0;
+  @include themify($themes) {
+    background: themed("subheaderBtn");
+  }
+
+  .loginButton {
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("textColor");
+    }
+  }
+}
+
+.backBtn {
+  position: relative;
+  padding-top: 3rem;
+  top: 0;
+  width: 80%;
+  display: flex;
+
+  .goBack {
+    padding: 0.5rem;
+    font-size: 18px;
+    border: none;
+    @include themify($themes) {
+      background: themed("subheaderBtn");
+    }
+    .goBackText {
+      text-decoration: none;
+      @include themify($themes) {
+        color: themed("textColor");
+      }
+    }
+  }
+}
+
+.loginBtn {
+  margin: 1.5rem;
+}
+
+.registerRedirect {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.loginForm {
+  width: 60%;
+  border-radius: 15px !important;
+  padding: 2rem;
+  margin: 1rem;
+  margin-bottom: 4rem;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+    box-shadow: themed("floatingBgShadow");
+  }
+}
+
+.loginFormLine {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+  }
+}
+
+.loginLine {
+  @include themify($themes) {
+    background-color: themed("formLine");
+    border: themed("formLineBorder");
+  }
+}
+
+.forgetPass {
+  padding-top: 1rem;
+}
+
+.nonBtn {
+  text-decoration: none;
+  color: #2d8984;
+}

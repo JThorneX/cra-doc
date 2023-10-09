@@ -4,9 +4,10 @@
   padding-bottom: 2rem;
   @include themify($themes) {
     color: themed("textColor");
+    background-color: themed("footerBG");
   }
+  z-index: 4;
 }
-
 
 .headerLogoSection {
   display: flex;
