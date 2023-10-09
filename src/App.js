@@ -46,7 +46,7 @@ import AboutUsMobile from "./Layout/Layouts/Mobile/AboutUs/aboutUs";
 import AppointmentsMobile from "./Layout/Layouts/Mobile/Appointments/appointments";
 import ContactMobile from "./Layout/Layouts/Mobile/Contact/contact";
 import LoginMobile from "./Layout/Layouts/Mobile/Login/login";
-import RegistertMobile from "./Layout/Layouts/Mobile/Register/register";
+import RegisterMobile from "./Layout/Layouts/Mobile/Register/register";
 import MyChartMobile from "./Layout/Layouts/Mobile/MyChart/myChart";
 import PayBillMobile from "./Layout/Layouts/Mobile/PayBill/payBill";
 import PrescriptionMobile from "./Layout/Layouts/Mobile/Prescription/prescription";
@@ -181,7 +181,7 @@ function App() {
                   */}
 
                   {matches.small && (
-                    <Route path="/register" element={<RegistertMobile />} />
+                    <Route path="/register" element={<RegisterMobile />} />
                   )}
 
                   {matches.medium && (

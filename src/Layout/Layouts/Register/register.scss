@@ -1,0 +1,111 @@
+@import "../../../styles/theme-variables.scss";
+
+.uniFooter {
+  position: fixed;
+}
+// .headerSite {
+//   display: block !important;
+// }
+
+.Register {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include themify($themes) {
+    color: themed("textColor");
+    background-color: themed("footerBG");
+  }
+}
+
+.registerHeader {
+  padding: 2rem;
+}
+
+.registerBtn {
+  border: 0;
+  margin: 1.5rem;
+  @include themify($themes) {
+    background: themed("subheaderBtn");
+  }
+
+  .registerButton {
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("textColor");
+    }
+  }
+}
+
+.backBtn {
+  position: relative;
+  padding-top: 3rem;
+  top: 0;
+  width: 80%;
+  display: flex;
+
+  .goBack {
+    padding: 0.5rem;
+    font-size: 18px;
+    border: none;
+    @include themify($themes) {
+      background: themed("subheaderBtn");
+    }
+    .goBackText {
+      text-decoration: none;
+      @include themify($themes) {
+        color: themed("textColor");
+      }
+    }
+  }
+}
+
+.registerAlert {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.registerRedirect {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.registerForm {
+  width: 60%;
+  border-radius: 15px !important;
+  padding: 2rem;
+  margin: 1rem;
+  margin-bottom: 4rem;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+    box-shadow: themed("floatingBgShadow");
+  }
+}
+
+.registerFormLine {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+  }
+}
+
+.registerLine {
+  @include themify($themes) {
+    background-color: themed("formLine");
+    border: themed("formLineBorder");
+  }
+}
+
+.forgetPass {
+  padding-top: 1rem;
+}
+
+.nonBtn {
+  text-decoration: none;
+  color: #2d8984;
+}
