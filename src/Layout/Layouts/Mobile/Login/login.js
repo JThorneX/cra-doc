@@ -20,20 +20,20 @@ const LoginMobile = () => {
   return (
     <>
       <HeaderMobile />
-      <div className="Login px-3">
-        <div className="backBtn">
-          <button className="goBack">
-            <NavLink exact to="/cra-doc/" className="goBackText">
+      <div className="LoginMobile px-3">
+        <div className="backBtnMobile">
+          <button className="goBackMobile">
+            <NavLink exact to="/cra-doc/" className="goBackTextMobile">
               Go back
             </NavLink>
           </button>
         </div>
-        <div className="loginHeader">
+        <div className="loginHeaderMobile">
           <h2>Welcome back!</h2>
         </div>
-        <div className="loginForm">
+        <div className="loginFormMobile">
           <Form onSubmit={handleSubmit}>
-            <Form.Group size="lg" controlId="name" className="loginFormLine">
+            <Form.Group size="lg" controlId="name" className="loginFormLineMobile">
               <Form.Label>Full Name</Form.Label>
               <Form.Control
                 autoFocus
@@ -42,7 +42,7 @@ const LoginMobile = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
-            <Form.Group size="lg" controlId="email" className="loginFormLine">
+            <Form.Group size="lg" controlId="email" className="loginFormLineMobile">
               <Form.Label>Email</Form.Label>
               <Form.Control
                 type="email"
@@ -53,7 +53,7 @@ const LoginMobile = () => {
             <Form.Group
               size="lg"
               controlId="password"
-              className="loginFormLine"
+              className="loginFormLineMobile"
             >
               <Form.Label>Password</Form.Label>
               <Form.Control
@@ -66,30 +66,30 @@ const LoginMobile = () => {
             <Button
               block
               size="lg"
-              className="loginBtn"
+              className="loginBtnMobile"
               type="submit"
               disabled={!validateForm()}
             >
-              <NavLink exact to="/cra-doc-home" className="loginButton">
+              <NavLink exact to="/cra-doc-home" className="loginButtonMobile">
                 Login
               </NavLink>
             </Button>
           </Form>
         </div>
-        <div className="forgetPass">
+        <div className="forgetPassMobile">
           <p>
             Forget your password or username?
             <br />{" "}
-            <NavLink exact to="/unfortunate" className="nonBtn">
+            <NavLink exact to="/unfortunate" className="nonBtnMobile">
               Reset here.
             </NavLink>
           </p>
         </div>
-        <div className="registerRedirect">
+        <div className="registerRedirectMobile">
           <p>
             Don't have an account?
             <br />
-            <NavLink exact to="/unfortunate" className="nonBtn">
+            <NavLink exact to="/unfortunate" className="nonBtnMobile">
               Register here.
             </NavLink>
           </p>

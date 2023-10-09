@@ -7,7 +7,7 @@
 //   display: block !important;
 // }
 
-.Login {
+.LoginMobile {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -17,17 +17,17 @@
   }
 }
 
-.loginHeader {
+.loginHeaderMobile {
   padding: 2rem;
 }
 
-.loginBtn {
+.loginBtnMobile {
   border: 0;
   @include themify($themes) {
     background: themed("subheaderBtn");
   }
 
-  .loginButton {
+  .loginButtonMobile {
     text-decoration: none;
     @include themify($themes) {
       color: themed("subText");
@@ -35,18 +35,18 @@
   }
 }
 
-.backBtn {
+.backBtnMobile {
   position: relative;
   top: 0;
   display: flex;
 
-  .goBack {
+  .goBackMobile {
     padding: 0.5rem;
     font-size: 12px;
     @include themify($themes) {
       background: themed("subheaderBtn");
     }
-    .goBackText {
+    .goBackTextMobile {
       text-decoration: none;
       @include themify($themes) {
         color: themed("subText");
@@ -55,25 +55,25 @@
   }
 }
 
-.loginBtn {
+.loginBtnMobile {
   margin: 1.5rem;
 }
 
-.registerRedirect {
+.registerRedirectMobile {
   display: flex;
   justify-content: center;
   padding-top: 4rem;
 }
 
-.loginFormLine {
+.loginFormLineMobile {
   padding: 0.8rem;
 }
 
-.forgetPass {
+.forgetPassMobile {
   padding-top: 1rem;
 }
 
-.nonBtn {
+.nonBtnMobile {
   text-decoration: none;
   color: #2d8984;
 }
