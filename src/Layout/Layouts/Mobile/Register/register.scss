@@ -1,0 +1,118 @@
+@import "../../../../styles/theme-variables.scss";
+
+.uniFooter {
+  position: fixed;
+}
+// .headerSite {
+//   display: block !important;
+// }
+
+.RegisterMobile {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8rem;
+  @include themify($themes) {
+    color: themed("textColor");
+    background-color: themed("footerBG");
+  }
+}
+
+.registerHeaderMobile {
+  padding: 2rem;
+}
+
+.registerBtnMobile {
+  border: 0;
+  margin: 1.5rem;
+  @include themify($themes) {
+    background: themed("subheaderBtn");
+  }
+
+  .registerButtonMobile {
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("textColor");
+    }
+  }
+}
+
+.backBtnMobile {
+  position: relative;
+  padding-top: 3rem;
+  top: 0;
+  width: 90%;
+  display: flex;
+
+  .goBackMobile {
+    padding: 0.5rem;
+    font-size: 18px;
+    border: none;
+    @include themify($themes) {
+      background: themed("subheaderBtn");
+    }
+    .goBackTextMobile {
+      text-decoration: none;
+      @include themify($themes) {
+        color: themed("textColor");
+      }
+    }
+  }
+}
+
+.registerAlertMobile {
+  width: 90%;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 15px !important;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+    box-shadow: themed("floatingBgShadow");
+  }
+}
+
+.registerRedirectMobile {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.registerFormMobile {
+  width: 90%;
+  border-radius: 15px !important;
+  padding: 2rem;
+  margin: 1rem;
+  margin-bottom: 4rem;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+    box-shadow: themed("floatingBgShadow");
+  }
+}
+
+.registerFormLineMobile {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+  }
+}
+
+.registerLineMobile {
+  @include themify($themes) {
+    background-color: themed("formLine");
+    border: themed("formLineBorder");
+  }
+}
+
+.forgetPassMobile {
+  padding-top: 1rem;
+}
+
+.nonBtnMobile {
+  text-decoration: none;
+  color: #2d8984;
+}

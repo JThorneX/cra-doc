@@ -7,7 +7,7 @@ import Header from "../../Header/header";
 import Footer from "../../Footer/footer";
 import Subheader from "../../Subheader/subheader";
 
-const LoginTablet = () => {
+const Register = () => {
   const [pin, setPin] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -165,4 +165,4 @@ const LoginTablet = () => {
   );
 };
 
-export default LoginTablet;
+export default Register;

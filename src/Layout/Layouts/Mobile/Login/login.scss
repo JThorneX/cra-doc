@@ -69,7 +69,9 @@
 }
 
 .loginFormMobile {
-  width: 80%;
+  width: 90%;
+  padding: 2rem;
+  border-radius: 15px !important;
   @include themify($themes) {
     background-color: themed("floatingBg");
     box-shadow: themed("floatingBgShadow");
