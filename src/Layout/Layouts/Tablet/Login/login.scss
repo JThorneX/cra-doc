@@ -1,0 +1,87 @@
+@import "../../../../styles/theme-variables.scss";
+
+.uniFooter {
+  position: fixed;
+}
+// .headerSite {
+//   display: block !important;
+// }
+
+.LoginTablet {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+}
+
+.loginHeaderTablet {
+  padding: 2rem;
+}
+
+.loginBtnTablet {
+  border: 0;
+  @include themify($themes) {
+    background: themed("subheaderBtn");
+  }
+
+  .loginButtonTablet {
+    text-decoration: none;
+    @include themify($themes) {
+      color: themed("subText");
+    }
+  }
+}
+
+.backBtnTablet {
+  position: relative;
+  top: 0;
+  display: flex;
+
+  .goBackTablet {
+    padding: 0.5rem;
+    font-size: 12px;
+    @include themify($themes) {
+      background: themed("subheaderBtn");
+    }
+    .goBackTextTablet {
+      text-decoration: none;
+      @include themify($themes) {
+        color: themed("subText");
+      }
+    }
+  }
+}
+
+.loginBtnTablet {
+  margin: 1.5rem;
+}
+
+.registerRedirectTablet {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.loginFormLineTablet {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  width: 70%;
+}
+
+.forgetPassTablet {
+  padding-top: 1rem;
+}
+
+.nonBtnTablet {
+  text-decoration: none;
+  color: #2d8984;
+}

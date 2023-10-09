@@ -1,0 +1,55 @@
+@import "../../../../styles/theme-variables.scss";
+
+.splashTabletWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splashLogoSectionTablet {
+  padding: 2rem;
+}
+
+.splashLogoIconTablet {
+  height: 15rem;
+  width: 15rem;
+}
+
+.splashHeaderTablet {
+  padding-top: 2rem;
+  width: 70%;
+  h1 {
+    @include themify($themes) {
+      color: themed("textColor");
+    }
+    font-weight: bold;
+  }
+}
+
+.splashBtnsTablet {
+  width: 90%;
+  padding: 3rem;
+}
+
+.splashBtnTablet {
+  @include themify($themes) {
+    background-color: themed("footerBackgroundColor");
+    color: themed("subText");
+  }
+  font-weight: bold;
+  width: 10rem;
+}
+
+.splashBtnTablet:hover {
+  @include themify($themes) {
+    background-color: themed("btnHover");
+  }
+}
+
+.splashBtnsWrapperTablet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -11,9 +11,12 @@ import MorganMobile from "../../../../assets/images/morgan.jpg";
 import TimMobile from "../../../../assets/images/tim.jpg";
 import WhitescarverMobile from "../../../../assets/images/whitescarver.jpg";
 
+import ScrollToTop from "../../../../components/scrollToTop";
+
 const AboutUs = () => {
   return (
     <div className="aboutUsMobile">
+      <ScrollToTop />
       <Header />
       <div className="aboutUsWrapperMobile">
         <div className="providersWrapperMobile">

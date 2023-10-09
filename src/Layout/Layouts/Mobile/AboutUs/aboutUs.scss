@@ -1,6 +1,6 @@
 @import "../../../../styles/theme-variables.scss";
 
-.aboutUs {
+.aboutUsMobile {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -9,15 +9,15 @@
     background-color: themed("bodyBackgroundColor");
   }
 
-  .aboutUsWrapper {
+  .aboutUsWrapperMobile {
     height: 100%;
   }
 }
 
-.providersWrapper {
+.providersWrapperMobile {
   background: rgb(43, 174, 167);
   @include themify($themes) {
-    background: themed("gradient");
+    background: themed("headerBackground");
   }
   padding-top: 2rem;
 
@@ -28,27 +28,29 @@
   }
 }
 
-#accordionProviders {
+#accordionProvidersMobile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 }
 
-.providerItem {
+.providerItemMobile {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.providerGroup {
+.providerGroupMobile {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.accordionBody {
+.accordionBodyMobile {
   text-align: left;
   @include themify($themes) {
     background-color: themed("headerBackground");
@@ -56,14 +58,14 @@
   }
 }
 
-.cardWrapper {
+.cardWrapperMobile {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem;
 }
 
-.accordionBtn {
+.accordionBtnMobile {
   padding-top: 2rem;
   padding-bottom: 2rem;
   @include themify($themes) {
@@ -74,18 +76,19 @@
   font-size: 1.4rem;
 }
 
-.accordion-button::after {
-  color: green;
-}
+// .accordion-button::after {
+//   color: green;
+// }
 
 .accordion-button:not(.collapsed) {
   color: #36cac3;
 }
-.accordionText {
+
+.accordionTextMobile {
   font-size: 1.3rem;
 }
 
-.headshotImg {
+.headshotImgMobile {
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -93,7 +96,7 @@
   border-radius: 0 50% 50% 50% !important;
 }
 
-.imgWrapper {
+.imgWrapperMobile {
   width: 200px;
   height: 200px;
   border-radius: 0 50% 50% 50% !important;

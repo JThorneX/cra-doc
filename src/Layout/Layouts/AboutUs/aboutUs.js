@@ -11,9 +11,12 @@ import Morgan from "../../../assets/images/morgan.jpg";
 import Tim from "../../../assets/images/tim.jpg";
 import Whitescarver from "../../../assets/images/whitescarver.jpg";
 
+import ScrollToTop from "../../../components/scrollToTop";
+
 const AboutUs = () => {
   return (
     <div className="aboutUs">
+      <ScrollToTop />
       <Header />
       <div className="aboutUsWrapper">
         <div className="providersWrapper">

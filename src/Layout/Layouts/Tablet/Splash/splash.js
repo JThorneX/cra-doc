@@ -4,35 +4,35 @@ import Logo from "../../../../assets/logo/fcsw dark logo.svg";
 
 const Splash = () => {
   return (
-    <div className="splashMobile">
-      <div className="splashMobileWrapper">
-        <section className="splashHeader">
+    <div className="splashTablet">
+      <div className="splashTabletWrapper">
+        <section className="splashHeaderTablet">
           <h1>FAMILY CARE Southwest, P.C.</h1>
         </section>
-        <NavLink exact to="/cra-doc" className="splashLogoSection m-3 ">
-          <img src={Logo} alt="logo" className="splashLogoIconMobile logo" />
+        <NavLink exact to="/cra-doc" className="splashLogoSectionTablet m-3 ">
+          <img src={Logo} alt="logo" className="splashLogoIconTablet logo" />
         </NavLink>
-        <div className="splashBtns">
-          <div className="splashBtnsWrapper">
+        <div className="splashBtnsTablet">
+          <div className="splashBtnsWrapperTablet">
             <NavLink
-              className="btn splashBtn bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
+              className="btn splashBtnTablet bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
               exact
-              to="/login-mobile"
+              to="/login"
             >
               Login
             </NavLink>{" "}
             <br />
             <NavLink
-              className="btn splashBtn bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
+              className="btn splashBtnTablet bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
               exact
-              to="/registermobile"
+              to="/register"
             >
               Register
             </NavLink>
           </div>
         </div>
-        <div className="splashOfficeInfo">
-          <section className="splashOfficeInfoWrapper">
+        <div className="splashOfficeInfoTablet">
+          <section className="splashOfficeInfoWrapperTablet">
             <h3>Office Hours</h3>
             <p>
               Monday-Friday 8:00am to 5:00pm <br />
