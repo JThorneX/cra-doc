@@ -57,11 +57,11 @@ const RegisterMobile = () => {
             >
               <Form.Label>Registration pin</Form.Label>
               <Form.Control
-                autoFocus
                 type="pin"
                 value={pin}
                 onChange={(e) => setPin(e.target.value)}
                 className="registerLineMobile"
+                pattern="\d*"
               />
             </Form.Group>
             <Form.Group
@@ -71,7 +71,6 @@ const RegisterMobile = () => {
             >
               <Form.Label>Full name</Form.Label>
               <Form.Control
-                autoFocus
                 type="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}

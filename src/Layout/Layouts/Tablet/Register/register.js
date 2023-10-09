@@ -53,10 +53,10 @@ const RegisterTablet = () => {
               size="lg"
               controlId="pin"
               className="registerFormLineTablet"
+              pattern="\d*"
             >
               <Form.Label>Registration pin</Form.Label>
               <Form.Control
-                autoFocus
                 type="pin"
                 value={pin}
                 onChange={(e) => setPin(e.target.value)}
@@ -70,7 +70,6 @@ const RegisterTablet = () => {
             >
               <Form.Label>Full name</Form.Label>
               <Form.Control
-                autoFocus
                 type="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}

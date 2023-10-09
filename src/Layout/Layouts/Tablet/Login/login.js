@@ -40,7 +40,6 @@ const LoginTablet = () => {
             >
               <Form.Label>Full Name</Form.Label>
               <Form.Control
-                autoFocus
                 type="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
