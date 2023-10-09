@@ -22,6 +22,10 @@ $themes: (
     gridText: #1e6966,
     // gradient: linear-gradient(#fbf2ee 0%, #2baea7 50%, #b4656f 100%),
     gradient: radial-gradient(#2baea7 0%, #296662 37%, #fbf2ee 100%),
+    floatingBg: #d6d5d1,
+    floatingBgShadow: 0px 13px 40px -14px rgba(70, 70, 70, 0.9),
+    formLine: #c3c2c1,
+    formLineBorder: 1px solid #2baea7,
   ),
   dark: (
     bodyBackgroundColor: #282828,
@@ -46,6 +50,10 @@ $themes: (
     gridText: #e3909b,
     gradient: radial-gradient(#2baea7 0%, #296662 37%, #282828 100%),
     // gradient: linear-gradient(#282828 0%, #2baea7 50%, #b4656f 100%),
+    floatingBg: #1a1a1a,
+    floatingBgShadow: 0px 13px 59px 16px #1212127a,
+    formLine: #242424,
+    formLineBorder: 1px solid #b4656f,
   ),
 );
 

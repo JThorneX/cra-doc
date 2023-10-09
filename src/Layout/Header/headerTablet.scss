@@ -5,6 +5,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @include themify($themes) {
+    background-color: themed("footerBG");
+  }
+  // box-shadow: 0px 27px 69px -38px rgba(82, 82, 82, 0.57);
 }
 
 .headerLogoSectionTablet {

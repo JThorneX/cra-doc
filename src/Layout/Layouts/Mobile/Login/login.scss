@@ -12,8 +12,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   @include themify($themes) {
     color: themed("textColor");
+    background-color: themed("footerBG");
   }
 }
 
@@ -38,6 +40,7 @@
 .backBtnMobile {
   position: relative;
   top: 0;
+  width: 80%;
   display: flex;
 
   .goBackMobile {
@@ -65,8 +68,33 @@
   padding-top: 4rem;
 }
 
+.loginFormMobile {
+  width: 80%;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+    box-shadow: themed("floatingBgShadow");
+  }
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 2.5rem;
+}
+
 .loginFormLineMobile {
   padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include themify($themes) {
+    background-color: themed("floatingBg");
+  }
+}
+
+.loginLineMobile {
+  width: 100%;
+  @include themify($themes) {
+    background-color: themed("formLine");
+    border: themed("formLineBorder");
+  }
 }
 
 .forgetPassMobile {

@@ -33,21 +33,31 @@ const LoginMobile = () => {
         </div>
         <div className="loginFormMobile">
           <Form onSubmit={handleSubmit}>
-            <Form.Group size="lg" controlId="name" className="loginFormLineMobile">
+            <Form.Group
+              size="lg"
+              controlId="name"
+              className="loginFormLineMobile"
+            >
               <Form.Label>Full Name</Form.Label>
               <Form.Control
                 autoFocus
                 type="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                className="loginLineMobile"
               />
             </Form.Group>
-            <Form.Group size="lg" controlId="email" className="loginFormLineMobile">
+            <Form.Group
+              size="lg"
+              controlId="email"
+              className="loginFormLineMobile"
+            >
               <Form.Label>Email</Form.Label>
               <Form.Control
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className="loginLineMobile"
               />
             </Form.Group>
             <Form.Group
@@ -60,6 +70,7 @@ const LoginMobile = () => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                className="loginLineMobile"
               />
             </Form.Group>
 
