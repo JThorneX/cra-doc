@@ -13,9 +13,7 @@ The doctor's office I use has one of the worst website's I've seen in the last d
 ### Road Map
 
 - Basic pages for every route
-- Figure out why the arrow on 'aboutUs' doesn't transform
 - Stroke logo color change
-- Fix animation on mobile devices (or get rid of entirely)
 
 ### Usage
 
