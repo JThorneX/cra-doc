@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Header from "../../Header/header";
-import Footer from "../../Footer/footer";
 import Subheader from "../../Subheader/subheader";
 
 const Register = () => {
@@ -160,7 +159,6 @@ const Register = () => {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

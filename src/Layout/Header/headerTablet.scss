@@ -14,7 +14,8 @@
 }
 
 .headerLogoSectionTablet {
-  padding-left: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   width: 10rem;
   height: 100%;
 }
@@ -37,7 +38,7 @@
   }
 
   .headerTabletContent {
-    width: 65%;
+    width: 60%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -46,12 +47,15 @@
 
     .headerTabletTitle {
       width: 90%;
+      padding-bottom: 1rem;
       display: flex;
     }
+
     .headerAddress {
       width: 70%;
-      text-align: center;
+      text-align: start;
       font-size: 1.25rem;
+      margin-left: 1rem;
     }
   }
 }

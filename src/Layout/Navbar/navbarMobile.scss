@@ -1,0 +1,41 @@
+@import "../../styles/theme-variables.scss";
+
+.navbarMobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbarContentMobile {
+  display: block;
+  width: 100%;
+  background-color: #176f6b;
+  padding-top: 0.5rem;
+}
+
+.navbarIconLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarMobileIconBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  h6 {
+    text-align: center;
+    color: rgb(211, 211, 211);
+  }
+}
+
+.navbarMobileIcon {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: rgb(211, 211, 211);
+}

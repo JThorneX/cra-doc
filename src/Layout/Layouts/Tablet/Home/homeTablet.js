@@ -2,6 +2,7 @@ import "./homeTablet.scss";
 import { NavLink } from "react-router-dom";
 import HeaderTablet from "../../../Header/headerTablet";
 import FooterTablet from "../../../Footer/footerTablet";
+import NavbarTablet from "../../../Navbar/navbarTablet";
 import MidheaderTablet from "../../../Midheader/midheaderTablet";
 
 import {
@@ -104,6 +105,7 @@ const HomeTablet = () => {
         </div>
       </div>
       <FooterTablet />
+      <NavbarTablet />
     </div>
   );
 };

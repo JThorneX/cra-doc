@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import HeaderTablet from "../../../Header/headerTablet";
-import FooterTablet from "../../../Footer/footerTablet";
-
 
 const RegisterTablet = () => {
   const [pin, setPin] = useState("");
@@ -28,7 +26,7 @@ const RegisterTablet = () => {
   return (
     <>
       <HeaderTablet />
-   
+
       <div className="RegisterTablet px-3">
         <div className="backBtnTablet">
           <button className="goBackTablet">
@@ -55,10 +53,10 @@ const RegisterTablet = () => {
               size="lg"
               controlId="pin"
               className="registerFormLineTablet"
+              pattern="\d*"
             >
               <Form.Label>Registration pin</Form.Label>
               <Form.Control
-                autoFocus
                 type="pin"
                 value={pin}
                 onChange={(e) => setPin(e.target.value)}
@@ -72,7 +70,6 @@ const RegisterTablet = () => {
             >
               <Form.Label>Full name</Form.Label>
               <Form.Control
-                autoFocus
                 type="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -172,7 +169,6 @@ const RegisterTablet = () => {
           </p>
         </div>
       </div>
-      <FooterTablet />
     </>
   );
 };

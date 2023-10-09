@@ -40,7 +40,6 @@ const LoginTablet = () => {
             >
               <Form.Label>Full Name</Form.Label>
               <Form.Control
-                autoFocus
                 type="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -100,7 +99,7 @@ const LoginTablet = () => {
           <p>
             Don't have an account?
             <br />
-            <NavLink exact to="/unfortunateTablet" className="nonBtnTablet">
+            <NavLink exact to="/register" className="nonBtnTablet">
               Register here.
             </NavLink>
           </p>

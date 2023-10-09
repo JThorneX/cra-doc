@@ -6,36 +6,117 @@
   width: 100%;
   left: 0;
   bottom: 0;
-  position: fixed;
-  z-index: 7;
 }
 
 .footerContentTablet {
-  display: block;
-  width: 100%;
-  background-color: #176f6b;
-  padding-top: 0.5rem;
-}
-
-.footerIconLinks {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footerTabletIconBox {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  h6 {
-    text-align: center;
-    color: rgb(211, 211, 211);
+  @include themify($themes) {
+    background-color: themed("footerBG");
+    color: themed("textColor");
   }
 }
 
-.footerTabletIcon {
-  height: 2.5rem;
-  width: 2.5rem;
-  color: rgb(211, 211, 211);
+.logoInfoTablet {
+  display: flex;
+  text-align: center;
+  margin-bottom: 1rem;
+  @include themify($themes) {
+    background-color: themed("footerBackgroundColor");
+  }
 }
+
+.logoIconTablet {
+  height: 6rem;
+  width: 6rem;
+  margin-right: 1rem;
+}
+
+.logoMarginTablet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.headerTitleTablet {
+  text-decoration: none;
+  font-weight: bold;
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+}
+
+.firstRowTablet {
+  padding-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.locationInfoTablet {
+  text-align: start;
+  width: 40%;
+  margin-left: 1rem;
+  padding-bottom: 1.5rem;
+  font-size: 16px;
+}
+
+.headerAddressTablet {
+  text-align: start;
+}
+
+.badgeInfoTablet {
+  width: 50%;
+}
+
+.badgeTextTablet {
+  min-height: 6.25rem;
+  width: 25rem;
+  font-size: 16px;
+  margin-left: 0.5rem;
+  text-align: start;
+}
+
+.badgeNCQATablet {
+  min-height: 9rem;
+  min-width: 9rem;
+  margin-right: 1rem;
+  background: url("../../assets/images/ncqa\ badge.svg");
+  background-repeat: no-repeat;
+}
+
+.copyrightWrapperTablet {
+  background-color: #289191;
+  color: black;
+  font-weight: 400;
+  padding-bottom: 5rem;
+}
+
+.copyrightBackgroundTablet {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.privacyDisclaimerTablet {
+  width: 50%;
+}
+
+.disclaimerLinkTablet {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-size: 12px;
+}
+
+.copyrightInfoTablet {
+  max-width: 20rem;
+  font-size: 12px;
+  margin-right: 1rem;
+}
+
+//this
+//is
+//media
+//query
+//area

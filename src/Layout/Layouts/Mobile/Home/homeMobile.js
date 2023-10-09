@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import HeaderMobile from "../../../Header/headerMobile";
 import FooterMobile from "../../../Footer/footerMobile";
 import MidheaderMobile from "../../../Midheader/midheaderMobile";
+import NavbarMobile from "../../../Navbar/navbarMobile";
 import PopUp from "../../../Alert/banner";
 
 import {
@@ -112,6 +113,7 @@ const HomeMobile = () => {
         </div>
       </div>
       <FooterMobile />
+      <NavbarMobile />
     </>
   );
 };

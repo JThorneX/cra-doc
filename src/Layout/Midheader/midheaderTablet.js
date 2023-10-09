@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function MidheaderTablet() {
   return (
     <header className="midheaderTablet">
-      <nav className="navbarTablet">
+      <nav className="midNavbarTablet">
         <div className="midheaderBtnsTablet">
           <NavLink className="btn midBtnTablet" exact to="/about-us">
             About Us
