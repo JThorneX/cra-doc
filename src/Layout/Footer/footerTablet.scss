@@ -1,6 +1,6 @@
 @import "../../styles/theme-variables.scss";
 
-.footer {
+.footerTablet {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,27 +8,39 @@
   bottom: 0;
 }
 
-.footerContent {
+.footerContentTablet {
   @include themify($themes) {
     background-color: themed("footerBG");
     color: themed("textColor");
   }
 }
 
-// pb-5 m-5
-
-.logoInfo {
+.logoInfoTablet {
   display: flex;
   text-align: center;
+  margin-bottom: 1rem;
   @include themify($themes) {
     background-color: themed("footerBackgroundColor");
   }
 }
 
-// .logo-section {
-// }
+.logoIconTablet {
+  height: 6rem;
+  width: 6rem;
+  margin-right: 1rem;
+}
 
-.headerTitle {
+.logoMarginTablet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.headerTitleTablet {
   text-decoration: none;
   font-weight: bold;
   @include themify($themes) {
@@ -36,17 +48,36 @@
   }
 }
 
-.locationInfo {
+.firstRowTablet {
+  padding-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.locationInfoTablet {
+  text-align: start;
+  width: 40%;
+  margin-left: 1rem;
+  padding-bottom: 1.5rem;
+  font-size: 16px;
+}
+
+.headerAddressTablet {
   text-align: start;
 }
 
-.badgeText {
-  min-height: 6.25rem;
-  width: 25rem;
-  margin-right: 0.5rem;
+.badgeInfoTablet {
+  width: 50%;
 }
 
-.badgeNCQA {
+.badgeTextTablet {
+  min-height: 6.25rem;
+  width: 25rem;
+  font-size: 16px;
+  margin-left: 0.5rem;
+  text-align: start;
+}
+
+.badgeNCQATablet {
   min-height: 9rem;
   min-width: 9rem;
   margin-right: 1rem;
@@ -54,26 +85,34 @@
   background-repeat: no-repeat;
 }
 
-.copyrightBackground {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.copyrightWrapper {
+.copyrightWrapperTablet {
   background-color: #289191;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
+  padding-bottom: 5rem;
 }
 
-.privacyDisclaimer {
+.copyrightBackgroundTablet {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.privacyDisclaimerTablet {
   width: 50%;
 }
 
-.disclaimerLink {
+.disclaimerLinkTablet {
   text-decoration: none;
   cursor: pointer;
   color: black;
+  font-size: 12px;
+}
+
+.copyrightInfoTablet {
+  max-width: 20rem;
+  font-size: 12px;
+  margin-right: 1rem;
 }
 
 //this

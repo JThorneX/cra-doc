@@ -1,28 +1,28 @@
 @import "../../styles/theme-variables.scss";
 
-.footerTablet {
+.navbarTablet {
   display: flex;
   flex-direction: column;
   width: 100%;
   left: 0;
   bottom: 0;
   position: fixed;
-  z-index: 7;
+  z-index: 10;
 }
 
-.footerContentTablet {
+.navbarContentTablet {
   display: block;
   width: 100%;
   background-color: #176f6b;
   padding-top: 0.5rem;
 }
 
-.footerIconLinks {
+.navbarIconLinksTablet {
   display: flex;
   justify-content: space-around;
 }
 
-.footerTabletIconBox {
+.navbarTabletIconBox {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
   }
 }
 
-.footerTabletIcon {
+.navbarTabletIcon {
   height: 2.5rem;
   width: 2.5rem;
   color: rgb(211, 211, 211);

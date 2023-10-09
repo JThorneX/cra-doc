@@ -1,4 +1,4 @@
-import "./footerTablet.scss";
+import "./navbarTablet.scss";
 
 import { NavLink } from "react-router-dom";
 
@@ -6,42 +6,42 @@ import { IoSettingsOutline, IoLogOutOutline } from "react-icons/io5";
 import { BsClipboardData } from "react-icons/bs";
 import { AiOutlineHome } from "react-icons/ai";
 
-const FooterTablet = () => {
+const NavbarTablet = () => {
   return (
-    <div className="footerTablet">
-      <div className="footerContentTablet">
-        <div className="footerContentTabletWrapper">
-          <section className="footerIconLinks">
+    <div className="navbarTablet">
+      <div className="navbarContentTablet">
+        <div className="navbarContentTabletWrapper">
+          <section className="navbarIconLinksTablet">
             <NavLink
               exact
               to="/cra-doc-home"
-              className="footerHomeIcon footerTabletIconBox"
+              className="navbarHomeIcon navbarTabletIconBox"
             >
-              <AiOutlineHome className="footerTabletIcon" />
+              <AiOutlineHome className="navbarTabletIcon" />
               <h6>Home</h6>
             </NavLink>
             <NavLink
               exact
               to="/my-chart"
-              className="footerMyChartIcon footerTabletIconBox"
+              className="navbarMyChartIcon navbarTabletIconBox"
             >
-              <BsClipboardData className="footerTabletIcon" />
+              <BsClipboardData className="navbarTabletIcon" />
               <h6>My Chart</h6>
             </NavLink>
             <NavLink
               exact
               to="/user-settings"
-              className="footerSettingsIcon footerTabletIconBox"
+              className="navbarSettingsIcon navbarTabletIconBox"
             >
-              <IoSettingsOutline className="footerTabletIcon" />
+              <IoSettingsOutline className="navbarTabletIcon" />
               <h6>My Settings</h6>
             </NavLink>
             <NavLink
               exact
               to="/logout"
-              className="footerLogoutIcon footerTabletIconBox"
+              className="navbarLogoutIcon navbarTabletIconBox"
             >
-              <IoLogOutOutline className="footerTabletIcon" />
+              <IoLogOutOutline className="navbarTabletIcon" />
               <h6>Logout</h6>
             </NavLink>
           </section>
@@ -51,4 +51,4 @@ const FooterTablet = () => {
   );
 };
 
-export default FooterTablet;
+export default NavbarTablet;

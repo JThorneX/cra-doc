@@ -8,7 +8,7 @@ const HeaderTablet = () => {
         <div className="headerTabletWrapper">
           <div className="headerTabletContent">
             <div className="headerTabletTitle">
-              <a href="/cra-doc-home" className="headerLogoSectionTablet m-3 ">
+              <a href="/cra-doc-home" className="headerLogoSectionTablet">
                 <img
                   src={Logo}
                   alt="logo"
