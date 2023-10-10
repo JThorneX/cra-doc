@@ -1,7 +1,7 @@
 //THE USUAL
 import "./App.css";
 import { useState } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Media from "react-media";
 
 //DESKTOP
@@ -76,7 +76,7 @@ function App() {
 
   return (
     <div className="siteWrapper">
-      <HashRouter>
+      <Router>
         <ScrollToTop />
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <div className={`theme-${theme}`}>
@@ -349,7 +349,7 @@ function App() {
             </Media>
           </div>
         </ThemeContext.Provider>
-      </HashRouter>
+      </Router>
     </div>
   );
 }

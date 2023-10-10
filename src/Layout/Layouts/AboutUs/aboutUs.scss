@@ -15,13 +15,15 @@
 }
 
 .providersWrapper {
-  // background: rgb(43, 174, 167);
-  background-color: rgb(22, 22, 22);
-  // @include themify($themes) {
-  //   background: themed("gradient");
-  // }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include themify($themes) {
+    background-color: themed("bodyBackgroundColor");
+  }
   padding-top: 4rem;
-
+  padding-bottom: 4rem;
   h2 {
     @include themify($themes) {
       color: themed("textColor");
@@ -29,15 +31,26 @@
   }
 }
 
+.aboutUsHeaderText {
+  padding-bottom: 4rem;
+}
+
+.providersAccordion {
+  width: 55%;
+  @include themify($themes) {
+    box-shadow: themed("floatingBgShadow");
+  }
+}
+
 #accordionProviders {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
 }
 
 .providerItem {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +89,7 @@
 }
 
 .accordion-button::after {
-  color: green;
+  color: #b13983;
 }
 
 .accordion-button:not(.collapsed) {

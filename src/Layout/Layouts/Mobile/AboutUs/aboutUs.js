@@ -1,9 +1,6 @@
 import "./aboutUs.scss";
 import Header from "../../../Header/headerMobile";
 import Footer from "../../../Footer/footerMobile";
-// import AccordionComplete from "../../../components/Accordion/accordionComplete";
-// import "animate.css/animate.min.css";
-// import { AnimationOnScroll } from "react-animation-on-scroll";
 import SimsMobile from "../../../../assets/images/sims.jpg";
 import KellerMobile from "../../../../assets/images/keller.jpg";
 import HildebrandMobile from "../../../../assets/images/hildebrand.JPG";

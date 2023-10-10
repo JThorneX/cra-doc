@@ -1,7 +1,7 @@
 import "./subheader.scss";
 import { NavLink } from "react-router-dom";
 
-function Subheader() {
+function SubheaderLoggedIn() {
   return (
     <header className="subheader">
       <div className="bannerSub w-lg-75 mx-lg-auto position-relative px-lg-3 py-4 shadow-5">
@@ -9,7 +9,7 @@ function Subheader() {
           <div className="navBtns">
             <div className="navbar-left">
               <a
-                href="#/cra-doc"
+                href="/cra-doc"
                 className="btn subBtn d-inline-block p-2 fs-4 px-4"
               >
                 Home
@@ -20,18 +20,11 @@ function Subheader() {
                 <NavLink
                   className="btn subBtn bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
                   exact
-                  to="/login"
+                  to="/my-chart"
                 >
-                  Login
+                  My Chart
                 </NavLink>{" "}
                 <br />
-                <NavLink
-                  className="btn subBtn bg-dark-hover border-0  mb-4 mb-lg-0 p-2 fs-4"
-                  exact
-                  to="/register"
-                >
-                  Register
-                </NavLink>
               </div>
             </div>
           </div>
@@ -41,4 +34,4 @@ function Subheader() {
   );
 }
 
-export default Subheader;
+export default SubheaderLoggedIn;
