@@ -4,6 +4,11 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Media from "react-media";
 
+//COMPONENT FOLDER
+import Unfortunate from "./Layout/Unfortunate/unfortunate";
+import UnfortunateMobile from "./Layout/Unfortunate/unfortunateMobile";
+import UnfortunateTablet from "./Layout/Unfortunate/unfortunateTablet";
+
 //DESKTOP
 import HomeLayout from "./Layout/Layouts/Home/home";
 import AboutUs from "./Layout/Layouts/AboutUs/aboutUs";
@@ -93,13 +98,13 @@ function App() {
                   
                   */}
                   {matches.small && (
-                    <Route path="/" element={<SplashMobile />} />
+                    <Route path="/cra-doc" element={<SplashMobile />} />
                   )}
                   {matches.small && (
                     <Route path="/home" element={<HomeMobile />} />
                   )}
                   {matches.medium && (
-                    <Route path="/" element={<SplashTablet />} />
+                    <Route path="/cra-doc" element={<SplashTablet />} />
                   )}
                   {matches.medium && (
                     <Route path="/home" element={<HomeTablet />} />
@@ -341,6 +346,28 @@ function App() {
 
                   {matches.large && (
                     <Route path="/404" element={<FourOhFour />} />
+                  )}
+
+                  {/* Unforunate Routes  
+                  
+                  */}
+
+                  {matches.small && (
+                    <Route
+                      path="/unfortunate"
+                      element={<UnfortunateMobile />}
+                    />
+                  )}
+
+                  {matches.medium && (
+                    <Route
+                      path="/unfortunate"
+                      element={<UnfortunateTablet />}
+                    />
+                  )}
+
+                  {matches.large && (
+                    <Route path="/unfortunate" element={<Unfortunate />} />
                   )}
                 </Routes>
               )}

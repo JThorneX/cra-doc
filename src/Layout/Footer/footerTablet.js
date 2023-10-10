@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footerContentTablet">
         <div className="logoInfoTablet">
           <div className="logoMarginTablet">
-            <a href="/cra-doc" className="logoSectionTablet me-3">
+            <a href="/home" className="logoSectionTablet me-3">
               <img src={Logo} alt="logo" className="logoIconTablet logo" />
             </a>
             <header className="headerTitleTablet">

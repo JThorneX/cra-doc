@@ -31,7 +31,7 @@ const RegisterMobile = () => {
       <div className="RegisterMobile px-3">
         <div className="backBtnMobile">
           <button className="goBackMobile">
-            <NavLink exact to="/cra-doc/" className="goBackTextMobile">
+            <NavLink exact to="/cra-doc" className="goBackTextMobile">
               Go back
             </NavLink>
           </button>
@@ -141,7 +141,7 @@ const RegisterMobile = () => {
               type="submit"
               disabled={!validateForm()}
             >
-              <NavLink exact to="/cra-doc" className="registerButtonMobile">
+              <NavLink exact to="/home" className="registerButtonMobile">
                 Register
               </NavLink>
             </Button>

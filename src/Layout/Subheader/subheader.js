@@ -9,7 +9,7 @@ function Subheader() {
           <div className="navBtns">
             <div className="navbar-left">
               <a
-                href="/cra-doc"
+                href="/"
                 className="btn subBtn d-inline-block p-2 fs-4 px-4"
               >
                 Home

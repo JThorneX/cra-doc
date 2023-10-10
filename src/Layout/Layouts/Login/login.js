@@ -26,7 +26,7 @@ const LoginTablet = () => {
       <div className="Login px-3">
         <div className="backBtn">
           <button className="goBack">
-            <NavLink exact to="/cra-doc/" className="goBackText">
+            <NavLink exact to="/" className="goBackText">
               Go back
             </NavLink>
           </button>
@@ -76,7 +76,7 @@ const LoginTablet = () => {
               type="submit"
               disabled={!validateForm()}
             >
-              <NavLink exact to="/cra-doc-home" className="loginButton">
+              <NavLink exact to="/" className="loginButton">
                 Login
               </NavLink>
             </Button>

@@ -14,7 +14,7 @@ const NavbarTablet = () => {
           <section className="navbarIconLinksTablet">
             <NavLink
               exact
-              to="/cra-doc-home"
+              to="/home"
               className="navbarHomeIcon navbarTabletIconBox"
             >
               <AiOutlineHome className="navbarTabletIcon" />

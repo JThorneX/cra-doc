@@ -26,11 +26,10 @@ const RegisterTablet = () => {
   return (
     <>
       <HeaderTablet />
-
       <div className="RegisterTablet px-3">
         <div className="backBtnTablet">
           <button className="goBackTablet">
-            <NavLink exact to="/cra-doc/" className="goBackTextTablet">
+            <NavLink exact to="/cra-doc" className="goBackTextTablet">
               Go back
             </NavLink>
           </button>
@@ -140,11 +139,7 @@ const RegisterTablet = () => {
               type="submit"
               disabled={!validateForm()}
             >
-              <NavLink
-                exact
-                to="/cra-doc-home"
-                className="registerButtonTablet"
-              >
+              <NavLink exact to="/home" className="registerButtonTablet">
                 Register
               </NavLink>
             </Button>

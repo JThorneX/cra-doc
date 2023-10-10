@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footerContentMobile">
         <div className="logoInfoMobile">
           <div className="logoMarginMobile d-flex">
-            <a href="/cra-doc" className="logoSectionMobile me-3 ">
+            <a href="/home" className="logoSectionMobile me-3 ">
               <img src={Logo} alt="logo" className="logoIconMobile logo" />
             </a>
             <header className="fs-3 headerTitleMobile mt-4">
