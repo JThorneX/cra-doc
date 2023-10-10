@@ -93,20 +93,18 @@ function App() {
                   
                   */}
                   {matches.small && (
-                    <Route path="/cra-doc" element={<SplashMobile />} />
+                    <Route path="/" element={<SplashMobile />} />
                   )}
                   {matches.small && (
-                    <Route path="/cra-doc-home" element={<HomeMobile />} />
+                    <Route path="/home" element={<HomeMobile />} />
                   )}
                   {matches.medium && (
-                    <Route path="/cra-doc" element={<SplashTablet />} />
+                    <Route path="/" element={<SplashTablet />} />
                   )}
                   {matches.medium && (
-                    <Route path="/cra-doc-home" element={<HomeTablet />} />
+                    <Route path="/home" element={<HomeTablet />} />
                   )}
-                  {matches.large && (
-                    <Route path="/cra-doc" element={<HomeLayout />} />
-                  )}
+                  {matches.large && <Route path="/" element={<HomeLayout />} />}
 
                   {/* About Us Routes 
                   
