@@ -40,7 +40,6 @@ const LoginMobile = () => {
             >
               <Form.Label>Full Name</Form.Label>
               <Form.Control
-               
                 type="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -100,7 +99,7 @@ const LoginMobile = () => {
           <p>
             Don't have an account?
             <br />
-            <NavLink exact to="/unfortunate" className="nonBtnMobile">
+            <NavLink exact to="/register" className="nonBtnMobile">
               Register here.
             </NavLink>
           </p>

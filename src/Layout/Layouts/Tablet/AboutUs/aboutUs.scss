@@ -1,6 +1,6 @@
 @import "../../../../styles/theme-variables.scss";
 
-.aboutUs {
+.aboutUsTablet {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -9,17 +9,21 @@
     background-color: themed("bodyBackgroundColor");
   }
 
-  .aboutUsWrapper {
+  .aboutUsWrapperTablet {
     height: 100%;
   }
 }
 
-.providersWrapperMobile {
-  background: rgb(43, 174, 167);
+.providersWrapperTablet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @include themify($themes) {
-    background: themed("headerBackground");
+    background: themed("bodyBackgroundColor");
   }
   padding-top: 2rem;
+  padding-bottom: 2rem;
 
   h2 {
     @include themify($themes) {
@@ -28,27 +32,38 @@
   }
 }
 
-#accordionProviders {
+.aboutUsHeaderTextTablet {
+  padding-bottom: 4rem;
+}
+
+#accordionProvidersTablet {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  width: 100%;
 }
 
-.providerItem {
-  width: 80%;
+.providersAccordionTextTablet {
+  width: 55%;
+  @include themify($themes) {
+    box-shadow: themed("floatingBgShadow");
+  }
+}
+
+.providerItemTablet {
+  width: 100% !important;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // flex-direction: column;
+  // justify-content: center;
 }
 
-.providerGroup {
+.providerGroupTablet {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.accordionBody {
+.accordionBodyTablet {
   text-align: left;
   @include themify($themes) {
     background-color: themed("headerBackground");
@@ -56,14 +71,14 @@
   }
 }
 
-.cardWrapper {
+.cardWrapperTablet {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem;
 }
 
-.accordionBtn {
+.accordionBtnTablet {
   padding-top: 2rem;
   padding-bottom: 2rem;
   @include themify($themes) {
@@ -74,18 +89,18 @@
   font-size: 1.4rem;
 }
 
-.accordion-button::after {
-  color: green;
+.accordion-buttonTablet::after {
+  color: #b13983;
 }
 
-.accordion-button:not(.collapsed) {
+.accordion-buttonTablet:not(.collapsed) {
   color: #36cac3;
 }
-.accordionText {
+.accordionTextTablet {
   font-size: 1.3rem;
 }
 
-.headshotImg {
+.headshotImgTablet {
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -93,7 +108,7 @@
   border-radius: 0 50% 50% 50% !important;
 }
 
-.imgWrapper {
+.imgWrapperTablet {
   width: 200px;
   height: 200px;
   border-radius: 0 50% 50% 50% !important;
