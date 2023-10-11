@@ -17,7 +17,7 @@ const AboutUs = () => {
       <Header />
       <div className="aboutUsWrapperMobile">
         <div className="providersWrapperMobile">
-          <h2>Meet our providers</h2>
+          <h2 className="aboutUsHeaderTextMobile">Meet our providers</h2>
           <div className="accordion" id="accordionProvidersMobile">
             {/* data-bs-parent ^^  */}
             {/* SIMS ACCORDION START  */}

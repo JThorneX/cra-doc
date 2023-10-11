@@ -15,17 +15,20 @@
 }
 
 .providersWrapperMobile {
-  background: rgb(43, 174, 167);
   @include themify($themes) {
     background: themed("bodyBackgroundColor");
   }
   padding-top: 2rem;
-
+  padding-bottom: 2rem;
   h2 {
     @include themify($themes) {
       color: themed("textColor");
     }
   }
+}
+
+.aboutUsHeaderTextMobile {
+  padding-bottom: 1rem;
 }
 
 #accordionProvidersMobile {
@@ -73,12 +76,12 @@
     color: themed("textColor");
   }
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
-// .accordion-button::after {
-//   color: green;
-// }
+.accordion-button::after {
+  color: #b13983;
+}
 
 .accordion-button:not(.collapsed) {
   color: #36cac3;
@@ -90,15 +93,15 @@
 }
 
 .headshotImgMobile {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   margin-right: 3rem;
   border-radius: 0 50% 50% 50% !important;
 }
 
 .imgWrapperMobile {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 0 50% 50% 50% !important;
 }
