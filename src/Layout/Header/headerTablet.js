@@ -3,7 +3,7 @@ import "./headerTablet.scss";
 
 const HeaderTablet = () => {
   return (
-    <div className="headerAll">
+    <div className="headerAll" id="headerAll">
       <header className="headerTablet">
         <div className="headerTabletWrapper">
           <div className="headerTabletContent">
