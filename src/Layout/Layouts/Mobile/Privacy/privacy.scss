@@ -1,0 +1,19 @@
+@import "../../../../styles/theme-variables.scss";
+
+.privacyWrapperMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacyTextWrapperMobile {
+  padding: 2rem;
+  width: 100%;
+
+  p {
+    text-align: left;
+    font-size: 20px;
+  }
+}
