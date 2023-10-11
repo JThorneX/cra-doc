@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.c81d8dbb.css",
-    "main.js": "/static/js/main.be85f100.js",
-    "static/media/colorado rockies.avif": "/static/media/colorado rockies.414738c58c804d8afc16.avif",
-    "static/media/doctor-patient-ipad.avif": "/static/media/doctor-patient-ipad.4367305204995b7175e2.avif",
-    "static/media/medical-building.avif": "/static/media/medical-building.f6909f8b8729dcdb0bb8.avif",
-    "static/media/tim.jpg": "/static/media/tim.cde3c8afbaa271f94a48.jpg",
-    "static/media/doctor-patient.avif": "/static/media/doctor-patient.b00197bdb3b486379c9d.avif",
-    "static/media/keller.jpg": "/static/media/keller.3aa059450cfa9febb299.jpg",
-    "static/media/sims.jpg": "/static/media/sims.9f33416a7d752a91563f.jpg",
-    "static/media/morgan.jpg": "/static/media/morgan.4d446ad16f89a96be451.jpg",
-    "static/media/hildebrand.JPG": "/static/media/hildebrand.a4efb1bfaa72fc666b02.JPG",
-    "static/media/whitescarver.jpg": "/static/media/whitescarver.9c0e2a3ae5b5683579b5.jpg",
-    "static/media/ncqa badge.svg": "/static/media/ncqa badge.0145fa07bbd8a12f316c.svg",
-    "static/media/fcsw dark logo.svg": "/static/media/fcsw dark logo.213de07af2ced74a7dc31a6b5cb972ac.svg",
-    "index.html": "/index.html",
-    "main.c81d8dbb.css.map": "/static/css/main.c81d8dbb.css.map",
-    "main.be85f100.js.map": "/static/js/main.be85f100.js.map"
+    "main.css": "/cra-doc/static/css/main.747e0307.css",
+    "main.js": "/cra-doc/static/js/main.da8293f6.js",
+    "static/media/colorado rockies.avif": "/cra-doc/static/media/colorado rockies.414738c58c804d8afc16.avif",
+    "static/media/doctor-patient-ipad.avif": "/cra-doc/static/media/doctor-patient-ipad.4367305204995b7175e2.avif",
+    "static/media/medical-building.avif": "/cra-doc/static/media/medical-building.f6909f8b8729dcdb0bb8.avif",
+    "static/media/tim.jpg": "/cra-doc/static/media/tim.cde3c8afbaa271f94a48.jpg",
+    "static/media/doctor-patient.avif": "/cra-doc/static/media/doctor-patient.b00197bdb3b486379c9d.avif",
+    "static/media/keller.jpg": "/cra-doc/static/media/keller.3aa059450cfa9febb299.jpg",
+    "static/media/sims.jpg": "/cra-doc/static/media/sims.9f33416a7d752a91563f.jpg",
+    "static/media/morgan.jpg": "/cra-doc/static/media/morgan.4d446ad16f89a96be451.jpg",
+    "static/media/hildebrand.JPG": "/cra-doc/static/media/hildebrand.a4efb1bfaa72fc666b02.JPG",
+    "static/media/whitescarver.jpg": "/cra-doc/static/media/whitescarver.9c0e2a3ae5b5683579b5.jpg",
+    "static/media/ncqa badge.svg": "/cra-doc/static/media/ncqa badge.0145fa07bbd8a12f316c.svg",
+    "static/media/fcsw dark logo.svg": "/cra-doc/static/media/fcsw dark logo.213de07af2ced74a7dc31a6b5cb972ac.svg",
+    "index.html": "/cra-doc/index.html",
+    "main.747e0307.css.map": "/cra-doc/static/css/main.747e0307.css.map",
+    "main.da8293f6.js.map": "/cra-doc/static/js/main.da8293f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c81d8dbb.css",
-    "static/js/main.be85f100.js"
+    "static/css/main.747e0307.css",
+    "static/js/main.da8293f6.js"
   ]
 }
