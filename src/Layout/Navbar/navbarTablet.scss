@@ -1,9 +1,9 @@
 @import "../../styles/theme-variables.scss";
 
-.navbarTablet {
+.navbarNavTablet {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   left: 0;
   bottom: 0;
   position: fixed;

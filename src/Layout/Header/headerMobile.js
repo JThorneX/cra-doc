@@ -7,7 +7,7 @@ const Header = () => {
       <header className="headerMobile">
         <div className="headerMobileWrapper">
           <div className="headerMobileContent">
-            <a href="/cra-doc-home" className="headerLogoSection">
+            <a href="/home" className="headerLogoSection">
               <img
                 src={Logo}
                 alt="logo"

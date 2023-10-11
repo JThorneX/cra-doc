@@ -2,10 +2,6 @@ import "./footerTablet.scss";
 import Logo from "../../assets/logo/fcsw dark logo.svg";
 import { NavLink } from "react-router-dom";
 
-// import { IoSettingsOutline, IoLogOutOutline } from "react-icons/io5";
-// import { BsClipboardData } from "react-icons/bs";
-// import { AiOutlineHome } from "react-icons/ai";
-
 const Footer = () => {
   return (
     <div className="footerTablet">
@@ -20,8 +16,6 @@ const Footer = () => {
             </header>
           </div>
         </div>
-        <br />
-        <br />
         <div className="firstRowTablet row d-flex">
           <div className="locationInfoTablet justify-content-start col-lg-6 col-12">
             <div className="footerSecondTablet">

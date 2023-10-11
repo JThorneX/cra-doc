@@ -15,6 +15,10 @@
 }
 
 .providersWrapperMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @include themify($themes) {
     background: themed("bodyBackgroundColor");
   }
@@ -35,12 +39,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.providersAccordionTextMobile {
+  width: 95%;
+  @include themify($themes) {
+    box-shadow: themed("floatingBgShadow");
+  }
 }
 
 .providerItemMobile {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

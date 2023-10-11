@@ -8,7 +8,7 @@ import { AiOutlineHome } from "react-icons/ai";
 
 const NavbarTablet = () => {
   return (
-    <div className="navbarTablet">
+    <div className="navbarNavTablet">
       <div className="navbarContentTablet">
         <div className="navbarContentTabletWrapper">
           <section className="navbarIconLinksTablet">

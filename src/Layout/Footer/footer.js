@@ -2,10 +2,6 @@ import "./footer.scss";
 import Logo from "../../assets/logo/fcsw dark logo.svg";
 import { NavLink } from "react-router-dom";
 
-import { IoSettingsOutline, IoLogOutOutline } from "react-icons/io5";
-import { BsClipboardData } from "react-icons/bs";
-import { AiOutlineHome } from "react-icons/ai";
-
 const Footer = () => {
   return (
     <div className="footer">
@@ -66,7 +62,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

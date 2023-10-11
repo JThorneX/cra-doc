@@ -24,6 +24,3 @@ function Alert() {
 }
 
 export default Alert;
-
-//import Alert from "./Layout/Alert/banner";
-//<Alert />
