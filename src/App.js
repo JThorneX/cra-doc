@@ -109,7 +109,9 @@ function App() {
                   {matches.medium && (
                     <Route path="/home" element={<HomeTablet />} />
                   )}
-                  {matches.large && <Route path="/cra-doc" element={<HomeLayout />} />}
+                  {matches.large && (
+                    <Route path="/cra-doc" element={<HomeLayout />} />
+                  )}
 
                   {/* About Us Routes 
                   
