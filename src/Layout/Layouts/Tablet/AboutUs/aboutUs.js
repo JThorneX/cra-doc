@@ -25,10 +25,10 @@ const AboutUs = () => {
             <div className="accordion" id="accordionProvidersTablet">
               {/* data-bs-parent ^^  */}
               {/* SIMS ACCORDION START  */}
-              <div className="providerItemTablet accordion-itemTablet">
-                <h2 className="accordion-headerTablet">
+              <div className="providerItemTablet accordion-item">
+                <h2 className="accordion-header accordionHeaderTablet">
                   <button
-                    className="accordion-buttonTablet accordionBtnTablet"
+                    className="accordion-button accordionBtnTablet"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#SimsTablet"
@@ -80,10 +80,10 @@ const AboutUs = () => {
               </div>
               {/* SIMS ACCORDION END  */}
               {/* KELLER ACCORDION START  */}
-              <div className="providerItemTablet accordion-itemTablet">
-                <h2 className="accordion-headerTablet">
+              <div className="providerItemTablet accordion-item">
+                <h2 className="accordion-header accordionHeaderTablet">
                   <button
-                    className="accordion-buttonTablet accordionBtnTablet"
+                    className="accordion-button accordionBtnTablet"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#KellerTablet"
@@ -123,10 +123,10 @@ const AboutUs = () => {
               </div>
               {/* KELLER ACCORDION END  */}
               {/* HILDEBRAND ACCORDION START  */}
-              <div className="providerItemTablet accordion-itemTablet">
-                <h2 className="accordion-headerTablet">
+              <div className="providerItemTablet accordion-item">
+                <h2 className="accordion-header accordionHeaderTablet">
                   <button
-                    className="accordion-buttonTablet accordionBtnTablet"
+                    className="accordion-button accordionBtnTablet"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#HildebrandTablet"
@@ -168,10 +168,10 @@ const AboutUs = () => {
               </div>
               {/* HILDEBRAND ACCORDION END  */}
               {/* MORGAN ACCORDION START  */}
-              <div className="providerItemTablet accordion-itemTablet">
-                <h2 className="accordion-headerTablet">
+              <div className="providerItemTablet accordion-item">
+                <h2 className="accordion-header accordionHeaderTablet">
                   <button
-                    className="accordion-buttonTablet accordionBtnTablet"
+                    className="accordion-button accordionBtnTablet"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#MorganTablet"
@@ -221,10 +221,10 @@ const AboutUs = () => {
               </div>
               {/* MORGAN ACCORDION END  */}
               {/* TIM ACCORDION START  */}
-              <div className="providerItemTablet accordion-itemTablet">
-                <h2 className="accordion-headerTablet">
+              <div className="providerItemTablet accordion-item">
+                <h2 className="accordion-header accordionHeaderTablet">
                   <button
-                    className="accordion-buttonTablet accordionBtnTablet"
+                    className="accordion-button accordionBtnTablet"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#TimTablet"
@@ -267,10 +267,10 @@ const AboutUs = () => {
               </div>
               {/* TIM ACCORDION END  */}
               {/* WHITESCARVER ACCORDION START  */}
-              <div className="providerItemTablet accordion-itemTablet">
-                <h2 className="accordion-headerTablet">
+              <div className="providerItemTablet accordion-item">
+                <h2 className="accordion-header accordionHeaderTablet">
                   <button
-                    className="accordion-buttonTablet accordionBtnTablet"
+                    className="accordion-button accordionBtnTablet"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#WhitescarverTablet"

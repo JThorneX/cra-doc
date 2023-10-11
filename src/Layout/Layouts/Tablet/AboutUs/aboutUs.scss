@@ -44,7 +44,7 @@
 }
 
 .providersAccordionTextTablet {
-  width: 55%;
+  width: 65%;
   @include themify($themes) {
     box-shadow: themed("floatingBgShadow");
   }
@@ -52,10 +52,11 @@
 
 .providerItemTablet {
   width: 100% !important;
-  display: flex;
-  // flex-direction: column;
-  // justify-content: center;
 }
+
+// .accordionHeaderTablet {
+//   width: 100%;
+// }
 
 .providerGroupTablet {
   display: flex;
@@ -89,11 +90,11 @@
   font-size: 1.4rem;
 }
 
-.accordion-buttonTablet::after {
+.accordion-button::after {
   color: #b13983;
 }
 
-.accordion-buttonTablet:not(.collapsed) {
+.accordion-button:not(.collapsed) {
   color: #36cac3;
 }
 .accordionTextTablet {
