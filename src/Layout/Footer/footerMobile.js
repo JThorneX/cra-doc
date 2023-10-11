@@ -2,9 +2,6 @@ import "./footerMobile.scss";
 import Logo from "../../assets/logo/fcsw dark logo.svg";
 import { NavLink } from "react-router-dom";
 
-// import { IoSettingsOutline, IoLogOutOutline } from "react-icons/io5";
-// import { BsClipboardData } from "react-icons/bs";
-// import { AiOutlineHome } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -12,7 +9,7 @@ const Footer = () => {
       <div className="footerContentMobile">
         <div className="logoInfoMobile">
           <div className="logoMarginMobile d-flex">
-            <a href="/cra-doc" className="logoSectionMobile me-3 ">
+            <a href="/home" className="logoSectionMobile me-3 ">
               <img src={Logo} alt="logo" className="logoIconMobile logo" />
             </a>
             <header className="fs-3 headerTitleMobile mt-4">

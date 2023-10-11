@@ -23,7 +23,7 @@ const LoginMobile = () => {
       <div className="LoginMobile px-3">
         <div className="backBtnMobile">
           <button className="goBackMobile">
-            <NavLink exact to="/cra-doc/" className="goBackTextMobile">
+            <NavLink exact to="/cra-doc" className="goBackTextMobile">
               Go back
             </NavLink>
           </button>
@@ -80,7 +80,7 @@ const LoginMobile = () => {
               type="submit"
               disabled={!validateForm()}
             >
-              <NavLink exact to="/cra-doc-home" className="loginButtonMobile">
+              <NavLink exact to="/cra-doc" className="loginButtonMobile">
                 Login
               </NavLink>
             </Button>

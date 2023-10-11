@@ -14,7 +14,7 @@ const NavbarMobile = () => {
           <section className="navbarIconLinks">
             <NavLink
               exact
-              to="/cra-doc-home"
+              to="/home"
               className="navbarHomeIcon navbarMobileIconBox"
             >
               <AiOutlineHome className="navbarMobileIcon" />

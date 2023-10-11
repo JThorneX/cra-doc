@@ -2,17 +2,13 @@ import "./footer.scss";
 import Logo from "../../assets/logo/fcsw dark logo.svg";
 import { NavLink } from "react-router-dom";
 
-import { IoSettingsOutline, IoLogOutOutline } from "react-icons/io5";
-import { BsClipboardData } from "react-icons/bs";
-import { AiOutlineHome } from "react-icons/ai";
-
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footerContent">
         <div className="logoInfo">
           <div className="logoMargin m-5 d-flex">
-            <a href="/cra-doc" className="logo-section me-3 ">
+            <a href="/" className="logo-section me-3 ">
               <img src={Logo} alt="logo" className="LlogoIcon logo" />
             </a>
             <header className="fs-1 headerTitle mt-4">
@@ -66,7 +62,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

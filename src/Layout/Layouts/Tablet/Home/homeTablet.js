@@ -4,6 +4,7 @@ import HeaderTablet from "../../../Header/headerTablet";
 import FooterTablet from "../../../Footer/footerTablet";
 import NavbarTablet from "../../../Navbar/navbarTablet";
 import MidheaderTablet from "../../../Midheader/midheaderTablet";
+import SubheaderTablet from "../../../Subheader/subheaderTablet";
 
 import {
   BsCalendarDate,
@@ -18,6 +19,7 @@ const HomeTablet = () => {
   return (
     <div className="homeTablet">
       <HeaderTablet />
+      <SubheaderTablet />
       <div className="homeContentTablet">
         <div className="tabletMissionImage">
           <div className="missionTextMobile missionOverlayTablet">

@@ -23,7 +23,7 @@ const LoginTablet = () => {
       <div className="LoginTablet px-3">
         <div className="backBtnTablet">
           <button className="goBackTablet">
-            <NavLink exact to="/cra-doc/" className="goBackTextTablet">
+            <NavLink exact to="/home" className="goBackTextTablet">
               Go back
             </NavLink>
           </button>
@@ -80,7 +80,7 @@ const LoginTablet = () => {
               type="submit"
               disabled={!validateForm()}
             >
-              <NavLink exact to="/cra-doc-home" className="loginButtonTablet">
+              <NavLink exact to="/cra-doc" className="loginButtonTablet">
                 Login
               </NavLink>
             </Button>
@@ -90,7 +90,7 @@ const LoginTablet = () => {
           <p>
             Forget your password or username?
             <br />{" "}
-            <NavLink exact to="/unfortunateTablet" className="nonBtnTablet">
+            <NavLink exact to="/unfortunate" className="nonBtnTablet">
               Reset here.
             </NavLink>
           </p>
