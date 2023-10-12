@@ -1,0 +1,20 @@
+@import "../../../styles/theme-variables.scss";
+
+.privacyWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacyTextWrapper {
+  padding: 4rem;
+  width: 80%;
+
+  p {
+    padding: 1rem;
+    text-align: left;
+    font-size: 20px;
+  }
+}

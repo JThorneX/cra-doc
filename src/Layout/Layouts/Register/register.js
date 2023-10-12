@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Header from "../../Header/header";
 import Subheader from "../../Subheader/subheader";
+import Footer from "../../Footer/footer";
 
 const Register = () => {
   const [pin, setPin] = useState("");
@@ -31,7 +32,7 @@ const Register = () => {
       <div className="Register px-3">
         <div className="backBtn">
           <button className="goBack">
-            <NavLink exact to="/" className="goBackText">
+            <NavLink exact to="/cra-doc" className="goBackText">
               Go back
             </NavLink>
           </button>
@@ -159,6 +160,7 @@ const Register = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

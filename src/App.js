@@ -68,6 +68,7 @@ import ScrollToTop from "./components/scrollToTop";
 import { ThemeContext } from "./contexts/theme-context";
 
 function App() {
+  // theme change
   const isBrowserDefaultDark = () =>
     window.matchMedia("(prefers-color-scheme: dark)").matches;
 
@@ -79,6 +80,15 @@ function App() {
 
   const [theme, setTheme] = useState(getDefaultTheme());
 
+  // scroll to top
+  // const router = useRouter();
+  // const mainContentRef = useRef(null);
+
+  // useEffect(() => {
+  //   if (mainContentRef.current) {
+  //     mainContentRef.current.scrollTop = 0;
+  //   }
+  // }, [router.asPath]);
   return (
     <div className="siteWrapper">
       <Router>
@@ -109,7 +119,9 @@ function App() {
                   {matches.medium && (
                     <Route path="/home" element={<HomeTablet />} />
                   )}
-                  {matches.large && <Route path="/cra-doc" element={<HomeLayout />} />}
+                  {matches.large && (
+                    <Route path="/cra-doc" element={<HomeLayout />} />
+                  )}
 
                   {/* About Us Routes 
                   

@@ -26,7 +26,7 @@ const LoginTablet = () => {
       <div className="Login px-3">
         <div className="backBtn">
           <button className="goBack">
-            <NavLink exact to="/" className="goBackText">
+            <NavLink exact to="/cra-doc" className="goBackText">
               Go back
             </NavLink>
           </button>
